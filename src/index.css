@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "klsmaru";
+  src: url("../public/fonts/klsmaru.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ZenInShugo";
+  src: url("../public/fonts/ZenInShugo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ZenInShugoPop";
+  src: url("../public/fonts/ZenInShugoPop.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ToroNoGlitchMincho";
+  src: url("../public/fonts/ToroNoGlitchMinchoH3.otf") format("opentype");
+}

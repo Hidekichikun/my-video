@@ -17,6 +17,7 @@ import { Seasons } from "./Seasons";
 import { Setsubunn } from "./Setsubunn";
 import { MahouShojoTanabe } from "./MahouShojoTanabe";
 import { NichijoTakagi } from "./NichijoTakagi";
+import { HarakataNabe } from "./HarakataNabe";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -179,6 +180,16 @@ export const RemotionRoot: React.FC = () => {
         component={NichijoTakagi}
         // 3:30 (210s * 30fps = 6300 frames)
         durationInFrames={6300}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      <Composition
+        id="HarakataNabe"
+        component={HarakataNabe}
+        // 4:20 (260s * 30fps = 7800 frames)
+        durationInFrames={7800}
         fps={30}
         width={1920}
         height={1080}

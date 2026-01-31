@@ -19,6 +19,7 @@ const PHOTO_SEGMENTS = [
   { start: 45.5, end: 58, src: "photo/ハーカタ・ナーベの日常/反省しないハーカタ.png" },
 ];
 const FONT_FILE = "fonts/OtsutomeFont_Ver3_16.ttf";
+const SPECIAL_FONT_FILE = "fonts/NikumaruFont.otf";
 
 
 const loadOtsutomeFont = async () => {
@@ -26,8 +27,12 @@ const loadOtsutomeFont = async () => {
     "Otsutome",
     `url(${staticFile(FONT_FILE)}) format("truetype")`
   );
-  const loaded = await otsutome.load();
-  document.fonts.add(loaded);
+  const nikumaru = new FontFace(
+    "Nikumaru",
+    `url(${staticFile(SPECIAL_FONT_FILE)}) format("opentype")`
+  );
+  const loaded = await Promise.all([otsutome.load(), nikumaru.load()]);
+  loaded.forEach((font) => document.fonts.add(font));
 };
 
 export const HarakataNabe: React.FC = () => {
@@ -106,8 +111,8 @@ export const HarakataNabe: React.FC = () => {
     currentLine && lineStart >= slideStart && lineStart <= slideEnd;
 
   const closeUpTimes = [
-    23.0, 93.0, 94.0, 97.0, 100.0, 104.0, 105.0, 109.0, 111.0, 115.0,
-    153.0, 164.0,
+    23.0, 92.5, 93.0, 94.0, 97.0, 100.0, 104.0, 105.0, 109.0, 111.0, 115.0,
+    153.0, 154.0, 157.0, 160.0, 164.0, 165.0, 169.0, 171.0, 175.0,
   ];
   const isCloseUpLine = currentLine
     ? closeUpTimes.some((time) => Math.abs(lineStart - time) < 0.2)
@@ -123,10 +128,15 @@ export const HarakataNabe: React.FC = () => {
     : 0;
 
   const lineScale = isCloseUpLine
-    ? interpolate(currentTime, [lineStart, lineEnd], isBigCloseUp ? [1.08, 1.45] : [1.02, 1.18], {
-        extrapolateLeft: "clamp",
-        extrapolateRight: "clamp",
-      })
+    ? (isBigCloseUp
+        ? interpolate(currentTime, [lineStart, lineStart + 0.6], [1.0, 1.6], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+          })
+        : interpolate(currentTime, [lineStart, lineEnd], [1.02, 1.18], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+          }))
     : 1;
 
   const currentPhoto = PHOTO_SEGMENTS.find(
@@ -153,8 +163,26 @@ export const HarakataNabe: React.FC = () => {
       })
     : 1.02;
 
+  const isFlashPhoto = currentPhoto?.src === PHOTO_SEGMENTS[0].src;
+  const photoFlash = isFlashPhoto
+    ? interpolate(currentTime, [currentPhoto.start, currentPhoto.start + 0.12], [0, 0.15], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      })
+    : 0;
+
   const isLongLine = currentLine ? currentLine.text.length > 18 : false;
-  const fontSize = isTitleLine ? 84 : isCenterLine ? 72 : isLongLine ? 56 : 64;
+  const lineColor = isBigCloseUp ? "#ffb3d5" : "#ffffff";
+
+  const fontSize = isTitleLine
+    ? 84
+    : isBigCloseUp
+      ? 96
+      : isCenterLine
+        ? 72
+        : isLongLine
+          ? 56
+          : 64;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#0a0b10", color: "#ffffff" }}>
@@ -170,6 +198,15 @@ export const HarakataNabe: React.FC = () => {
             objectFit: "cover",
             transform: `translate(-50%, -50%) scale(${photoZoom})`,
             opacity: photoOpacity,
+          }}
+        />
+      )}
+
+      {photoFlash > 0 && (
+        <AbsoluteFill
+          style={{
+            backgroundColor: "#ffffff",
+            opacity: photoFlash,
           }}
         />
       )}
@@ -191,11 +228,14 @@ export const HarakataNabe: React.FC = () => {
           width: "88%",
           maxWidth: 1500,
           textAlign: "center",
-          fontFamily: "'Otsutome', 'Soukou Mincho', serif",
+          fontFamily: isBigCloseUp
+            ? "'Nikumaru', 'Otsutome', 'Soukou Mincho', sans-serif"
+            : "'Otsutome', 'Soukou Mincho', serif",
           fontSize,
           letterSpacing: "0.04em",
           lineHeight: 1.45,
           textShadow: "0 6px 22px rgba(0,0,0,0.65)",
+          color: lineColor,
           opacity: lineOpacity,
           whiteSpace: "pre-wrap",
         }}

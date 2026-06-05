@@ -18,6 +18,7 @@ import { Setsubunn } from "./Setsubunn";
 import { MahouShojoTanabe } from "./MahouShojoTanabe";
 import { NichijoTakagi } from "./NichijoTakagi";
 import { HarakataNabe } from "./HarakataNabe";
+import { JiGaMe } from "./JiGaMe";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -190,6 +191,16 @@ export const RemotionRoot: React.FC = () => {
         component={HarakataNabe}
         // 4:20 (260s * 30fps = 7800 frames)
         durationInFrames={7800}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      <Composition
+        id="JiGaMe"
+        component={JiGaMe}
+        // 3:50 (230s * 30fps), lets the audio finish after the final lyric.
+        durationInFrames={6900}
         fps={30}
         width={1920}
         height={1080}

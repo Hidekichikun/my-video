@@ -50,3 +50,17 @@ testCases.forEach((test, index) => {
         );
     }
 });
+
+const multiTagResult = parseLrc('[00:01.00]First[00:02.50]{sabi}Second');
+if (
+    multiTagResult.length === 2 &&
+    multiTagResult[0].time === 1 &&
+    multiTagResult[0].text === 'First' &&
+    multiTagResult[1].time === 2.5 &&
+    multiTagResult[1].text === 'Second' &&
+    multiTagResult[1].isChorus
+) {
+    console.log('Multi-tag test passed');
+} else {
+    console.error('Multi-tag test failed:', multiTagResult);
+}

@@ -7,7 +7,7 @@ const SH: [string, number, number, string][] = [
   ['CosineShortB', 141.3, 162.5, 'キモい×(−1)'],
   ['CosineShortC', 190.3, 213.9, '名前で呼んでよね'],
 ];
-export const RemotionRoot: React.FC = () => (
+export const CosineCompositions: React.FC = () => (
   <>
     <Composition id="Cosine" component={Cosine} durationInFrames={DURATION} fps={FPS} width={1920} height={1080} />
     {SH.map(([id, s, e, label]) => (

@@ -41,7 +41,7 @@
 | `src/Pyramid2/voicevox/readings_with_ids.tsv` | 番号・行ID・読み・字幕の表 |
 | `src/Pyramid2/voicevox/pyramid2.vvproj` | VOICEVOXのプロジェクト（録り直し用） |
 | `public/audio/pyramid2/{行ID}.wav` | 音声143本（`00-01.wav`〜`08-13.wav`）。24kHz・16bit |
-| `voice-pyramid2/` | VOICEVOXの書き出しそのまま（字幕用txt付き）。元データとして残すだけ |
+| `voice/pyramid2/` | VOICEVOXの書き出しそのまま（字幕用txt付き）。元データとして残すだけ |
 | `public/photo/pyramid2-anime/` | 新しいイラスト27枚（1536×864） |
 | `public/photo/pyramid-anime/` | 前作のイラスト。8枚を使い回す |
 | `public/photo/pyramid-guide/` | 解説キャラ5枚（neutral / talk / blink / point / wonder） |

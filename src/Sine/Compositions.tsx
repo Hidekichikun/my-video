@@ -6,7 +6,7 @@ const SH: [string, number, number, string, boolean, boolean?][] = [
   ['SineShortA', 41.7, 65.3, 'サビ', false],
   ['SineHookA', 42.0, 57.0, 'サビ_音なし', true, true],
 ];
-export const RemotionRoot: React.FC = () => (
+export const SineCompositions: React.FC = () => (
   <>
     <Composition id="Sine" component={Sine} durationInFrames={DURATION} fps={FPS} width={1920} height={1080} />
     {SH.map(([id, s, e, label, silent, clean]) => (

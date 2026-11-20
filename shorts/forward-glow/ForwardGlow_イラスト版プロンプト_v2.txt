@@ -1,0 +1,58 @@
+Forward Glow ショート（イラスト版 v2：1枚目ベース）プロンプト
+対象：short01_sabi（サビ 0:33〜）の4カット　→ ただいま正気を失い中 用
+サイズ：縦 1080×1920（9:16）
+参考画像：気に入った1枚目（正面ニコッの子）を毎回いっしょに渡す
+　→ "Same character and same art style as the reference image." が効くようにするため
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ 共通スタイル（毎回コピペして各カットの頭につける）
+━━━━━━━━━━━━━━━━━━━━━━━━
+Anime illustration, vertical 9:16, 1080x1920.
+Same character and same art style as the reference image.
+Character: a gentle, cheerful girl around 18, straight honey-blonde bob with blunt bangs, big round brown eyes with bright highlights, soft pink blush on the cheeks, small nose, kind smile.
+Outfit: oversized beige-khaki hoodie with drawstrings, plain fabric with only one small black star on the left sleeve, black leggings, small black backpack.
+Style: soft anime shading with smooth gradients, glossy highlights on hair and clothes, clean line art, warm and bright colors, cute character-like feel (not photorealistic).
+Lighting: warm golden backlight, sun glow on the hair edges, floating light dots.
+Background: autumn trees with orange and yellow leaves in soft bokeh, a few falling leaves.
+Composition: keep the top 12% and bottom 25% fairly simple (space for title and lyrics).
+No text, no letters or logos on clothes, no watermark, no signature, nothing written in the corners.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ カット1（0.0〜6.3秒）「前に 攻め 跳ねて 進め／繰り返すのみ」
+　※1秒目で目を止めるカット
+━━━━━━━━━━━━━━━━━━━━━━━━
+Upper-body shot from the waist up, facing the viewer, head slightly tilted, big eyes looking straight at the camera, bright smile with mouth slightly open as if starting to sing, one hand making a small fist in front of her chest.
+Hair gently blowing in the wind, leaves drifting around her.
+Eyes positioned about 35% from the top of the frame.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ カット2（6.3〜11.5秒）「越えて 詰めて 乗って 攻めて 晴れた 空を／迷いなんて」
+━━━━━━━━━━━━━━━━━━━━━━━━
+Full-body shot, she is running forward toward the viewer along a path covered in fallen leaves, hoodie and hair fluttering, backpack bouncing, happy determined expression.
+Slightly low camera angle, clear blue sky visible between the autumn trees above, leaves kicked up around her feet.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ カット3（11.5〜16.7秒）「跳ねて 越えて キモチ たかめ／小さな一歩で」
+━━━━━━━━━━━━━━━━━━━━━━━━
+Three-quarter back view, she looks back over her shoulder at the viewer with a soft confident smile, as if saying "come with me", taking one step forward.
+The black star on her sleeve visible, backpack on her back, golden light outlining her hair, sparkles in the air.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ カット4（16.7〜22.1秒）「詰めて ぎゅっと 攻めて 前へ／かぜに 乗るよ／グッと押し出していけ」
+　※サビの締め。いちばん盛り上がるカット
+━━━━━━━━━━━━━━━━━━━━━━━━
+Upper-body shot, she reaches one hand forward toward the camera (hand slightly blurred in the foreground, face in sharp focus), big bright smile, eyes shining and looking at the viewer.
+Strong wind blowing her hair and hood back, a burst of golden light and a whirl of autumn leaves behind her.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ 調整のしかた
+━━━━━━━━━━━━━━━━━━━━━━━━
+・顔が変わる → "keep exactly the same face, hairstyle and eye shape as the reference image" を足す
+・リアル寄りに戻る → "more anime-like, simpler shading" を足す
+・パーカーにまた文字が出る → "completely plain hoodie" に変える
+・四隅に透かしっぽい文字が出たら、下は歌詞で隠れるけど、上の場合はトリミングで消す
+・幼く見えすぎる → "around 20 years old" に変える
+
+■ できた画像
+・build/public/ に forward-glow-chara-1.png 〜 4.png で保存
+　→ shorts/_work/fg1.json の shots の画像パスを差し替えれば、今のショートと同じ尺・歌詞で作り直せる

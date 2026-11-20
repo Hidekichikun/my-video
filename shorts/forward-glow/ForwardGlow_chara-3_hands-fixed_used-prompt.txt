@@ -1,0 +1,9 @@
+Generation: built-in image_gen
+Output: build/public/forward-glow-chara-3.png
+Delivery: 1080x1920
+
+Edit the supplied anime illustration with strictly localized arm/hand repairs. This is the actual edit target. Preserve the face looking back, wink, smiling expression, head position, hair, backpack, legs, walking pose, outfit colors, golden autumn background, lighting, framing and art style.
+1. REMOVE the entire extra raised peace-sign arm on the far image-left: erase the V-sign fingers and hand beside the face and the bent sleeve below that hand. Reconstruct the autumn background and hoodie torso naturally where this extra limb was. Do not remove or change the face.
+2. Retain the legitimate LEFT arm: the star-bearing sleeve in image center-left descending from the shoulder beside the backpack. Fix its lower end: remove the malformed little flesh-colored protrusion emerging at the waist from its cuff. Give this arm a normal relaxed downward position with a coherent sleeve and cuff; the hand can be fully hidden inside the long oversized sleeve, with NO flesh protruding through hoodie fabric.
+3. Retain the existing natural arm at image right hanging beside her body.
+Final anatomy: exactly TWO shoulders, TWO arms and no extra limb, no raised hand, no peace sign. Both arms relaxed downward. One small black star on left sleeve. The girl's face MUST remain turned back and winking exactly as in this input, unlike a rear-head walking variant. No text, watermark, signature or logos. Vertical 9:16, target 1080x1920.

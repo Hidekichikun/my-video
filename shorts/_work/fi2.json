@@ -1,0 +1,79 @@
+{
+ "title": "Fire in my senses",
+ "audio": "music/mastered/Fire in my senses (master).wav",
+ "jacket": "music/jacket/Fire in my senses_jacket.png",
+ "snow": true,
+ "start": 166.8,
+ "lyrics_end": 29.4,
+ "lyrics": [
+  [
+   167.3,
+   "Break my Fire in my senses"
+  ],
+  [
+   170.2,
+   "どんな昨日も道に変えて"
+  ],
+  [
+   172.7,
+   "望む未来は　創れるから"
+  ],
+  [
+   175.9,
+   "光の方へ歩いていくよ"
+  ],
+  [
+   182.7,
+   "Burning mind解き放て"
+  ],
+  [
+   185.4,
+   "澄んだ心がわたしの軸"
+  ],
+  [
+   187.8,
+   "根を制して　自由を得て"
+  ],
+  [
+   191.1,
+   "選ぶ未来はわたしの手で"
+  ]
+ ],
+ "shots": [
+  [
+   0,
+   "build/public/fire-in-my-senses-bg.png",
+   0.45,
+   0.34,
+   0.7,
+   0.85
+  ],
+  [
+   5.9,
+   "build/public/fire-in-my-senses-bg.png",
+   0.45,
+   0.5,
+   1,
+   0.9
+  ],
+  [
+   15.9,
+   "build/public/fire-in-my-senses-bg.png",
+   0.63,
+   0.32,
+   0.5,
+   0.42
+  ],
+  [
+   21.0,
+   "build/public/fire-in-my-senses-bg.png",
+   0.45,
+   0.55,
+   0.8,
+   0.72
+  ]
+ ],
+ "end1": "Now Streaming",
+ "end2": "配信中",
+ "out": "fire-in-my-senses/FireInMySenses_short02_release.mp4"
+}

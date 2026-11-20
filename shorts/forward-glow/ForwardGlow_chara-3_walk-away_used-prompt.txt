@@ -1,0 +1,8 @@
+Generation: built-in image_gen
+Output: build/public/forward-glow-chara-3.png
+Delivery: 1080x1920
+
+Use case: precise-object-edit / illustration-story. Edit the supplied Forward Glow CUT 3 illustration.
+Change the girl's pose so she is walking naturally AWAY FROM THE VIEWER down the autumn path toward the distant golden light. Strict rear view: head faces forward down the path, show only the back of her honey-blonde bob, no face or profile visible, no turning back. Remove the peace sign completely; both arms lowered in a relaxed natural walking swing at her sides, exactly two arms, two hands. Her shoulders, torso and black backpack face directly away from the camera. Natural gentle walking stride, full body and both shoes visible.
+Preserve the same character's honey-blonde bob, oversized beige-khaki hoodie with only one small black star on left sleeve, black leggings, black sneakers and small black backpack. Preserve the existing polished soft anime art style, warm golden backlight, detailed glossy hair, autumn forest path, orange and yellow foliage, floating leaves, bokeh, light dots, perspective, character scale and vertical 9:16 framing. Keep top 12% and bottom 25% relatively simple for later title and lyrics.
+No text, no logos, no watermark, no signature, no extra people. Target 1080x1920.

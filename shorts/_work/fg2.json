@@ -1,0 +1,78 @@
+{
+ "title": "Forward Glow",
+ "audio": "music/mastered/Forward Glow (master).wav",
+ "jacket": "music/jacket/Forward Glow_jacket.png",
+ "start": 91.5,
+ "lyrics_end": 22.0,
+ "lyrics": [
+  [
+   91.9,
+   "進め 極め 挑め もっと 攻めて もっと"
+  ],
+  [
+   95.8,
+   "もう止まらない"
+  ],
+  [
+   97.1,
+   "貫け こころ 掴め ぎゅっと きみの きもち"
+  ],
+  [
+   101.1,
+   "一点突破だ"
+  ],
+  [
+   102.6,
+   "揺れて ぶれる こころ 戒め かたく 保つ"
+  ],
+  [
+   106.2,
+   "信念もって"
+  ],
+  [
+   107.7,
+   "高鳴る キモチ たかめ もっと 赴くまま"
+  ],
+  [
+   111.2,
+   "心が走るほうへ"
+  ]
+ ],
+ "shots": [
+  [
+   0,
+   "build/public/forward-glow-03.png",
+   0.6,
+   0.5,
+   1,
+   0.9
+  ],
+  [
+   5.6,
+   "build/public/forward-glow-13.png",
+   0.5,
+   0.5,
+   1,
+   0.88
+  ],
+  [
+   11.1,
+   "build/public/forward-glow-09.png",
+   0.62,
+   0.5,
+   1,
+   0.9
+  ],
+  [
+   16.2,
+   "build/public/forward-glow-02.png",
+   0.5,
+   0.5,
+   1,
+   0.86
+  ]
+ ],
+ "end1": "Now Streaming",
+ "end2": "配信中",
+ "out": "forward-glow/ForwardGlow_short02_release.mp4"
+}

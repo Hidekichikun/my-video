@@ -1,0 +1,53 @@
+{
+ "title": "So stupid, but so good.",
+ "audio": "music/So stupid, but so good..mp3",
+ "image": "photo/So stupid, but so good/オラオラ娘.png",
+ "bpm": 112.347,
+ "start": 181.92105619909745,
+ "beats": 52,
+ "shots": [
+  [
+   0,
+   0.58,
+   0.15,
+   0.36,
+   0.3
+  ],
+  [
+   8,
+   0.5,
+   0.5,
+   1.0,
+   0.88
+  ],
+  [
+   16,
+   0.5,
+   0.22,
+   0.5,
+   0.42
+  ],
+  [
+   24,
+   0.5,
+   0.8,
+   0.55,
+   0.45
+  ],
+  [
+   32,
+   0.6,
+   0.14,
+   0.3,
+   0.25
+  ],
+  [
+   40,
+   0.5,
+   0.42,
+   0.95,
+   0.8
+  ]
+ ],
+ "out": "so-stupid-but-so-good/SoStupidButSoGood_short01_sabi.mp4"
+}

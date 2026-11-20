@@ -1,0 +1,4 @@
+Mode: built-in image_gen; precise-object-edit.
+Target: T1_thumb_welcome.png.
+References: 課長ここは会社ですよ/サムネ_課長ここは会社です_イラスト版.png; 社長ここは地球です/サムネ案_イラスト×ゲームUI.png.
+Replace only the foreground woman's helmet with a yellow industrial safety hard hat matching the references: richly detailed overlapping worn rectangular punk-zine stickers, torn edges, scuffed yellow paint, painted highlights and shadows. Remove the large geometric triangle pattern. Preserve the composition, character identity, pose, clothing, background crowd, confetti and framing. No UI or titles. Output the complete 16:9 image.

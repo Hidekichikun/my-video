@@ -1,0 +1,99 @@
+{
+ "title": "So stupid, but so good.",
+ "audio": "music/So stupid, but so good..mp3",
+ "image": "photo/So stupid, but so good/オラオラ娘.png",
+ "bpm": 112.347,
+ "start": 181.92105619909745,
+ "beats": 52,
+ "shots": [
+  [
+   0,
+   0.62,
+   0.26,
+   0.52,
+   0.44,
+   "photo/So stupid, but so good/ネオンハートのゴシックアイドル.png"
+  ],
+  [
+   4,
+   0.5,
+   0.5,
+   1.0,
+   0.92,
+   "photo/So stupid, but so good/ネオンハートのゴシックアイドル.png"
+  ],
+  [
+   8,
+   0.5,
+   0.22,
+   0.49,
+   0.42,
+   "photo/So stupid, but so good/オラオラ娘.png"
+  ],
+  [
+   12,
+   0.4,
+   0.33,
+   0.6,
+   0.45,
+   "photo/So stupid, but so good/ChatGPT 画像 2026年10月5日 00_26_03.png"
+  ],
+  [
+   16,
+   0.5,
+   0.5,
+   1.0,
+   0.9,
+   "photo/So stupid, but so good/ChatGPT 画像 2026年10月5日 00_26_03.png"
+  ],
+  [
+   24,
+   0.4,
+   0.33,
+   0.62,
+   0.5,
+   "photo/So stupid, but so good/ChatGPT 画像 2026年10月5日 00_25_26.png"
+  ],
+  [
+   28,
+   0.5,
+   0.5,
+   1.0,
+   0.9,
+   "photo/So stupid, but so good/ChatGPT 画像 2026年10月5日 00_25_26.png"
+  ],
+  [
+   32,
+   0.5,
+   0.5,
+   1.0,
+   0.88,
+   "photo/So stupid, but so good/オラオラ娘.png"
+  ],
+  [
+   36,
+   0.5,
+   0.8,
+   0.55,
+   0.45,
+   "photo/So stupid, but so good/オラオラ娘.png"
+  ],
+  [
+   40,
+   0.64,
+   0.25,
+   0.42,
+   0.35,
+   "photo/So stupid, but so good/ネオンハートのゴシックアイドル.png"
+  ],
+  [
+   46,
+   0.5,
+   0.22,
+   0.49,
+   0.42,
+   "photo/So stupid, but so good/オラオラ娘.png"
+  ]
+ ],
+ "out": "so-stupid-but-so-good/SoStupidButSoGood_short02_4pics.mp4"
+}

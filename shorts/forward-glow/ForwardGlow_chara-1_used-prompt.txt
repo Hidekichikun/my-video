@@ -1,0 +1,15 @@
+Generation: built-in image_gen
+Reference: user attached codex-clipboard-1307e752-aaeb-4311-a1f2-d532679f663b.png
+Output: build/public/forward-glow-chara-1.png
+Delivery: resized to 1080x1920
+
+Use case: illustration-story.
+Create ONE finished image for Forward Glow short01_sabi, CUT 1 (0–6.3 seconds). Vertical 9:16, target 1080x1920.
+The attached reference is the character and art-style reference. Same character and same art style as the reference image. Use the user's following specification as authoritative over incidental details in the reference: remove ALL reference clothing text, lettering, emblems and signature; only one small black star on her left sleeve. The earlier ForwardGlow illustration prompt supplies the autumn setting, hopeful mood, chorus use and title/lyrics safe space; do NOT use its chibi/3-head proportions or two-fist pose. Use these latest instructions:
+Anime illustration. Character: a gentle, cheerful girl around 18, straight honey-blonde bob with blunt bangs, big round brown eyes with bright highlights, soft pink blush on the cheeks, small nose, kind smile.
+Outfit: oversized beige-khaki hoodie with drawstrings, plain fabric with only one small black star on the left sleeve, black leggings, small black backpack. Only show what naturally fits the waist-up framing.
+Style: soft anime shading with smooth gradients, glossy highlights on hair and clothes, clean line art, warm and bright colors, cute character-like feel (not photorealistic).
+Lighting: warm golden backlight, sun glow on the hair edges, floating light dots.
+Background: autumn trees with orange and yellow leaves in soft bokeh, a few falling leaves.
+Composition: keep the top 12% and bottom 25% fairly simple (space for title and lyrics). Upper-body shot from the waist up, facing the viewer, head slightly tilted, big eyes looking straight at the camera, bright smile with mouth slightly open as if starting to sing, one hand making a small fist in front of her chest. Hair gently blowing in the wind, leaves drifting around her. Eyes positioned about 35% from the top of the frame.
+No text, no letters or logos on clothes, no watermark, no signature, nothing written in the corners. No extra characters.

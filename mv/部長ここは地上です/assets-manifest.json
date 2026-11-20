@@ -1,0 +1,369 @@
+{
+  "date": "2026-10-19",
+  "generator": "built-in image_gen",
+  "status": "generated source images; sprite extraction and MV assembly pending",
+  "characters": [
+    {
+      "file": "characters/bucho.png",
+      "prompt": "characters/bucho-prompt.txt",
+      "label": "部長・全身設定画",
+      "width": 1254,
+      "height": 1254,
+      "reference": "../社長ここは地球です/characters/hero.png"
+    },
+    {
+      "file": "characters/somu.png",
+      "prompt": "characters/somu-prompt.txt",
+      "label": "総務部・全身設定画",
+      "width": 1254,
+      "height": 1254,
+      "reference": "../社長ここは地球です/characters/hero.png"
+    },
+    {
+      "file": "characters/trouble_icons.png",
+      "prompt": "characters/trouble_icons-prompt.txt",
+      "label": "トラブルアイコン8個",
+      "width": 1774,
+      "height": 887
+    }
+  ],
+  "sprites": [
+    {
+      "file": "sprites/D01_idle.png",
+      "prompt": "sprites/D01_idle-prompt.txt",
+      "label": "部長・胸を張って待機",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D02_ganimata_walk.png",
+      "prompt": "sprites/D02_ganimata_walk-prompt.txt",
+      "label": "部長・ガニ股歩行",
+      "width": 2172,
+      "height": 724,
+      "frames": 4,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D03_chest_thump.png",
+      "prompt": "sprites/D03_chest_thump-prompt.txt",
+      "label": "部長・胸ドン",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D04_never_said.png",
+      "prompt": "sprites/D04_never_said-prompt.txt",
+      "label": "部長・俺は言ってねぇぞ",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D05_float.png",
+      "prompt": "sprites/D05_float-prompt.txt",
+      "label": "部長・浮き上がる",
+      "width": 2172,
+      "height": 724,
+      "frames": 3,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D06_point_shout.png",
+      "prompt": "sprites/D06_point_shout-prompt.txt",
+      "label": "部長・指さし号令",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D07_fix_machine.png",
+      "prompt": "sprites/D07_fix_machine-prompt.txt",
+      "label": "部長・機械修理",
+      "width": 2172,
+      "height": 724,
+      "frames": 3,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D08_souka.png",
+      "prompt": "sprites/D08_souka-prompt.txt",
+      "label": "部長・そうか",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D09_eye_to_eye.png",
+      "prompt": "sprites/D09_eye_to_eye-prompt.txt",
+      "label": "部長・目線を合わせる",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D10_fly.png",
+      "prompt": "sprites/D10_fly-prompt.txt",
+      "label": "部長・空を飛ぶ",
+      "width": 2172,
+      "height": 724,
+      "frames": 3,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D11_rush.png",
+      "prompt": "sprites/D11_rush-prompt.txt",
+      "label": "部長・突進",
+      "width": 2172,
+      "height": 724,
+      "frames": 4,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D12_walk_away.png",
+      "prompt": "sprites/D12_walk_away-prompt.txt",
+      "label": "部長・去っていく",
+      "width": 2079,
+      "height": 756,
+      "frames": 4,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/D13_question.png",
+      "prompt": "sprites/D13_question-prompt.txt",
+      "label": "部長・質問",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "bucho",
+      "reference": "characters/bucho.png"
+    },
+    {
+      "file": "sprites/G01_papers.png",
+      "prompt": "sprites/G01_papers-prompt.txt",
+      "label": "総務部・書類を出す",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "somu",
+      "reference": "characters/somu.png"
+    },
+    {
+      "file": "sprites/G02_sigh.png",
+      "prompt": "sprites/G02_sigh-prompt.txt",
+      "label": "総務部・ため息",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "somu",
+      "reference": "characters/somu.png"
+    },
+    {
+      "file": "sprites/H05_pull_down.png",
+      "prompt": "sprites/H05_pull_down-prompt.txt",
+      "label": "主人公・引きずり下ろす",
+      "width": 1920,
+      "height": 819,
+      "frames": 3,
+      "character": "hero",
+      "reference": "../社長ここは地球です/characters/hero.png"
+    },
+    {
+      "file": "sprites/H06_tsukkomi_point.png",
+      "prompt": "sprites/H06_tsukkomi_point-prompt.txt",
+      "label": "主人公・ツッコミ",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "hero",
+      "reference": "../社長ここは地球です/characters/hero.png"
+    },
+    {
+      "file": "sprites/H07_extinguisher.png",
+      "prompt": "sprites/H07_extinguisher-prompt.txt",
+      "label": "主人公・消火器",
+      "width": 2172,
+      "height": 724,
+      "frames": 3,
+      "character": "hero",
+      "reference": "../社長ここは地球です/characters/hero.png"
+    },
+    {
+      "file": "sprites/S10_no_helmet.png",
+      "prompt": "sprites/S10_no_helmet-prompt.txt",
+      "label": "新人・ノーヘル",
+      "width": 1774,
+      "height": 887,
+      "frames": 2,
+      "character": "shinjin",
+      "reference": "../ウェルカムトゥザ社畜/characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S11_helmet_on.png",
+      "prompt": "sprites/S11_helmet_on-prompt.txt",
+      "label": "新人・ヘルメット着用",
+      "width": 2048,
+      "height": 768,
+      "frames": 3,
+      "character": "shinjin",
+      "reference": "../ウェルカムトゥザ社畜/characters/shinjin.png"
+    }
+  ],
+  "backgrounds": [
+    {
+      "file": "backgrounds/B1_factory_gate.png",
+      "prompt": "backgrounds/B1_factory_gate-prompt.txt",
+      "label": "朝の工場正門",
+      "width": 1672,
+      "height": 941,
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    },
+    {
+      "file": "backgrounds/B2_factory_floor.png",
+      "prompt": "backgrounds/B2_factory_floor-prompt.txt",
+      "label": "工場メインステージ",
+      "width": 1672,
+      "height": 941,
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    },
+    {
+      "file": "backgrounds/B3_office_somu.png",
+      "prompt": "backgrounds/B3_office_somu-prompt.txt",
+      "label": "総務部の事務所",
+      "width": 1672,
+      "height": 941,
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    },
+    {
+      "file": "backgrounds/B4_meeting_room.png",
+      "prompt": "backgrounds/B4_meeting_room-prompt.txt",
+      "label": "会議室",
+      "width": 1672,
+      "height": 941,
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    },
+    {
+      "file": "backgrounds/B5_trouble_floor.png",
+      "prompt": "backgrounds/B5_trouble_floor-prompt.txt",
+      "label": "トラブルだらけの工場",
+      "width": 1672,
+      "height": 941,
+      "correction_prompt": "backgrounds/B5_trouble_floor-correction.txt",
+      "correction_references": [
+        "backgrounds/B2_factory_floor.png",
+        "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+      ],
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    },
+    {
+      "file": "backgrounds/B6_sky_rooftops.png",
+      "prompt": "backgrounds/B6_sky_rooftops-prompt.txt",
+      "label": "工場の屋根と青空",
+      "width": 1672,
+      "height": 941,
+      "correction_prompt": "backgrounds/B6_sky_rooftops-correction.txt",
+      "correction_references": [
+        "backgrounds/B6_sky_rooftops.png",
+        "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+      ],
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    },
+    {
+      "file": "backgrounds/B7_boss_warning.png",
+      "prompt": "backgrounds/B7_boss_warning-prompt.txt",
+      "label": "赤黒いボス部屋",
+      "width": 1672,
+      "height": 941,
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    },
+    {
+      "file": "backgrounds/B8_machine_line.png",
+      "prompt": "backgrounds/B8_machine_line-prompt.txt",
+      "label": "機械が並ぶライン",
+      "width": 1672,
+      "height": 941,
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    },
+    {
+      "file": "backgrounds/B9_sunset_road.png",
+      "prompt": "backgrounds/B9_sunset_road-prompt.txt",
+      "label": "夕方の工場前の道",
+      "width": 1672,
+      "height": 941,
+      "reference": "../課長ここは会社ですよ/backgrounds/B2_kacho_desk.png"
+    }
+  ],
+  "thumbnail": [
+    {
+      "file": "thumbnail/J1_jacket_square.png",
+      "prompt": "thumbnail/J1_jacket_square-prompt.txt",
+      "label": "正方形ジャケット",
+      "width": 1254,
+      "height": 1254,
+      "correction_prompt": "thumbnail/J1_jacket_square-correction.txt",
+      "correction_references": [
+        "thumbnail/J1_jacket_square.png",
+        "characters/bucho.png"
+      ],
+      "references": [
+        "../課長ここは会社ですよ/サムネ_課長ここは会社です_イラスト版.png",
+        "../社長ここは地球です/サムネ案_イラスト×ゲームUI.png",
+        "characters/bucho.png"
+      ]
+    },
+    {
+      "file": "thumbnail/T1_thumb_hero.png",
+      "prompt": "thumbnail/T1_thumb_hero-prompt.txt",
+      "label": "サムネ第1候補・主人公と浮く部長",
+      "width": 1672,
+      "height": 941,
+      "correction_prompt": "thumbnail/T1_thumb_hero-correction.txt",
+      "correction_references": [
+        "thumbnail/T1_thumb_hero.png",
+        "characters/bucho.png"
+      ],
+      "references": [
+        "../課長ここは会社ですよ/サムネ_課長ここは会社です_イラスト版.png",
+        "../社長ここは地球です/サムネ案_イラスト×ゲームUI.png",
+        "characters/bucho.png"
+      ]
+    },
+    {
+      "file": "thumbnail/T2_thumb_bucho.png",
+      "prompt": "thumbnail/T2_thumb_bucho-prompt.txt",
+      "label": "サムネ第2候補・まかせろ部長",
+      "width": 1671,
+      "height": 941,
+      "correction_prompt": "thumbnail/T2_thumb_bucho-correction.txt",
+      "correction_references": [
+        "thumbnail/T2_thumb_bucho.png",
+        "characters/bucho.png"
+      ],
+      "references": [
+        "../課長ここは会社ですよ/サムネ_課長ここは会社です_イラスト版.png",
+        "../社長ここは地球です/サムネ案_イラスト×ゲームUI.png",
+        "characters/bucho.png"
+      ]
+    }
+  ]
+}

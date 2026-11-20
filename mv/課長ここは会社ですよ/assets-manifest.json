@@ -1,0 +1,209 @@
+{
+  "date": "2026-10-07",
+  "generator": "built-in image_gen",
+  "status": "generated source images; sprite extraction and MV assembly pending",
+  "characters": [
+    {
+      "file": "characters/kacho.png",
+      "prompt": "characters/kacho-prompt.txt",
+      "label": "課長"
+    },
+    {
+      "file": "characters/okaachan.png",
+      "prompt": "characters/okaachan-prompt.txt",
+      "label": "おかあちゃん・シルエット"
+    },
+    {
+      "file": "characters/excel_monster.png",
+      "prompt": "characters/excel_monster-prompt.txt",
+      "label": "エクセルモンスター"
+    },
+    {
+      "file": "characters/items.png",
+      "prompt": "characters/items-prompt.txt",
+      "label": "アイテムアイコン8個"
+    }
+  ],
+  "sprites": [
+    {
+      "file": "sprites/K01_idle.png",
+      "prompt": "sprites/K01_idle-prompt.txt",
+      "label": "課長・待機",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K02_slick.png",
+      "prompt": "sprites/K02_slick-prompt.txt",
+      "label": "課長・オールバック",
+      "character": "kacho",
+      "frames": 3
+    },
+    {
+      "file": "sprites/K03_nod.png",
+      "prompt": "sprites/K03_nod-prompt.txt",
+      "label": "課長・うなずく",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K04_walk.png",
+      "prompt": "sprites/K04_walk-prompt.txt",
+      "label": "課長・歩行",
+      "character": "kacho",
+      "frames": 4
+    },
+    {
+      "file": "sprites/K05_whiteboard.png",
+      "prompt": "sprites/K05_whiteboard-prompt.txt",
+      "label": "課長・ホワイトボード",
+      "character": "kacho",
+      "frames": 3
+    },
+    {
+      "file": "sprites/K06_calculator.png",
+      "prompt": "sprites/K06_calculator-prompt.txt",
+      "label": "課長・電卓",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K07_pc_stare.png",
+      "prompt": "sprites/K07_pc_stare-prompt.txt",
+      "label": "課長・PCをにらむ",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K08_printout.png",
+      "prompt": "sprites/K08_printout-prompt.txt",
+      "label": "課長・プリントアウト",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K09_phone.png",
+      "prompt": "sprites/K09_phone-prompt.txt",
+      "label": "課長・電話と顔面蒼白",
+      "character": "kacho",
+      "frames": 3
+    },
+    {
+      "file": "sprites/K10_panic_run.png",
+      "prompt": "sprites/K10_panic_run-prompt.txt",
+      "label": "課長・慌てて走る",
+      "character": "kacho",
+      "frames": 4
+    },
+    {
+      "file": "sprites/K11_sleep.png",
+      "prompt": "sprites/K11_sleep-prompt.txt",
+      "label": "課長・居眠り",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K12_headshake.png",
+      "prompt": "sprites/K12_headshake-prompt.txt",
+      "label": "課長・首を振る",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K13_glance.png",
+      "prompt": "sprites/K13_glance-prompt.txt",
+      "label": "課長・ちらっと見る",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K14_lecture.png",
+      "prompt": "sprites/K14_lecture-prompt.txt",
+      "label": "課長・赤ペンで力説",
+      "character": "kacho",
+      "frames": 2
+    },
+    {
+      "file": "sprites/K15_car_drive.png",
+      "prompt": "sprites/K15_car_drive-prompt.txt",
+      "label": "課長・車通勤",
+      "character": "kacho",
+      "frames": 3
+    },
+    {
+      "file": "sprites/H01_tsukkomi.png",
+      "prompt": "sprites/H01_tsukkomi-prompt.txt",
+      "label": "主人公・ツッコミ",
+      "character": "hero",
+      "frames": 2
+    },
+    {
+      "file": "sprites/H02_facepalm.png",
+      "prompt": "sprites/H02_facepalm-prompt.txt",
+      "label": "主人公・呆れてため息",
+      "character": "hero",
+      "frames": 2
+    },
+    {
+      "file": "sprites/O01_okaachan_phone.png",
+      "prompt": "sprites/O01_okaachan_phone-prompt.txt",
+      "label": "おかあちゃん・電話",
+      "character": "okaachan",
+      "frames": 2
+    },
+    {
+      "file": "sprites/E01_excel_float.png",
+      "prompt": "sprites/E01_excel_float-prompt.txt",
+      "label": "エクセルモンスター・浮遊",
+      "character": "excel_monster",
+      "frames": 2
+    }
+  ],
+  "backgrounds": [
+    {
+      "file": "backgrounds/B1_office_morning.png",
+      "prompt": "backgrounds/B1_office_morning-prompt.txt",
+      "label": "朝の工場事務所"
+    },
+    {
+      "file": "backgrounds/B2_kacho_desk.png",
+      "prompt": "backgrounds/B2_kacho_desk-prompt.txt",
+      "label": "課長の机とホワイトボード"
+    },
+    {
+      "file": "backgrounds/B3_meeting.png",
+      "prompt": "backgrounds/B3_meeting-prompt.txt",
+      "label": "紙の資料だらけの会議室"
+    },
+    {
+      "file": "backgrounds/B4_night_control.png",
+      "prompt": "backgrounds/B4_night_control-prompt.txt",
+      "label": "夜勤の制御室・セピア"
+    },
+    {
+      "file": "backgrounds/B5_battle_grid.png",
+      "prompt": "backgrounds/B5_battle_grid-prompt.txt",
+      "label": "表計算の異次元・RPG戦闘"
+    },
+    {
+      "file": "backgrounds/B6_org_chart.png",
+      "prompt": "backgrounds/B6_org_chart-prompt.txt",
+      "label": "空の組織図"
+    },
+    {
+      "file": "backgrounds/B7_factory_night_empty.png",
+      "prompt": "backgrounds/B7_factory_night_empty-prompt.txt",
+      "label": "夜の無人工場"
+    },
+    {
+      "file": "backgrounds/B8_parking_dusk.png",
+      "prompt": "backgrounds/B8_parking_dusk-prompt.txt",
+      "label": "夕方の駐車場と黒い車"
+    },
+    {
+      "file": "backgrounds/B9_commute_road.png",
+      "prompt": "backgrounds/B9_commute_road-prompt.txt",
+      "label": "朝の通勤路と渋滞"
+    }
+  ]
+}

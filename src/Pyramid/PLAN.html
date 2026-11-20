@@ -1,0 +1,524 @@
+<title>ピラミッド予習動画プラン</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #ECEBE6;
+  --surface: #F7F6F2;
+  --ink: #1D212B;
+  --muted: #5A5F6B;
+  --line: #CFCDC5;
+  --lapis: #27488A;
+  --lapis-soft: #DCE3F1;
+  --ochre: #A87A22;
+  --ochre-soft: #F1E6CE;
+  --ok: #2F6B45;
+  --warn: #9A5B12;
+  --no: #8E2F2F;
+  --serif: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --sans: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Consolas", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #13161D;
+    --surface: #1B1F28;
+    --ink: #E7E4DB;
+    --muted: #A2A6B0;
+    --line: #333844;
+    --lapis: #8FAAE6;
+    --lapis-soft: #22304D;
+    --ochre: #D9AE5C;
+    --ochre-soft: #3A3020;
+    --ok: #7FC196;
+    --warn: #E0A35A;
+    --no: #E08A8A;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #13161D;
+  --surface: #1B1F28;
+  --ink: #E7E4DB;
+  --muted: #A2A6B0;
+  --line: #333844;
+  --lapis: #8FAAE6;
+  --lapis-soft: #22304D;
+  --ochre: #D9AE5C;
+  --ochre-soft: #3A3020;
+  --ok: #7FC196;
+  --warn: #E0A35A;
+  --no: #E08A8A;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.8;
+  padding: 0 16px;
+  padding-block: 48px 80px;
+}
+.wrap { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px; }
+
+header { display: flex; flex-direction: column; gap: 14px; }
+.eyebrow {
+  font-family: var(--mono); font-size: 12px; letter-spacing: .12em;
+  color: var(--ochre); text-transform: uppercase;
+}
+h1 {
+  font-family: var(--serif); font-weight: 800; font-size: clamp(30px, 6vw, 44px);
+  line-height: 1.3; margin: 0; text-wrap: balance;
+}
+.lead { margin: 0; color: var(--muted); max-width: 62ch; }
+
+h2 {
+  font-family: var(--serif); font-weight: 800; font-size: 24px; line-height: 1.4;
+  margin: 0; text-wrap: balance;
+  display: flex; align-items: baseline; gap: 12px;
+}
+h2 .num { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--lapis); }
+h3 { font-family: var(--serif); font-weight: 600; font-size: 18px; margin: 0; }
+section { display: flex; flex-direction: column; gap: 18px; }
+p { margin: 0; max-width: 65ch; }
+.note { color: var(--muted); font-size: 13.5px; }
+a { color: var(--lapis); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--lapis); outline-offset: 2px; border-radius: 2px; }
+
+/* spec list */
+.spec { display: grid; grid-template-columns: 7.5em 1fr; border-top: 1px solid var(--line); margin: 0; }
+.spec dt, .spec dd { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.spec dt { color: var(--muted); font-size: 13.5px; }
+
+/* VR box */
+.vr {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px;
+  padding: 22px; display: flex; flex-direction: column; gap: 16px;
+}
+.vr-facts { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13.5px; color: var(--muted); }
+.vr-facts b { color: var(--ink); font-weight: 700; }
+
+/* mapping table */
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+th { font-weight: 500; font-size: 12.5px; color: var(--muted); letter-spacing: .04em; }
+td.ch { font-family: var(--mono); font-size: 12.5px; color: var(--lapis); white-space: nowrap; }
+
+/* phases */
+.phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.phase { border-top: 3px solid var(--lapis); padding-top: 12px; display: flex; flex-direction: column; gap: 8px; }
+.phase .tag { font-family: var(--mono); font-size: 12px; color: var(--lapis); }
+.phase .where { font-family: var(--mono); font-size: 12px; color: var(--muted); word-break: break-all; }
+.phase ul { margin: 0; padding-left: 1.1em; font-size: 14px; }
+@media (max-width: 640px) { .phases { grid-template-columns: 1fr; } }
+
+/* chapter timeline */
+.chapters { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.chap {
+  display: grid; grid-template-columns: 2.2em 1fr 9.5em; gap: 4px 14px;
+  padding: 12px 0; border-bottom: 1px solid var(--line); align-items: start;
+}
+.chap .n { font-family: var(--mono); font-size: 13px; color: var(--muted); padding-top: 2px; }
+.chap .t { font-weight: 700; }
+.chap .t .vrmark {
+  font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .06em;
+  color: var(--ochre); background: var(--ochre-soft); padding: 1px 6px; border-radius: 3px; margin-left: 6px;
+  white-space: nowrap;
+}
+.chap .d { grid-column: 2; color: var(--muted); font-size: 13.5px; }
+.chap .bar { grid-column: 3; grid-row: 1 / span 2; display: flex; flex-direction: column; gap: 4px; padding-top: 4px; }
+.chap .bar .track { height: 8px; background: var(--lapis-soft); border-radius: 2px; }
+.chap .bar .fill { height: 100%; background: var(--lapis); border-radius: 2px; }
+.chap .bar .sec { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.total { display: flex; justify-content: flex-end; gap: 10px; font-family: var(--mono); font-size: 13px; color: var(--muted); padding-top: 8px; }
+.total b { color: var(--ink); font-weight: 500; }
+@media (max-width: 520px) {
+  .chap { grid-template-columns: 2em 1fr; }
+  .chap .bar { grid-column: 2; grid-row: auto; }
+}
+
+/* ideas */
+.ideas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 28px; }
+.ideas div { display: flex; flex-direction: column; gap: 4px; }
+.ideas p { font-size: 14px; color: var(--muted); }
+@media (max-width: 600px) { .ideas { grid-template-columns: 1fr; } }
+
+/* research flow */
+.flow { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13.5px; }
+.flow span { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 4px 10px; }
+.flow i { color: var(--muted); font-style: normal; }
+
+.sources { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.sources li::marker { font-family: var(--mono); color: var(--lapis); }
+
+/* confidence labels */
+.labels { display: flex; flex-wrap: wrap; gap: 8px; }
+.lab { font-size: 12.5px; padding: 2px 10px; border-radius: 999px; border: 1px solid currentColor; }
+.lab.ok { color: var(--ok); } .lab.likely { color: var(--lapis); } .lab.hypo { color: var(--warn); } .lab.no { color: var(--no); }
+
+pre.card {
+  margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 6px;
+  padding: 16px; font-family: var(--mono); font-size: 12.5px; line-height: 1.7; overflow-x: auto; white-space: pre;
+}
+
+.todo { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.todo li { display: grid; grid-template-columns: 1.6em 1fr; gap: 8px; }
+.todo .box { font-family: var(--mono); color: var(--lapis); }
+.todo .done { color: var(--muted); text-decoration: line-through; }
+
+footer { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+
+/* v2 additions */
+.part { display: flex; align-items: baseline; gap: 10px; padding: 18px 0 6px; border-bottom: 1px solid var(--line); }
+.part b { font-family: var(--serif); font-weight: 800; font-size: 16px; }
+.part span { font-size: 13px; color: var(--muted); }
+.chap.khufu .t { color: var(--lapis); }
+.compare svg { display: block; width: 100%; min-width: 640px; height: auto; }
+.compare .py { fill: var(--line); }
+.compare .py.hi { fill: var(--ochre); }
+.compare .ground { stroke: var(--muted); stroke-width: 1; }
+.compare text { text-anchor: middle; font-family: var(--mono); font-size: 12px; fill: var(--muted); }
+.compare text.nm { font-family: var(--sans); font-size: 13px; fill: var(--ink); }
+.compare text.hi { fill: var(--ochre); font-weight: 700; }
+tr.khufu td { color: var(--ink); font-weight: 700; background: var(--ochre-soft); }
+td.none { color: var(--muted); }
+.callout {
+  border-left: 3px solid var(--ochre); background: var(--surface);
+  padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; border-radius: 0 6px 6px 0;
+}
+.vs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 14px; }
+.vs div { display: flex; flex-direction: column; gap: 2px; }
+.vs b { font-family: var(--serif); }
+@media (max-width: 520px) { .vs { grid-template-columns: 1fr; } }
+.unique { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 28px; border-top: 1px solid var(--line); }
+.unique div { padding: 12px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 2px; }
+.unique b { font-weight: 700; }
+.unique p { font-size: 13.5px; color: var(--muted); }
+@media (max-width: 600px) { .unique { grid-template-columns: 1fr; } }
+.steps { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.steps li::marker { font-family: var(--mono); color: var(--lapis); }
+.status { font-family: var(--mono); font-size: 11px; padding: 1px 7px; border-radius: 3px; width: fit-content; }
+.status.done { color: var(--ok); border: 1px solid var(--ok); }
+.status.next { color: var(--lapis); border: 1px solid var(--lapis); }
+.status.later { color: var(--muted); border: 1px solid var(--line); }
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Remotion ／ 予習動画プラン ／ v3</div>
+  <h1>VRでピラミッドに行く前に観る動画</h1>
+  <p class="lead">名古屋のVR体験「Horizon of Khufu」に行く前に観る、約10分のナレーション付き動画なのだ。歴代の王とピラミッドをたどりながら、クフの大ピラミッドが他と比べて何が特別なのかが分かる内容にするのだ。</p>
+</header>
+
+<section>
+  <h2><span class="num">01</span>参加するVR体験</h2>
+  <div class="vr">
+    <h3>Horizon of Khufu（ホライゾン・オブ・クフ）</h3>
+    <div class="vr-facts">
+      <span><b>会場</b> IMMERSIVE JOURNEY 名古屋（栄・スカイル10階）</span>
+      <span><b>時間</b> 体験 約45分＋準備 約15分</span>
+      <span><b>対象</b> 8歳以上</span>
+      <span><b>料金</b> 平日4,000円／土日祝5,000円</span>
+    </div>
+    <p>4500年前のギザを再現した、歩き回れるタイプのVRなのだ。ハーバード大学のエジプト学者らの研究データに基づいているのだ。作品名の「Khufu（クフ）の地平線」は、大ピラミッドの古代名「アケト・クフ」から来ているのだ。</p>
+  </div>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>VRの場面</th><th>予習しておくこと</th><th>章</th></tr></thead>
+      <tbody>
+        <tr><td>大ピラミッドの内部探検</td><td>通路・大回廊・王の間の位置関係と、それぞれの役割</td><td class="ch">06</td></tr>
+        <tr><td>立ち入れない頂上に登る</td><td>建設当時は白い化粧石で覆われていたこと。今の姿との違い</td><td class="ch">04</td></tr>
+        <tr><td>ナイルを行く太陽の船</td><td>ピラミッドの脇から見つかった実物の船と、その意味</td><td class="ch">09</td></tr>
+        <tr><td>クフ王の葬儀</td><td>来世の考え方と、葬儀で何が行われたか</td><td class="ch">09</td></tr>
+        <tr><td>4500年前の再現</td><td>古王国時代・第4王朝の社会と、クフ王という人物</td><td class="ch">01</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">出典：<a href="https://immersivejourney.jp/khufu.html">IMMERSIVE JOURNEY 公式</a>／<a href="https://artexhibition.jp/topics/news/20260122-AEJ2825334/">美術展ナビ（2026年1月22日）</a>。料金は変わる可能性があるので予約時に確かめるのだ。</p>
+</section>
+
+<section>
+  <h2><span class="num">02</span>仕様</h2>
+  <dl class="spec">
+    <dt>形式</dt><dd>Remotion、16:9、1920×1080、30fps</dd>
+    <dt>尺</dt><dd>本編 約12分（ゆっくりした速さ）／プレビズのダイジェスト 約2分</dd>
+    <dt>語り</dt><dd>ナレーション音声＋字幕。原稿は約3,000字（1分あたり約300字）</dd>
+    <dt>音声</dt><dd>VOICEVOX（無料・ローカルで動く日本語読み上げ）の「暁記ミタマ」。話速1.15、音高0.01、抑揚1.5で1行ごとに書き出す</dd>
+    <dt>絵柄</dt><dd>簡易3D（三角錐・箱・透視投影）＋断面図・地図・年表・比較図。鎌倉プレビズの手法を流用</dd>
+    <dt>音</dt><dd>自作の仮効果音＋ナレーションの下で小さく流すBGM</dd>
+  </dl>
+  <h3>ナレーションの作り方</h3>
+  <ol class="steps">
+    <li><code>script.md</code> に章ごとのナレーション原稿を書く</li>
+    <li>VOICEVOXで章ごとに音声を書き出す（<code>public/audio/pyramid/ch00.wav</code> など）</li>
+    <li>音声の長さを実測して、各章のSequenceの長さを決める。尺は音声に合わせるのだ</li>
+    <li>字幕は原稿を文ごとに区切り、音声のタイミングに合わせて出す</li>
+  </ol>
+  <p class="note">音声の長さはファイルの申告値ではなく実測するのだ。システムにffmpegが無いので、Remotion同梱のffmpegを使うのだ。</p>
+
+  <h3>ナレーションの声：暁記ミタマ</h3>
+  <dl class="spec">
+    <dt>クレジット</dt><dd>動画の最後に <code>VOICEVOX:暁記ミタマ</code> と表記する</dd>
+    <dt>声優名</dt><dd>必要かどうかをキャラクターの利用規約で確かめて、必要なら <code>data/facts.ts</code> の <code>CREDIT_VOICE_ACTOR</code> に入れるのだ</dd>
+    <dt>音声づくり</dt><dd>VOICEVOXを自分で操作して書き出す。条件は <code>HANDOFF.md</code> の5章</dd>
+  </dl>
+  <p class="note">出典：<a href="https://voicevox.hiroshiba.jp/product/akatsuki_mitama/">VOICEVOX公式キャラクターページ</a></p>
+</section>
+
+<section>
+  <h2><span class="num">03</span>スケジュール</h2>
+  <p>VR体験は <b>10月23日</b> なのだ。観る前にしっかり頭に入れておきたいので、<b>9月30日の完成を目標、遅くても10月5日まで</b>にするのだ。残りの約2週間は、見返して覚える期間にするのだ。</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>日付</th><th>やること</th><th>担当</th></tr></thead>
+      <tbody>
+        <tr><td>9/25（金）</td><td>プラン確定、リサーチの補足</td><td>Opus</td></tr>
+        <tr><td>9/26（土）</td><td>ナレーション原稿 <code>script.md</code>（約3,000字）と数字の確認</td><td>Opus</td></tr>
+        <tr><td>9/27（日）</td><td>VOICEVOXを入れて仮音声を書き出す。プレビズを作る</td><td>自分＋Opus</td></tr>
+        <tr><td>9/28（月）</td><td>プレビズを観て直す。共通部品（断面図・比較図・地図・年表）と引き継ぎ仕様書を作る</td><td>Opus</td></tr>
+        <tr><td>9/29〜10/1</td><td>イラスト作成と本編の実装を並行して進める</td><td>自分＋Codex</td></tr>
+        <tr><td>10/2〜10/3</td><td>通しで観て直す。レンダー</td><td>自分＋Codex</td></tr>
+        <tr><td>10/4〜10/5</td><td><b>予備日。遅くてもここで完成</b></td><td>—</td></tr>
+        <tr><td>10/6〜10/22</td><td>見返して覚える。VRチェックリストを確かめる</td><td>自分</td></tr>
+        <tr><td>10/23（金）</td><td><b>Horizon of Khufu 体験</b></td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">04</span>作業の分担</h2>
+  <p>プレビズまでをOpus 5.5で進め、イラストを作ってから、本編の実装をCodexに引き継ぐ形がよいと思うのだ。</p>
+  <div class="phases">
+    <div class="phase">
+      <span class="tag">Opus 5.5</span>
+      <h3>判断が多い部分</h3>
+      <ul>
+        <li>ナレーション原稿と数字の確認</li>
+        <li>プレビズ（構成・尺・見せ方）</li>
+        <li>共通部品の土台</li>
+        <li>引き継ぎ仕様書</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <span class="tag">自分</span>
+      <h3>素材づくり</h3>
+      <ul>
+        <li>VOICEVOXのインストール</li>
+        <li>イラストの作成</li>
+        <li>プレビズと本編の確認</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <span class="tag">Codex</span>
+      <h3>量が多い部分</h3>
+      <ul>
+        <li>仕様書に沿った章ごとの実装</li>
+        <li>イラストの組み込み</li>
+        <li>字幕のタイミング合わせ</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">引き継ぐときの仕様書には、章ごとの秒数、ナレーション原稿、画面の指示、使う部品とイラストのファイル名、確定した数字を書くのだ。数字や言い回しはプレビズの段階で確定させて、実装側では変えない約束にするのだ。</p>
+</section>
+
+<section>
+  <h2><span class="num">05</span>構成：積み上げ → 頂点 → その後</h2>
+  <p>歴代のピラミッドを時代順にたどり、クフで頂点を迎え、ピラミッドが造られなくなるまでを描くのだ。クフの章を一番厚くして、最後に他の王と並べて「クフだけの特徴」をまとめるのだ。</p>
+  <p class="note"><span class="lab" style="color:var(--ochre);border-color:var(--ochre)">VR</span> はVRの場面に直結する章なのだ。棒の長さは尺に比例しているのだ。</p>
+  <div class="chapters">
+    <div class="part"><b>導入</b></div>
+    <div class="chap"><span class="n">00</span><span class="t">最大の墓、最小の肖像</span><span class="d">高さ約146mの墓を造った王の、確実な全身像は高さ約7.5cmの象牙の小像だけ</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:37.5%"></span></span><span class="sec">0:30</span></span></div>
+    <div class="chap"><span class="n">01</span><span class="t">時代背景<span class="vrmark">VR</span></span><span class="d">約4500年前、古王国時代。ナイルの恵みと、神の化身としてのファラオ</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:62.5%"></span></span><span class="sec">0:50</span></span></div>
+
+    <div class="part"><b>積み上げ</b><span>クフ以前</span></div>
+    <div class="chap"><span class="n">02</span><span class="t">ジェセル王</span><span class="d">マスタバ墓から最初のピラミッド（階段ピラミッド）へ。設計者イムホテプ</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:56.3%"></span></span><span class="sec">0:45</span></span></div>
+    <div class="chap"><span class="n">03</span><span class="t">スネフェル王</span><span class="d">メイドゥム・屈折・赤の3基。角度を変えながら、なめらかな四角錐にたどり着く。クフの父</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:62.5%"></span></span><span class="sec">0:50</span></span></div>
+
+    <div class="part"><b>頂点</b><span>クフ王</span></div>
+    <div class="chap khufu"><span class="n">04</span><span class="t">規模と当時の姿<span class="vrmark">VR</span></span><span class="d">高さ・石の数・方位の精度。白い化粧石に覆われた完成時の姿</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:75%"></span></span><span class="sec">1:00</span></span></div>
+    <div class="chap khufu"><span class="n">05</span><span class="t">誰がどう造ったか</span><span class="d">労働者の町、メレルの日誌、ナイルの水運、そり、傾斜路の諸説</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:100%"></span></span><span class="sec">1:20</span></span></div>
+    <div class="chap khufu"><span class="n">06</span><span class="t">内部構造<span class="vrmark">VR</span></span><span class="d">女王の間・大回廊・王の間・重力軽減の間。ミューオン調査で見つかった空間</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:87.5%"></span></span><span class="sec">1:10</span></span></div>
+
+    <div class="part"><b>その後</b><span>クフ以後</span></div>
+    <div class="chap"><span class="n">07</span><span class="t">カフラー王とメンカウラー王</span><span class="d">ギザの第2・第3ピラミッドとスフィンクス</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:62.5%"></span></span><span class="sec">0:50</span></span></div>
+    <div class="chap"><span class="n">08</span><span class="t">ピラミッドの終わり</span><span class="d">ウナス王のピラミッド・テキスト → 中王国の復活 → ツタンカーメンと王家の谷</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:62.5%"></span></span><span class="sec">0:50</span></span></div>
+
+    <div class="part"><b>意味とまとめ</b></div>
+    <div class="chap"><span class="n">09</span><span class="t">死生観・太陽の船・葬儀<span class="vrmark">VR</span></span><span class="d">来世、カーとバー、クフの太陽の船、王の葬儀</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:62.5%"></span></span><span class="sec">0:50</span></span></div>
+    <div class="chap"><span class="n">10</span><span class="t">クフだけの特徴</span><span class="d">歴代のピラミッドを並べて比べる</span><span class="bar"><span class="track"><span class="fill" style="display:block;width:50%"></span></span><span class="sec">0:40</span></span></div>
+  </div>
+  <div class="total">合計 <b>約12分</b>（行間・章の間を含む）</div>
+</section>
+
+<section>
+  <h2><span class="num">06</span>王とピラミッド</h2>
+  <p>建設当時の高さを同じ縮尺で並べたのだ。第10章ではこの図を動画の中で1基ずつ積み上げて見せるのだ。</p>
+  <div class="scroll compare">
+    <svg viewBox="0 0 990 200" role="img" aria-label="歴代ピラミッドの建設当時の高さの比較。クフ146.5m、カフラー143.5m、屈折104.7m、赤104m、メンカウラー65m、ジェセル62.5m、ウナス43m">
+      <line x1="8" y1="170" x2="982" y2="170" class="ground"/>
+      <rect x="16.0" y="162.5" width="87.1" height="7.5" class="py"/>
+      <rect x="22.1" y="155.0" width="74.9" height="7.5" class="py"/>
+      <rect x="28.2" y="147.5" width="62.7" height="7.5" class="py"/>
+      <rect x="34.3" y="140.0" width="50.5" height="7.5" class="py"/>
+      <rect x="40.4" y="132.5" width="38.3" height="7.5" class="py"/>
+      <rect x="46.5" y="125.0" width="26.1" height="7.5" class="py"/>
+      <text x="59.6" y="119.0" class="hv">62.5m</text>
+      <text x="59.6" y="190" class="nm">ジェセル</text>
+      <polygon class="py" points="125.1,170 149.2,136.2 193.3,94.6 237.4,136.2 261.5,170"/>
+      <text x="193.3" y="88.6" class="hv">104.7m</text>
+      <text x="193.3" y="190" class="nm">屈折</text>
+      <polygon class="py" points="283.5,170 362.7,95.1 441.9,170"/>
+      <text x="362.7" y="89.1" class="hv">104m</text>
+      <text x="362.7" y="190" class="nm">赤</text>
+      <polygon class="py hi" points="463.9,170 546.8,64.5 629.7,170"/>
+      <text x="546.8" y="58.5" class="hv hi">146.5m</text>
+      <text x="546.8" y="190" class="nm hi">クフ</text>
+      <polygon class="py" points="651.7,170 729.2,66.7 806.7,170"/>
+      <text x="729.2" y="60.7" class="hv">143.5m</text>
+      <text x="729.2" y="190" class="nm">カフラー</text>
+      <polygon class="py" points="828.7,170 865.9,123.2 903.2,170"/>
+      <text x="865.9" y="117.2" class="hv">65m</text>
+      <text x="865.9" y="190" class="nm">メンカウラー</text>
+      <polygon class="py" points="925.2,170 946.0,139.0 966.8,170"/>
+      <text x="946.0" y="133.0" class="hv">43m</text>
+      <text x="946.0" y="190" class="nm">ウナス</text>
+    </svg>
+  </div>
+  <p class="note">高さと底辺は概数なのだ。屈折・赤・ジェセルの数字は、原稿にする前に出典で確かめるのだ。</p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>王</th><th>時代</th><th>場所</th><th>墓</th><th>ひとことで</th></tr></thead>
+      <tbody>
+        <tr><td>ジェセル</td><td>第3王朝</td><td>サッカラ</td><td>階段ピラミッド</td><td>最初のピラミッド</td></tr>
+        <tr><td>スネフェル</td><td>第4王朝</td><td>メイドゥム、ダハシュール</td><td>屈折・赤など</td><td>試行錯誤で形を完成させた。クフの父</td></tr>
+        <tr class="khufu"><td>クフ</td><td>第4王朝</td><td>ギザ</td><td>大ピラミッド</td><td>最大。部屋を石の山の中に持ち上げた</td></tr>
+        <tr><td>カフラー</td><td>第4王朝</td><td>ギザ</td><td>第2ピラミッド</td><td>高台にあるので一番大きく見える。スフィンクス</td></tr>
+        <tr><td>メンカウラー</td><td>第4王朝</td><td>ギザ</td><td>第3ピラミッド</td><td>小さいが下部に花崗岩の外装</td></tr>
+        <tr><td>ウナス</td><td>第5王朝</td><td>サッカラ</td><td>小型ピラミッド</td><td>埋葬室に初めて文字（ピラミッド・テキスト）</td></tr>
+        <tr><td>ツタンカーメン</td><td>新王国</td><td>王家の谷</td><td class="none">ピラミッドなし</td><td>岩山をくり抜いた墓。黄金のマスク</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <h3>ツタンカーメンはピラミッドを造っていないのだ</h3>
+    <p>クフより約1200年後の新王国時代の王で、墓はルクソールの「王家の谷」にある岩をくり抜いた墓なのだ。この頃の王はピラミッドをやめていたのだ。そこで第08章で「なぜピラミッドは造られなくなったのか」の答えとして登場させるのだ。</p>
+    <div class="vs">
+      <div><b>クフ</b><span>巨大な墓を地上に造って目立たせた。早い時期に荒らされた</span></div>
+      <div><b>ツタンカーメン</b><span>谷の奥に墓を隠した。1922年に、ほとんど荒らされていない状態で見つかった</span></div>
+    </div>
+    <p class="note">ピラミッドをやめた理由は1つではないのだ。盗掘の経験、都がテーベに移ったこと、墓と神殿を分ける考え方などが重なったのだ。王家の谷の上にそびえる山は、自然のピラミッドの形をしているのだ。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">07</span>クフだけの特徴</h2>
+  <p>第10章でまとめる候補なのだ。クフの独自性は「突然生まれた技術」ではなく、先代までの技術を前例のない規模と内部構成でまとめたところにあるのだ。</p>
+  <div class="unique">
+    <div><b>最大</b><p>建設当時の高さ約146.5m。エジプトで最も高いピラミッド</p></div>
+    <div><b>部屋が石の山の中にある</b><p>他の多くは埋葬室が地下か基部。クフは内部の高い位置に王の間がある</p></div>
+    <div><b>大回廊</b><p>高さ約8.5m・長さ約47mの持ち送り天井。同じ規模の例は他にない</p></div>
+    <div><b>重力軽減の間</b><p>王の間の上に5層。作業班が書いたクフの名が残り、建てた王の証拠になる</p></div>
+    <div><b>4本の細いシャフト</b><p>通気孔とは言い切れない。星との関係など諸説あり</p></div>
+    <div><b>建設記録がある</b><p>メレルの日誌に、大ピラミッド用の石灰岩を船で運んだ記録が残る</p></div>
+    <div><b>太陽の船</b><p>ピラミッドの脇から、解体された実物の船が見つかった</p></div>
+    <div><b>七不思議で唯一現存</b><p>古代世界の七不思議のうち、今も残るのはこれだけ</p></div>
+    <div><b>今も謎が見つかる</b><p>ミューオン調査で大空間と北面の通路が見つかった。用途は分かっていない</p></div>
+    <div><b>本人の像がほぼない</b><p>カフラーやメンカウラーには大きな像が残るのに、クフは約7.5cmの小像だけ</p></div>
+  </div>
+  <p class="note">詳しくは <code>research/11_khufu-unique.md</code> なのだ。「唯一」「最初」という言い方は、出典で確かめたものだけ使うのだ。</p>
+</section>
+
+<section>
+  <h2><span class="num">08</span>見せ方のアイデア</h2>
+  <div class="ideas">
+    <div><h3>断面図アニメーション</h3><p>大ピラミッドを縦に切り、通路と部屋を順に光らせるのだ。VRの中で自分がどこにいるか分かるようになるのだ。</p></div>
+    <div><h3>ピラミッドを積み上げる比較図</h3><p>章が進むごとに1基ずつ並べていき、第10章で全部そろえてクフの大きさを見せるのだ。</p></div>
+    <div><h3>今と当時の切り替え</h3><p>今の階段状の表面と、化粧石で覆われた白い姿をワイプで切り替えるのだ。</p></div>
+    <div><h3>年表</h3><p>ジェセルからツタンカーメンまで約1300年を1本の線に並べ、日本の縄文時代とも比べるのだ。</p></div>
+    <div><h3>ナイル沿いの地図</h3><p>サッカラ・ダハシュール・ギザ・ルクソールの位置を示すのだ。</p></div>
+    <div><h3>諸説の比較画面</h3><p>建設方法やピラミッドをやめた理由は、確度ラベルで色分けして断定しないのだ。</p></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">09</span>進め方</h2>
+  <div class="phases">
+    <div class="phase">
+      <span class="tag">Phase 0</span>
+      <h3>リサーチ</h3>
+      <span class="status done">基礎リサーチ完了</span>
+      <span class="where">src/Pyramid/research/</span>
+      <ul>
+        <li><code>00</code>〜<code>11</code> と出典一覧を作成済み</li>
+        <li>次は <code>script.md</code> にナレーション原稿を書く</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <span class="tag">Phase 1</span>
+      <h3>プレビズ</h3>
+      <span class="status next">次</span>
+      <span class="where">src/PyramidPrevis/</span>
+      <ul>
+        <li>全章を60〜90秒に縮めて通しで見る</li>
+        <li>仮のナレーションで読む速さと字幕の量を確かめる</li>
+        <li>断面図・比較図・地図・年表の部品を作る</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <span class="tag">Phase 2</span>
+      <h3>本編</h3>
+      <span class="status later">その後</span>
+      <span class="where">src/PyramidFull/</span>
+      <ul>
+        <li>章ごとにSequenceを分け、尺は音声に合わせる</li>
+        <li>章単位でレンダーして確かめる</li>
+        <li>最後にもう一度数字を確かめる</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">10</span>調べ方のルール</h2>
+  <p>VRで見る場面から逆算して、「知っておくと得すること」を調べるのだ。数字と年代は2つ以上の信頼できる情報源で確かめて、高さは「建設当時」と「現在」を区別するのだ。</p>
+  <div class="labels">
+    <span class="lab ok">確定</span><span class="lab likely">有力</span><span class="lab hypo">仮説</span><span class="lab no">俗説・否定</span>
+  </div>
+  <ol class="sources">
+    <li>公的機関：エジプト観光・考古省</li>
+    <li>大学・研究プロジェクト：Digital Giza（ハーバード大学）、AERA（労働者の町の発掘）、ScanPyramids</li>
+    <li>論文：大空間の報告（Nature, 2017）、北面の通路（2023）、ギザ近くの昔のナイル支流（2022）</li>
+    <li>日本語の専門家：河江肖剰氏（名古屋大学）の本や動画</li>
+    <li>一般メディア：入口として使い、数字は上の情報源で確かめる</li>
+  </ol>
+  <p class="note">ピラミッドはオカルト系の情報が多いので、「新発見」や数字は必ず1〜3まで遡るのだ。詳しくは <code>research/RESEARCH_PLAN.md</code> と <code>research/sources.md</code> なのだ。</p>
+</section>
+
+<section>
+  <h2><span class="num">11</span>決めたこと・決めたいこと</h2>
+  <ul class="todo">
+    <li><span class="box">[x]</span><span class="done">VR体験 → Horizon of Khufu（IMMERSIVE JOURNEY 名古屋）</span></li>
+    <li><span class="box">[x]</span><span class="done">本編の尺 → 約12分（ゆっくりした速さにするため延長）</span></li>
+    <li><span class="box">[x]</span><span class="done">VRを観るときの注意点や案内は動画に入れない（11章「VRで見るポイント」を削除）</span></li>
+    <li><span class="box">[x]</span><span class="done">ナレーション → 音声あり＋字幕</span></li>
+    <li><span class="box">[x]</span><span class="done">扱う王 → クフ以外の王とツタンカーメンも入れて、クフの特徴を比べる</span></li>
+    <li><span class="box">[x]</span><span class="done">ナレーションの声 → VOICEVOX「暁記ミタマ」</span></li>
+    <li><span class="box">[x]</span><span class="done">完成目標 → 9月30日、遅くても10月5日（VR体験は10月23日）</span></li>
+    <li><span class="box">[x]</span><span class="done">分担 → プレビズまでOpus 5.5、イラストの後の実装はCodex</span></li>
+    <li><span class="box">[x]</span><span class="done">VOICEVOXをインストールする</span></li>
+    <li><span class="box">[ ]</span><span>イラストの作り方（どのツールで、何枚作るか）</span></li>
+  </ul>
+</section>
+
+<footer>my-video／src/Pyramid　2026年9月25日更新（v3）</footer>
+
+</div>

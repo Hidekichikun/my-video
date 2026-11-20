@@ -1,0 +1,11 @@
+{
+  "id": "N5b",
+  "tool": "built-in image_gen",
+  "file": "N5b_若い子を見る.png",
+  "reference": [
+    "N4_今の彼女.png",
+    "N5_銭湯.png"
+  ],
+  "prompt": "Use case: illustration-story with identity preservation. Create ONE full-bleed anime MV still, 1456 x 816 pixels, landscape 16:9, no panels or borders. Reference 1 is the exact CHARACTER, ART STYLE and NOW OUTFIT reference. Preserve the same adult young woman, gray bob with pink inner ends, facial features and pink (not red) eyes, fine linework, richly textured painterly anime background. Plain white T-shirt, light blue denim jacket, black straight-leg pants (no rips or chains), NO headphones. Reference 2 is only a supporting reference for an old public bathhouse entrance and night lighting, keep bathhouse SMALL in background. Scene: Night street in quiet old Japanese neighborhood. She walks home alone and pauses, glancing sideways with a soft nostalgic smile at a group of three or four noisy teenagers in hoodies laughing loudly as they pass by. Main subject is her gentle expression as she remembers her own youth, not the bathhouse. Compose adult heroine in foreground with face visible in three-quarter profile and eyes directed toward the younger group in midground; teenagers interact with each other naturally, not with camera. In distant background glimpse warm-lit wooden entrance of old Japanese public bathhouse with plain noren curtain and little steam. Cool blue night with warm orange light from bathhouse. No cigarettes, alcohol, red eyes, jagged teeth, text, logos, watermark. All characters fully clothed.",
+  "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a16632-9ad9-7860-bff2-ba5162667306\\exec-26e16b1a-dc1c-4727-b8f2-28e0b510e6de.png"
+}

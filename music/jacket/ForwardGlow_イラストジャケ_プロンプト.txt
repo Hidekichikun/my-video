@@ -1,0 +1,22 @@
+Forward Glow ジャケット（イラスト版）プロンプト
+サイズ：正方形 3000×3000（Codexが小さく出したら、アップスケールしてもらう）
+参考画像：build/public/forward-glow-chara-1.png（ショートのカット1）を添付
+できたら：music/jacket/ForwardGlow_illust_raw.png で保存 → 文字入れはClaudeがやる
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+Anime illustration, square 1:1, 3000x3000, album cover art.
+Same character and same art style as the reference image.
+Character: a gentle, cheerful girl around 18, straight honey-blonde bob with blunt bangs, big round brown eyes with bright highlights, soft pink blush, small nose.
+Outfit: oversized beige-khaki hoodie with drawstrings, plain fabric with only one small black star on the left sleeve, small black backpack straps visible.
+Pose: chest-up portrait, facing the viewer, centered, looking straight into the camera with a soft, determined smile, hair gently blowing in the wind.
+Composition: face centered and slightly above the middle, eyes about 35% from the top of the image. Keep the bottom 30% simple and calm (soft bokeh, hoodie fabric) — space for the title.
+Lighting: warm golden backlight through autumn trees, dappled sunlight falling on her hair and cheek, glowing rim light, floating light dots.
+Background: orange and yellow autumn leaves in soft bokeh, a few falling leaves.
+Mood: hopeful, quiet strength, "moving forward".
+No text, no letters, no logos on clothes, no watermark, no signature, nothing written anywhere.
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+■ 調整
+・顔が変わる → "keep exactly the same face, hairstyle and eye shape as the reference image"
+・下が明るすぎて文字が読めなさそう → "darker, softer bottom area"
+・ショートと並べて浮かないか、サムネサイズ（120px）で目がわかるかを確認

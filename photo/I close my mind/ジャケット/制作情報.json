@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: identity-preserve. Reference image is the exact identity/style/color/scene source. Create a SQUARE 1:1 close-up cover illustration, at the LARGEST available native resolution, target 4096 x 4096 pixels, minimum 2048 x 2048 pixels. Same girl EXACT face identity and facial proportions, pink-violet eyes, gray bob with pink inner hair, original headphones with orange rings, completely PLAIN cream hoodie (no dot/mark). She looks back over her shoulder at camera with a gentle natural smile, preserve original personality, not a different face. Close-up head/shoulders/upper torso, face centered horizontally in upper-middle. IMPORTANT eye line approximately 35% down from top; complete hair/headphones comfortably within frame, face clearly legible. Dusk overpass, teal/cool blue ambient with warm orange city lights rendered as soft bokeh light particles in background. Retain original anime art style, linework, painted texture and precise dusk colors. Bottom 30% of square must be calm and DARKER, low-detail dark teal/blue shadowed negative space suitable for title overlay, no bright bokeh or face or high-contrast railings in that bottom zone. Achieve darkness naturally through softly shadowed lower hoodie and softly receding dusk environment, no hard rectangular panel, no abrupt gradient boundary. Upper warm bokeh softly frames face. No text, no logos, no watermark, no cigarettes, no extra person, no neck jewelry, no pink dot. Create a single finished square high-resolution image.",
+  "enhancementPrompt": "High-resolution enhancement of THIS EXACT completed square illustration. Produce a true 2048 x 2048 pixel PNG or larger square (4096x4096 preferred if supported). Minimum dimension 2048 pixels. Preserve exact composition and image content, do not reinterpret: same woman's exact face, eyes, hair and headphones, cream hoodie, dusk bokeh, dark lower title space. Eyes at approx 28-35% from top. Restore clean detailed line art and painted texture at high resolution without changing any facial feature, pose, colors or layout. No text, logos, watermark or other additions. This request is specifically for output resolution at least 2048x2048; no low resolution output.",
+  "nativeSize": [
+    1254,
+    1254
+  ],
+  "exports": [
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "method": "High-quality bicubic enlargement"
+    },
+    {
+      "size": [
+        2048,
+        2048
+      ],
+      "method": "High-quality bicubic enlargement"
+    }
+  ]
+}

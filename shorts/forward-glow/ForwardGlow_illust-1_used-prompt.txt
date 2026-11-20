@@ -1,0 +1,16 @@
+Generation: built-in image_gen
+Reference: build/public/forward-glow-chorus-1.png
+Output: build/public/forward-glow-illust-1.png
+
+Use case: illustration-story
+Asset type: Forward Glow music video / short video, first chorus shot, one finished portrait illustration.
+Input image 1 is a CHARACTER AND ATMOSPHERE REFERENCE, not an image to copy unchanged. Redraw this same girl in a new composition following the supplied production prompt.
+Anime illustration, vertical 9:16, target 1080x1920.
+Same girl as the reference image, redrawn as a polished anime character illustration (not photorealistic). Keep the same recognizable face, hair silhouette and outfit as the reference image, adapted into anime.
+Character: a girl around 18, straight platinum-to-honey blonde hair, shoulder length, bangs falling just over the eyes; large expressive brown eyes with bright highlights; beige-khaki hooded jacket with a black abstract graphic print on the sleeve (no lettering).
+Style: clean line art, soft cel shading with painterly gradients, glowing rim light, slightly larger anime eyes, smooth skin (no pores, no freckles), detailed hair strands.
+Lighting: warm golden backlight, dappled sunlight through autumn trees, floating light particles.
+Background: orange and yellow autumn leaves, soft bokeh.
+Mood: hopeful, determined, moving forward.
+Composition: close-up portrait from the chest up, facing the camera directly, strong determined eyes looking straight at the viewer, mouth slightly open as if singing. Hair blown slightly by the wind, dappled light falling across her face and hair, autumn leaves drifting in the foreground. Eyes positioned about 35% from the top of the frame. Keep the top 12% and bottom 25% fairly simple (space for title and lyrics that will be added separately).
+No text, no letters, no watermark, no logo. One image only.

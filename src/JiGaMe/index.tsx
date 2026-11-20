@@ -36,6 +36,36 @@ const chorusRanges = [
 const isWithinRange = (time: number, ranges: Array<{ start: number; end: number }>) =>
   ranges.some((range) => time >= range.start && time < range.end);
 
+type DisplayColumn = Array<{ char: string; order: number }>;
+
+const splitLyricColumns = (text: string): DisplayColumn[] => {
+  const phrases = text
+    .split(/[\s\u3000]+/)
+    .map((phrase) => phrase.trim())
+    .filter(Boolean);
+  const sourcePhrases = phrases.length > 0 ? phrases : [text];
+
+  const columnTexts =
+    sourcePhrases.length <= 2
+      ? sourcePhrases
+      : sourcePhrases.reduce<[string[], string[]]>(
+          (columns, phrase) => {
+            const lengths = columns.map((column) => column.join('').length);
+            columns[lengths[0] <= lengths[1] ? 0 : 1].push(phrase);
+            return columns;
+          },
+          [[], []]
+        ).map((column) => column.join(''));
+
+  let order = 0;
+  return columnTexts.map((column) =>
+    Array.from(column).map((char) => ({
+      char,
+      order: order++,
+    }))
+  );
+};
+
 const loadFonts = async () => {
   const fonts = [
     new FontFace('Soukou Mincho', `url(${staticFile('fonts/SoukouMincho.ttf')}) format('truetype')`),
@@ -90,7 +120,6 @@ export const JiGaMe: React.FC = () => {
     return line.time <= currentTime && (!nextLine || nextLine.time > currentTime);
   });
   const currentLine = currentIndex >= 0 ? lyrics[currentIndex] : null;
-  const previousLine = currentIndex > 0 ? lyrics[currentIndex - 1] : null;
   const nextLine = currentIndex >= 0 ? lyrics[currentIndex + 1] : null;
   const lineStartFrame = currentLine ? Math.floor(currentLine.time * fps) : 0;
   const nextLineFrame = nextLine ? Math.floor(nextLine.time * fps) : lineStartFrame + fps * 7;
@@ -155,7 +184,18 @@ export const JiGaMe: React.FC = () => {
   const pulse = Math.sin(frame * 0.08) * 0.8 + Math.sin(localFrame * 0.9) * 2.6 * emphasisEntrance;
   const glitchShift = Math.sin(localFrame * 1.65) * 4 * emphasisEntrance;
   const lyricFont = isEmphasisLine || isChorusLine ? "'Totono Glitch Mincho', 'Soukou Mincho', serif" : "'Soukou Mincho', serif";
-  const currentCharacters = Array.from(currentLine?.text ?? '');
+  const lyricColumns = splitLyricColumns(currentLine?.text ?? '');
+  const totalCharacters = lyricColumns.reduce((total, column) => total + column.length, 0);
+  const maxColumnLength = lyricColumns.reduce((max, column) => Math.max(max, column.length), 0);
+  const baseFontSize = isEmphasisLine || isChorusLine ? 74 : 64;
+  const lyricFontSize = Math.max(42, baseFontSize - Math.max(0, maxColumnLength - 8) * 3);
+  const lyricLeft = currentTime < 85 ? '54%' : currentTime < 137 ? '47%' : currentTime < 180 ? '55%' : '50%';
+  const revealProgress = currentLine
+    ? interpolate(localFrame, [0, Math.max(1, lineDuration - 18)], [0, 1], {
+        extrapolateLeft: 'clamp',
+        extrapolateRight: 'clamp',
+      })
+    : 0;
 
   return (
     <AbsoluteFill style={{ backgroundColor: '#050609', color: '#eef3f8', overflow: 'hidden' }}>
@@ -224,78 +264,83 @@ export const JiGaMe: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          left: '50%',
-          bottom: '11%',
-          transform: 'translateX(-50%)',
-          width: '88%',
-          maxWidth: 1540,
-          height: 310,
+          inset: '8% 0 7%',
           textAlign: 'center',
           fontFamily: "'Soukou Mincho', serif",
           perspective: 900,
+          pointerEvents: 'none',
         }}
       >
         <div
           style={{
             position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            color: 'rgba(230, 238, 248, 0.34)',
-            fontSize: 34,
-            lineHeight: 1.25,
-            letterSpacing: '0.08em',
-            textShadow: '0 5px 18px rgba(0,0,0,0.62)',
-            transform: 'translateY(6px) rotateX(30deg)',
-            opacity: previousLine ? lyricOpacity * 0.78 : 0,
-          }}
-        >
-          {previousLine?.text ?? ''}
-        </div>
-
-        <div
-          style={{
-            position: 'absolute',
-            top: 92,
-            left: 0,
-            right: 0,
-            padding: '0 36px',
+            top: '50%',
+            left: lyricLeft,
+            height: '78%',
+            width: lyricColumns.length > 1 ? 620 : 360,
+            padding: '32px 0',
             boxSizing: 'border-box',
             color: isEmphasisLine || isChorusLine ? '#ffffff' : '#edf3fa',
             fontFamily: lyricFont,
-            fontSize: isEmphasisLine || isChorusLine ? 78 : 68,
-            lineHeight: 1.16,
-            letterSpacing: isEmphasisLine || isChorusLine ? '0.12em' : '0.06em',
+            fontSize: lyricFontSize,
+            lineHeight: 1.22,
+            letterSpacing: isEmphasisLine || isChorusLine ? '0.15em' : '0.1em',
             fontWeight: isEmphasisLine || isChorusLine ? 760 : 640,
+            writingMode: 'vertical-rl',
+            textOrientation: 'mixed',
             textShadow:
               isEmphasisLine || isChorusLine
                 ? '0 0 22px rgba(205,225,255,0.72), 0 9px 30px rgba(0,0,0,0.7)'
                 : '0 7px 24px rgba(0,0,0,0.68), 0 0 14px rgba(180,205,235,0.28)',
             opacity: lyricOpacity,
-            transform: `translate(${glitchShift}px, ${lineLift + pulse}px)`,
+            transform: `translate(-50%, -50%) translate(${glitchShift}px, ${lineLift + pulse}px)`,
             wordBreak: 'keep-all',
             overflowWrap: 'anywhere',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'row-reverse',
+            gap: lyricColumns.length > 1 ? 52 : 0,
           }}
         >
-          {isChorusLine
-            ? currentCharacters.map((char, index) => {
-                const charDecay = interpolate(chorusDecay, [index / Math.max(1, currentCharacters.length), 1], [0, 1], {
+          {lyricColumns.map((column, columnIndex) => (
+            <div
+              key={columnIndex}
+              style={{
+                display: 'block',
+                writingMode: 'vertical-rl',
+                textOrientation: 'mixed',
+                height: '100%',
+                lineHeight: 1.22,
+              }}
+            >
+              {column.map(({ char, order }) => {
+                const characterStart = order / Math.max(1, totalCharacters);
+                const characterReveal = interpolate(revealProgress, [characterStart, characterStart + 0.08], [0, 1], {
                   extrapolateLeft: 'clamp',
                   extrapolateRight: 'clamp',
                 });
-                const crumbleY = Math.sin(index * 1.7 + frame * 0.08) * 8 * charDecay;
+                const charDecay = isChorusLine
+                  ? interpolate(chorusDecay, [characterStart, 1], [0, 1], {
+                      extrapolateLeft: 'clamp',
+                      extrapolateRight: 'clamp',
+                    })
+                  : 0;
+                const crumbleX = Math.sin(order * 1.7 + frame * 0.08) * 8 * charDecay;
                 const ageOpacity = interpolate(charDecay, [0, 0.65, 1], [1, 0.55, 0], {
                   extrapolateLeft: 'clamp',
                   extrapolateRight: 'clamp',
                 });
+                const characterOpacity = lyricOpacity * characterReveal * ageOpacity;
+
                 return (
                   <span
-                    key={`${char}-${index}`}
+                    key={`${char}-${order}`}
                     style={{
                       display: 'inline-block',
-                      opacity: ageOpacity,
+                      opacity: characterOpacity,
                       color: `rgba(238, 243, 250, ${0.58 + 0.42 * (1 - charDecay)})`,
-                      transform: `translateY(${crumbleY}px) rotate(${charDecay * ((index % 3) - 1) * 3}deg)`,
+                      transform: `translateX(${crumbleX}px) rotate(${charDecay * ((order % 3) - 1) * 3}deg)`,
                       textShadow:
                         charDecay > 0.2
                           ? '0 0 10px rgba(210,205,190,0.42), 0 8px 24px rgba(0,0,0,0.65)'
@@ -305,26 +350,9 @@ export const JiGaMe: React.FC = () => {
                     {char}
                   </span>
                 );
-              })
-            : currentLine?.text ?? ''}
-        </div>
-
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 4,
-            left: 0,
-            right: 0,
-            color: 'rgba(230, 238, 248, 0.26)',
-            fontSize: 34,
-            lineHeight: 1.25,
-            letterSpacing: '0.08em',
-            textShadow: '0 5px 18px rgba(0,0,0,0.62)',
-            transform: 'translateY(-4px) rotateX(-26deg)',
-            opacity: nextLine ? lyricOpacity * 0.72 : 0,
-          }}
-        >
-          {nextLine?.text ?? ''}
+              })}
+            </div>
+          ))}
         </div>
       </div>
 

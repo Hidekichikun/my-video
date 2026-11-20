@@ -1,0 +1,73 @@
+{
+ "title": "I close my mind",
+ "audio": "music/I close my mind.mp3",
+ "image": "photo/I close my mind/u2944115231_Mischievous_anime_girl_in_a_dynamic_low_angle_com_433f70eb-4cce-4f5b-a2cd-0cb98a275472_3.png",
+ "bpm": 95.27,
+ "start": 195.47,
+ "beats": 64,
+ "calm": [
+  [
+   23,
+   44
+  ]
+ ],
+ "shots": [
+  [
+   0,
+   0.6,
+   0.21,
+   0.3,
+   0.25
+  ],
+  [
+   8,
+   0.5,
+   0.5,
+   0.88,
+   0.8
+  ],
+  [
+   16,
+   0.45,
+   0.3,
+   0.5,
+   0.42
+  ],
+  [
+   23,
+   0.6,
+   0.22,
+   0.75,
+   0.55
+  ],
+  [
+   34,
+   0.35,
+   0.8,
+   0.55,
+   0.45
+  ],
+  [
+   44,
+   0.62,
+   0.21,
+   0.24,
+   0.2
+  ],
+  [
+   52,
+   0.5,
+   0.5,
+   0.88,
+   0.78
+  ],
+  [
+   58,
+   0.4,
+   0.78,
+   0.5,
+   0.4
+  ]
+ ],
+ "out": "i-close-my-mind/IClosemyMind_short01_sabi.mp4"
+}

@@ -1,0 +1,87 @@
+{
+ "title": "Fire in my senses",
+ "audio": "music/mastered/Fire in my senses (master).wav",
+ "jacket": "music/jacket/Fire in my senses_jacket.png",
+ "snow": true,
+ "start": 57.4,
+ "lyrics_end": 29.0,
+ "lyrics": [
+  [
+   57.8,
+   "Break my Fire in my senses"
+  ],
+  [
+   60.3,
+   "六つの扉で心を整えて"
+  ],
+  [
+   63.7,
+   "世界じゃなく　心が先に"
+  ],
+  [
+   66.3,
+   "景色の色を決めていくから"
+  ],
+  [
+   73.3,
+   "Burning mind　解き放て"
+  ],
+  [
+   75.8,
+   "選ぶ未来はInside of me"
+  ],
+  [
+   78.2,
+   "導く声は示されてる"
+  ],
+  [
+   82.1,
+   "歩き出すのはわたし自身"
+  ]
+ ],
+ "shots": [
+  [
+   0,
+   "build/public/fire-in-my-senses-bg.png",
+   0.45,
+   0.5,
+   1,
+   0.88
+  ],
+  [
+   2.9,
+   "build/public/fire-in-my-senses-bg.png",
+   0.45,
+   0.34,
+   0.78,
+   0.7
+  ],
+  [
+   8.9,
+   "build/public/fire-in-my-senses-bg.png",
+   0.45,
+   0.55,
+   0.8,
+   0.72
+  ],
+  [
+   15.9,
+   "build/public/fire-in-my-senses-bg.png",
+   0.45,
+   0.5,
+   0.95,
+   0.82
+  ],
+  [
+   20.8,
+   "build/public/fire-in-my-senses-bg.png",
+   0.63,
+   0.32,
+   0.5,
+   0.42
+  ]
+ ],
+ "end1": "2026.11.06",
+ "end2": "配信スタート",
+ "out": "fire-in-my-senses/FireInMySenses_short01_sabi.mp4"
+}

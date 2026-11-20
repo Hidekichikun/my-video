@@ -3,5 +3,55 @@ dist
 .DS_Store
 .env
 
-# Ignore the output video from Git but not videos you import into src/.
-out
+# --- 生成物・作業用（いつ消してもよい） ---
+/out/
+/output/
+/build/
+/tmp/
+/Claude outputs/
+**/Claude outputs/
+**/_to_delete/
+__pycache__/
+*.pyc
+*.log
+*.bak
+*.tmpcheck
+
+# --- 重いメディアはgitで管理しない（ファイル自体はPCに残る） ---
+# 動画
+*.mp4
+*.mov
+*.webm
+*.mkv
+# 音声
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+# 画像
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.psd
+*.tif
+*.tiff
+# フォント
+*.ttf
+*.otf
+*.ttc
+*.woff
+*.woff2
+# アーカイブ・分割ファイル
+*.zip
+*.tar
+*.7z
+*.p[0-9][0-9]
+*.q[0-9][0-9]
+*.part[0-9][0-9]
+
+# --- 個人のローカル設定 ---
+.claude/settings.local.json

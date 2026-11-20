@@ -1,0 +1,18 @@
+Generation: built-in image_gen
+Reference: build/public/forward-glow-chara-1.png
+Output: music/jacket/ForwardGlow_illust_raw.png
+Delivery: resized to 3000x3000 with high-quality bicubic interpolation
+
+Use case: illustration-story.
+Asset type: album cover art, ONE square 1:1 finished illustration, target 3000x3000.
+Input image: CHARACTER AND ART STYLE reference. Same character and same art style as the reference image; create the new composition described below, not the reference's fist pose.
+Anime illustration, square 1:1, 3000x3000, album cover art.
+Same character and same art style as the reference image.
+Character: a gentle, cheerful girl around 18, straight honey-blonde bob with blunt bangs, big round brown eyes with bright highlights, soft pink blush, small nose.
+Outfit: oversized beige-khaki hoodie with drawstrings, plain fabric with only one small black star on the left sleeve, small black backpack straps visible.
+Pose: chest-up portrait, facing the viewer, centered, looking straight into the camera with a soft, determined smile, hair gently blowing in the wind.
+Composition: face centered and slightly above the middle, eyes about 35% from the top of the image. Keep the bottom 30% simple and calm (soft bokeh, hoodie fabric) — space for the title, which will be added separately later. No hands raised in front of torso.
+Lighting: warm golden backlight through autumn trees, dappled sunlight falling on her hair and cheek, glowing rim light, floating light dots.
+Background: orange and yellow autumn leaves in soft bokeh, a few falling leaves.
+Mood: hopeful, quiet strength, "moving forward".
+No text, no letters, no logos on clothes, no watermark, no signature, nothing written anywhere.

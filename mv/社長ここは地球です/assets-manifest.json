@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-05",
+  "generator": "built-in image_gen",
+  "status": "generated source images; sprite extraction and MV assembly pending",
+  "characters": [
+    {
+      "file": "characters/hero.png",
+      "prompt": "characters/hero-prompt.txt"
+    },
+    {
+      "file": "characters/boss.png",
+      "prompt": "characters/boss-prompt.txt"
+    },
+    {
+      "file": "characters/robot.png",
+      "prompt": "characters/robot-prompt.txt"
+    },
+    {
+      "file": "characters/robot_opposite.png",
+      "prompt": "characters/robot_opposite-prompt.txt",
+      "label": "ロボ・反対向き",
+      "direction": "right"
+    }
+  ],
+  "sprites": [
+    {
+      "file": "sprites/01_idle.png",
+      "character": "hero",
+      "frames": 2,
+      "label": "待機",
+      "prompt": "sprites/01_idle-prompt.txt"
+    },
+    {
+      "file": "sprites/02_walk.png",
+      "character": "hero",
+      "frames": 4,
+      "label": "歩行",
+      "prompt": "sprites/02_walk-prompt.txt"
+    },
+    {
+      "file": "sprites/03_shout.png",
+      "character": "hero",
+      "frames": 2,
+      "label": "メガホン",
+      "prompt": "sprites/03_shout-prompt.txt"
+    },
+    {
+      "file": "sprites/04_deadpan.png",
+      "character": "hero",
+      "frames": 2,
+      "label": "真顔・まばたき",
+      "prompt": "sprites/04_deadpan-prompt.txt"
+    },
+    {
+      "file": "sprites/05_smack.png",
+      "character": "hero",
+      "frames": 3,
+      "label": "機械を叩く",
+      "prompt": "sprites/05_smack-prompt.txt"
+    },
+    {
+      "file": "sprites/06_run.png",
+      "character": "hero",
+      "frames": 4,
+      "label": "工具箱で走る",
+      "prompt": "sprites/06_run-prompt.txt"
+    },
+    {
+      "file": "sprites/07_guitar.png",
+      "character": "hero",
+      "frames": 2,
+      "label": "ギター",
+      "prompt": "sprites/07_guitar-prompt.txt"
+    },
+    {
+      "file": "sprites/08_lift.png",
+      "character": "hero",
+      "frames": 2,
+      "label": "重量物を持ち上げる",
+      "prompt": "sprites/08_lift-prompt.txt"
+    },
+    {
+      "file": "sprites/09_coffee.png",
+      "character": "hero",
+      "frames": 3,
+      "label": "缶コーヒー",
+      "prompt": "sprites/09_coffee-prompt.txt"
+    },
+    {
+      "file": "sprites/10_point.png",
+      "character": "hero",
+      "frames": 2,
+      "label": "指さし",
+      "prompt": "sprites/10_point-prompt.txt"
+    },
+    {
+      "file": "sprites/11_boss_present.png",
+      "character": "boss",
+      "frames": 2,
+      "label": "社長・プレゼン",
+      "prompt": "sprites/11_boss_present-prompt.txt"
+    },
+    {
+      "file": "sprites/12_boss_clap.png",
+      "character": "boss",
+      "frames": 2,
+      "label": "社長・拍手",
+      "prompt": "sprites/12_boss_clap-prompt.txt"
+    },
+    {
+      "file": "sprites/13_boss_lost.png",
+      "character": "boss",
+      "frames": 2,
+      "label": "社長・迷子",
+      "prompt": "sprites/13_boss_lost-prompt.txt"
+    },
+    {
+      "file": "sprites/14_boss_float.png",
+      "character": "boss",
+      "frames": 2,
+      "label": "社長・無重力",
+      "prompt": "sprites/14_boss_float-prompt.txt"
+    },
+    {
+      "file": "sprites/15_boss_helmet.png",
+      "character": "boss",
+      "frames": 2,
+      "label": "社長・ヘルメット",
+      "prompt": "sprites/15_boss_helmet-prompt.txt"
+    },
+    {
+      "file": "sprites/16_robot_error.png",
+      "character": "robot",
+      "frames": 2,
+      "label": "ロボ・エラー",
+      "prompt": "sprites/16_robot_error-prompt.txt"
+    },
+    {
+      "file": "sprites/17_robot_bow.png",
+      "character": "robot",
+      "frames": 2,
+      "label": "ロボ・お辞儀",
+      "prompt": "sprites/17_robot_bow-prompt.txt"
+    },
+    {
+      "file": "characters/hero_wipe.png",
+      "character": "hero",
+      "frames": 4,
+      "label": "雑巾で拭き掃除",
+      "prompt": "characters/hero_wipe-prompt.txt"
+    },
+    {
+      "file": "sprites/16_robot_error_opposite.png",
+      "character": "robot",
+      "frames": 2,
+      "label": "ロボ・エラー・反対向き",
+      "direction": "right",
+      "prompt": "sprites/16_robot_error_opposite-prompt.txt"
+    },
+    {
+      "file": "sprites/17_robot_bow_opposite.png",
+      "character": "robot",
+      "frames": 2,
+      "label": "ロボ・お辞儀・反対向き",
+      "direction": "right",
+      "prompt": "sprites/17_robot_bow_opposite-prompt.txt"
+    },
+    {
+      "file": "characters/hero_wipe_left.png",
+      "character": "hero",
+      "frames": 4,
+      "direction": "left",
+      "label": "雑巾で拭き掃除・左向き",
+      "prompt": "characters/hero_wipe_left-prompt.txt"
+    }
+  ],
+  "backgrounds": [
+    {
+      "file": "backgrounds/B1_gate.png",
+      "label": "朝の工場入口",
+      "prompt": "backgrounds/B1_gate-prompt.txt"
+    },
+    {
+      "file": "backgrounds/B2_floor.png",
+      "label": "工場内",
+      "prompt": "backgrounds/B2_floor-prompt.txt"
+    },
+    {
+      "file": "backgrounds/B3_meeting.png",
+      "label": "会議室",
+      "prompt": "backgrounds/B3_meeting-prompt.txt"
+    },
+    {
+      "file": "backgrounds/B4_night.png",
+      "label": "夜の生産ライン",
+      "prompt": "backgrounds/B4_night-prompt.txt"
+    },
+    {
+      "file": "backgrounds/B5_maze.png",
+      "label": "ホワイトボードの迷路",
+      "prompt": "backgrounds/B5_maze-prompt.txt"
+    },
+    {
+      "file": "backgrounds/B6_space.png",
+      "label": "宇宙と地球",
+      "prompt": "backgrounds/B6_space-prompt.txt"
+    },
+    {
+      "file": "backgrounds/B7_bench.png",
+      "label": "夕暮れの休憩ベンチ",
+      "prompt": "backgrounds/B7_bench-prompt.txt"
+    },
+    {
+      "file": "backgrounds/B8_road.png",
+      "label": "帰り道とリンゴの木",
+      "prompt": "backgrounds/B8_road-prompt.txt"
+    }
+  ]
+}
+

@@ -1,0 +1,19 @@
+六ツ扉 投稿スケジュール（毎週 火・金 19:00）
+※ YouTube Studio（PC）で全部先にアップして「スケジュール設定」しとけば、あとは放置でOK
+※ ショートには「関連動画」でその曲のMVをつなぐ（MVがまだない曲はつけない）
+
+日付        曲                    投稿するもの
+10/6 (火)   Forward Glow          MV 公開（out/ForwardGlow_MV_v2.mp4）
+                                  → 公開後、ただ正気の旧FG MVを限定公開に
+10/7 (水)   So stupid, but so good  ショート chorus_v3_punk.mp4（六ツ扉のショート1本目）
+10/10 (土)  Forward Glow          ショート short01_sabi.mp4（関連動画：FG MV）
+10/14 (火)  Fire in my senses     ショート short01_sabi.mp4
+10/17 (金)  So stupid, but so good  ショート short02_4pics.mp4
+10/21 (火)  Forward Glow          （ショートの在庫が切れるので、新しいショートを作って入れる）
+10/24 (金)  So stupid, but so good  ショート short03.mp4
+10/28 (火)  Fire in my senses     （作り直したMVがあればここで公開。旧MVは限定公開に）
+10/30 (金)  Forward Glow          ショート short02_release.mp4（配信日）＋ Xで「配信スタート」
+11/3 (火)   Fire in my senses     （新しいショート or MVのサビ切り抜き）
+11/6 (金)   Fire in my senses     ショート short02_release.mp4（配信日）＋ Xで「配信スタート」
+
+投稿文：各曲フォルダの「YouTube投稿文_六ツ扉.txt」／MVは out/ForwardGlow_MV_YouTube投稿文_六ツ扉.txt

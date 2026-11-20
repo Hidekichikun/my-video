@@ -1,0 +1,59 @@
+Forward Glow ショート（キャラクター／マスコット寄り版）プロンプト
+対象：short01_sabi（サビ 0:33〜）の4カット　→ ただいま正気を失い中 用
+サイズ：縦 1080×1920（9:16）
+参考画像：build/public/forward-glow-chorus-1.png を渡して「この子の髪型・服・色だけ参考にして、キャラクターとして描き直して」と伝える
+（参考画像に引っぱられてリアル寄りに戻りやすいので、"only use it for hair, outfit and colors" を必ず入れる）
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ 共通スタイル（毎回コピペして各カットの頭につける）
+━━━━━━━━━━━━━━━━━━━━━━━━
+Cute mascot-like anime character illustration, vertical 9:16, 1080x1920.
+Use the reference image only for hair, outfit and colors. Do NOT copy its realistic rendering.
+Character: a cheerful girl with a round face and a small chin, simplified deformed proportions (about 3 heads tall), big round sparkling brown eyes with large white highlights, tiny nose (just a small dot or none), small expressive mouth.
+Hair: straight honey-blonde bob, shoulder length, chunky simple hair shapes with an ahoge (one cowlick strand), bangs over the eyes.
+Outfit: oversized beige-khaki hoodie with a simple black star/arrow graphic on the sleeve, sleeves slightly too long, small black backpack.
+Style: bold clean outlines, flat colors with simple 2-step cel shading, minimal detail, vivid and warm color palette, sticker-like / character-goods look, very readable at small size.
+Background: simple stylized autumn scene — orange and yellow leaf shapes, warm sunset gradient, a few sparkle and light-dot icons. Keep it simpler than the character.
+Mood: energetic, cute, "let's go forward!".
+Composition: keep the top 12% and bottom 25% simple (space for title and lyrics).
+No realistic skin texture, no freckles, no pores, no photorealism, no painterly detail.
+No text, no letters, no watermark, no logo.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ カット1（0.0〜6.3秒）「前に 攻め 跳ねて 進め／繰り返すのみ」
+　※1秒目で目を止めるカット。キラキラの目でこっちを見る
+━━━━━━━━━━━━━━━━━━━━━━━━
+Close-up from the chest up, facing the viewer, big sparkling eyes looking straight at the camera, wide open mouth singing happily, both fists raised in front of her chest ("let's go!" pose).
+Hair bouncing, autumn leaves and sparkles popping around her head.
+Eyes positioned about 35% from the top of the frame.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ カット2（6.3〜11.5秒）「越えて 詰めて 乗って 攻めて 晴れた 空を／迷いなんて」
+━━━━━━━━━━━━━━━━━━━━━━━━
+Full-body shot, she is jumping high in the air with one leg forward like hopping over something, arms spread out, hoodie flapping, backpack bouncing.
+Bright clear blue sky with simple round clouds, autumn leaves swirling below, small speed lines for motion.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ カット3（11.5〜16.7秒）「跳ねて 越えて キモチ たかめ／小さな一歩で」
+━━━━━━━━━━━━━━━━━━━━━━━━
+Full-body shot, she takes one small big-hearted step forward on a path of leaves, looking back over her shoulder at the viewer with a wink and a peace sign, a little glowing footprint where her foot lands.
+Warm golden light, sparkles and leaf shapes floating around.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ カット4（16.7〜22.1秒）「詰めて ぎゅっと 攻めて 前へ／かぜに 乗るよ／グッと押し出していけ」
+　※サビの締め。いちばん元気なカット
+━━━━━━━━━━━━━━━━━━━━━━━━
+Upper-body shot, she thrusts one fist forward toward the camera (big, close to the lens) with a huge confident grin, eyes shining.
+Strong wind blowing her hair and hood back, a burst of golden light rays and a whirl of leaves behind her, comic-style impact effect around the fist.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+■ 調整のしかた
+━━━━━━━━━━━━━━━━━━━━━━━━
+・もっとマスコット寄りにしたい → "about 3 heads tall" を "chibi, about 2 heads tall" に
+・ちょっと可愛すぎる／幼すぎる → "about 4 heads tall" にして "ahoge" を消す
+・リアル寄りに戻っちゃう → 参考画像を外して、共通スタイルだけで生成する
+・4枚で顔がバラバラになる → 1枚目ができたら、それを次のカットの参考画像にする（"same character as the reference"）
+
+■ できた画像
+・build/public/ に forward-glow-chara-1.png 〜 4.png で保存
+　→ shorts/_work/fg1.json の shots の画像パスを差し替えれば、今のショートと同じ尺・歌詞で作り直せる

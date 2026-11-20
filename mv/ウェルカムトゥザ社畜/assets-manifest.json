@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-11",
+  "generator": "built-in image_gen",
+  "status": "generated source images; sprite extraction and MV assembly pending",
+  "characters": [
+    {
+      "file": "characters/coworkers.png",
+      "prompt": "characters/coworkers-prompt.txt",
+      "label": "同僚3人・全身設定画",
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "file": "characters/shinjin.png",
+      "prompt": "characters/shinjin-prompt.txt",
+      "label": "新人・全身設定画",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "characters/ui_icons.png",
+      "prompt": "characters/ui_icons-prompt.txt",
+      "label": "スケジュール用アイコン8個",
+      "width": 1774,
+      "height": 887
+    }
+  ],
+  "sprites": [
+    {
+      "file": "sprites/H03_welcome.png",
+      "prompt": "sprites/H03_welcome-prompt.txt",
+      "label": "主人公・真顔で歓迎",
+      "width": 1983,
+      "height": 793,
+      "character": "hero",
+      "frames": 2,
+      "reference": "../社長ここは地球です/characters/hero.png"
+    },
+    {
+      "file": "sprites/H04_look_around.png",
+      "prompt": "sprites/H04_look_around-prompt.txt",
+      "label": "主人公・右見て左見て",
+      "width": 2172,
+      "height": 724,
+      "character": "hero",
+      "frames": 3,
+      "reference": "../社長ここは地球です/characters/hero.png"
+    },
+    {
+      "file": "sprites/K16_dictionary.png",
+      "prompt": "sprites/K16_dictionary-prompt.txt",
+      "label": "課長・辞書を引く",
+      "width": 2172,
+      "height": 724,
+      "character": "kacho",
+      "frames": 3,
+      "reference": "../課長ここは会社ですよ/characters/kacho.png"
+    },
+    {
+      "file": "sprites/M01_grumble.png",
+      "prompt": "sprites/M01_grumble-prompt.txt",
+      "label": "同僚3人・陰で文句",
+      "width": 2172,
+      "height": 724,
+      "character": "coworkers",
+      "frames": 2,
+      "reference": "characters/coworkers.png"
+    },
+    {
+      "file": "sprites/M02_aruaru.png",
+      "prompt": "sprites/M02_aruaru-prompt.txt",
+      "label": "同僚3人・あるある！",
+      "width": 2172,
+      "height": 724,
+      "character": "coworkers",
+      "frames": 2,
+      "reference": "characters/coworkers.png"
+    },
+    {
+      "file": "sprites/M03_nod.png",
+      "prompt": "sprites/M03_nod-prompt.txt",
+      "label": "同僚3人・全員うなずく",
+      "width": 2172,
+      "height": 724,
+      "character": "coworkers",
+      "frames": 2,
+      "reference": "characters/coworkers.png"
+    },
+    {
+      "file": "sprites/M04_headshake.png",
+      "prompt": "sprites/M04_headshake-prompt.txt",
+      "label": "同僚3人・首を振る",
+      "width": 2172,
+      "height": 724,
+      "character": "coworkers",
+      "frames": 2,
+      "reference": "characters/coworkers.png"
+    },
+    {
+      "file": "sprites/M05_group_photo.png",
+      "prompt": "sprites/M05_group_photo-prompt.txt",
+      "label": "同僚3人・写真は笑顔",
+      "width": 2172,
+      "height": 724,
+      "character": "coworkers",
+      "frames": 2,
+      "reference": "characters/coworkers.png"
+    },
+    {
+      "file": "sprites/S01_idle.png",
+      "prompt": "sprites/S01_idle-prompt.txt",
+      "label": "新人・やる気まんまん待機",
+      "width": 1774,
+      "height": 887,
+      "character": "shinjin",
+      "frames": 2,
+      "reference": "characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S02_bow.png",
+      "prompt": "sprites/S02_bow-prompt.txt",
+      "label": "新人・承知しました",
+      "width": 2048,
+      "height": 768,
+      "character": "shinjin",
+      "frames": 3,
+      "reference": "characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S03_walk.png",
+      "prompt": "sprites/S03_walk-prompt.txt",
+      "label": "新人・元気な歩行",
+      "width": 2079,
+      "height": 756,
+      "character": "shinjin",
+      "frames": 4,
+      "reference": "characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S04_shock.png",
+      "prompt": "sprites/S04_shock-prompt.txt",
+      "label": "新人・驚き",
+      "width": 1774,
+      "height": 887,
+      "character": "shinjin",
+      "frames": 2,
+      "reference": "characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S05_bed_wake.png",
+      "prompt": "sprites/S05_bed_wake-prompt.txt",
+      "label": "新人・寝る／目覚める",
+      "width": 2172,
+      "height": 724,
+      "character": "shinjin",
+      "frames": 3,
+      "reference": "characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S06_zombie_walk.png",
+      "prompt": "sprites/S06_zombie_walk-prompt.txt",
+      "label": "新人・疲れた歩行",
+      "width": 2172,
+      "height": 724,
+      "character": "shinjin",
+      "frames": 4,
+      "reference": "characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S07_look_around.png",
+      "prompt": "sprites/S07_look_around-prompt.txt",
+      "label": "新人・右見て左見て",
+      "width": 2172,
+      "height": 724,
+      "character": "shinjin",
+      "frames": 3,
+      "reference": "characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S08_pc_color.png",
+      "prompt": "sprites/S08_pc_color-prompt.txt",
+      "label": "新人・PC作業",
+      "width": 1983,
+      "height": 793,
+      "character": "shinjin",
+      "frames": 2,
+      "reference": "characters/shinjin.png"
+    },
+    {
+      "file": "sprites/S09_raise_hand.png",
+      "prompt": "sprites/S09_raise_hand-prompt.txt",
+      "label": "新人・おそるおそる挙手",
+      "width": 1774,
+      "height": 887,
+      "character": "shinjin",
+      "frames": 2,
+      "reference": "characters/shinjin.png"
+    }
+  ],
+  "backgrounds": [
+    {
+      "file": "backgrounds/B1_office_teiji.png",
+      "prompt": "backgrounds/B1_office_teiji-prompt.txt",
+      "label": "定時の事務所",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "backgrounds/B2_chorei.png",
+      "prompt": "backgrounds/B2_chorei-prompt.txt",
+      "label": "朝礼スペース",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "backgrounds/B3_break_room.png",
+      "prompt": "backgrounds/B3_break_room-prompt.txt",
+      "label": "休憩室",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "backgrounds/B4_home_desk_night.png",
+      "prompt": "backgrounds/B4_home_desk_night-prompt.txt",
+      "label": "夜のワンルーム",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "backgrounds/B5_meeting_infinite.png",
+      "prompt": "backgrounds/B5_meeting_infinite-prompt.txt",
+      "label": "無限会議室",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "backgrounds/B6_bedroom_dawn.png",
+      "prompt": "backgrounds/B6_bedroom_dawn-prompt.txt",
+      "label": "夜明け前の寝室",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "backgrounds/B7_loop_void.png",
+      "prompt": "backgrounds/B7_loop_void-prompt.txt",
+      "label": "布団と時計のベルトコンベア",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "backgrounds/B8_welcome_gate.png",
+      "prompt": "backgrounds/B8_welcome_gate-prompt.txt",
+      "label": "遊園地風の工場正門",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "thumbnail": [
+    {
+      "file": "thumbnail/J1_jacket_square.png",
+      "prompt": "thumbnail/J1_jacket_square-prompt.txt",
+      "label": "正方形ジャケット",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "thumbnail/T1_thumb_welcome.png",
+      "prompt": "thumbnail/T1_thumb_welcome-prompt.txt",
+      "label": "サムネ第1候補・ようこそ",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "thumbnail/T2_thumb_rookie.png",
+      "prompt": "thumbnail/T2_thumb_rookie-prompt.txt",
+      "label": "サムネ第2候補・新人ビフォーアフター",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "notes": [
+    "初回生成は各 *-prompt.txt の本文をそのまま使用。指定の参照画像を添付。",
+    "characters / sprites は緑背景の原画像。緑抜き、コマ切り、ドット粒度の統一は未実施。",
+    "背景・サムネの横長画像は1672×941px（約16:9）。厳密な16:9調整はMV編集時に実施。",
+    "ジャケットは1254×1254pxの生成原画像。3000×3000pxへの拡大は仕上げ時に実施。",
+    "後工程用の素材で、文字やゲームUIの重ね合わせは未実施。"
+  ],
+  "refinements": [
+    {
+      "file": "characters/ui_icons.png",
+      "prompt": "Edit target: the provided 8-icon pixel-art sheet. Change only the bottom-row third icon, the red hanko seal: remove the kanji from its circular face, replace with a plain red face with one simple concentric circle, absolutely no glyphs, letters or symbols resembling writing. Also replace the blue Z above the pillow with three small abstract curved blue sleep wisps, not a letter. Preserve all eight icons, exact layout, palette, pixel style, green chroma-key background, canvas aspect and everything else unchanged."
+    },
+    {
+      "file": "sprites/H04_look_around.png",
+      "prompt": "Edit target: provided three-frame pixel sprite sheet. Fix ONLY head/eye direction sequence. LEFT cell stays unchanged: nose and eyes point toward screen LEFT (her own right). MIDDLE cell must have head, nose and eyes turned toward screen RIGHT (her own left). RIGHT cell must also have head/nose/eyes toward screen RIGHT (her own left), with more narrowed suspicious eyes. In left-to-right reading order the screen directions are LEFT, RIGHT, RIGHT. Keep her identity, helmet stickers, orange hair, navy outfit, hands, body pose, full-body scale, baseline, three equal-width cells, pixel art and pure green background unchanged. No text."
+    },
+    {
+      "file": "thumbnail/T1_thumb_welcome.png",
+      "prompt": "Edit target: provided welcome thumbnail painting. Remove ALL writing, letters, pseudo-writing, logos and typographic marks from the helmet stickers, cheek bandages, clothes and background. Replace helmet stickers with simple abstract geometric punk graphics without writing; keep colors and collage texture. Background should contain only faint empty schedule-grid lines and arrows, no scribbles resembling handwriting. Preserve all people, facial identities, expressions, welcome arms, confetti, clapping coworkers, illustration medium, composition and 16:9 canvas. No UI frames, text, numbers, logos or watermark."
+    },
+    {
+      "file": "thumbnail/T2_thumb_rookie.png",
+      "prompt": "Edit target: provided before-after rookie thumbnail painting. Remove ALL writing, letters, pseudo-writing, logos and typographic marks from the helmet stickers, cheek bandages, clothes and background. Replace the woman's helmet stickers with simple abstract geometric punk graphics without writing; keep colors and collage texture. Keep both rookies' beginner leaf marks intact. Background must contain only faint empty calendar-grid lines, arrows and crossed-out X-shaped marks, no scribbles resembling handwriting or tiny day names. Preserve all three people, facial identities, expressions, blank ID card, coffee can, thumbs up, painting style, layout and 16:9 canvas. No UI frames, text, numbers, logos or watermark."
+    },
+    {
+      "file": "thumbnail/J1_jacket_square.png",
+      "prompt": "Edit target: provided square factory welcome album-cover painting. Remove ALL writing, letters, pseudo-writing, logos and typographic marks from helmet stickers, bandages and clothes. Replace the woman's helmet stickers with simple abstract geometric punk graphics without writing; keep collage colors and texture. Keep rookie beginner leaf mark intact. Fix factory wall analog clock: ONLY TWO hands, long minute hand vertical pointing straight up to 12 o'clock position, shorter hour hand pointing down-right at five o'clock position. Blank clock face with no numerals and no lettering. Preserve gate-opening gesture, characters, faces, balloons, blank arch, bursting kusudama, gloomy factory sky, ink/watercolor/gouache style, square composition and all other details. No UI, text, numbers, logos or watermark."
+    }
+  ]
+}

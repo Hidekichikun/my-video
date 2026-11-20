@@ -1,0 +1,1375 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="名古屋のHorizon of Khufu体験前に読む、クフ王とピラミッドの詳細リサーチ資料。"
+    />
+    <title>クフ王とピラミッド — VR体験前リサーチ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #e9e4d8;
+        --paper: #f8f5ed;
+        --paper-2: #f0eadc;
+        --ink: #20221f;
+        --muted: #65665f;
+        --line: #d2c9b7;
+        --lapis: #234b87;
+        --lapis-soft: #dfe7f3;
+        --gold: #9b7222;
+        --gold-soft: #efe1be;
+        --green: #356744;
+        --green-soft: #deeadf;
+        --amber: #9a5d17;
+        --amber-soft: #f1dfc6;
+        --red: #8f3f37;
+        --red-soft: #efdad6;
+        --shadow: 0 18px 50px rgba(65, 49, 25, 0.11);
+        --serif: "Shippori Mincho B1", "Yu Mincho", serif;
+        --sans: "Zen Kaku Gothic New", "Yu Gothic", system-ui, sans-serif;
+        --mono: "IBM Plex Mono", Consolas, monospace;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          color-scheme: dark;
+          --bg: #11161d;
+          --paper: #1b222b;
+          --paper-2: #232c37;
+          --ink: #eee9dc;
+          --muted: #adb0ab;
+          --line: #3b4652;
+          --lapis: #9bb8ef;
+          --lapis-soft: #25344e;
+          --gold: #e3bc68;
+          --gold-soft: #41351f;
+          --green: #86c59a;
+          --green-soft: #213a2a;
+          --amber: #edaf64;
+          --amber-soft: #45311e;
+          --red: #e69a90;
+          --red-soft: #472825;
+          --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+        }
+      }
+      :root[data-theme="dark"] {
+        color-scheme: dark;
+        --bg: #11161d;
+        --paper: #1b222b;
+        --paper-2: #232c37;
+        --ink: #eee9dc;
+        --muted: #adb0ab;
+        --line: #3b4652;
+        --lapis: #9bb8ef;
+        --lapis-soft: #25344e;
+        --gold: #e3bc68;
+        --gold-soft: #41351f;
+        --green: #86c59a;
+        --green-soft: #213a2a;
+        --amber: #edaf64;
+        --amber-soft: #45311e;
+        --red: #e69a90;
+        --red-soft: #472825;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 72px;
+      }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(
+            circle at 15% 0%,
+            color-mix(in srgb, var(--gold-soft) 55%, transparent),
+            transparent 34rem
+          ),
+          var(--bg);
+        font-family: var(--sans);
+        font-size: 16px;
+        line-height: 1.85;
+      }
+      a {
+        color: var(--lapis);
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        text-decoration-thickness: 2px;
+      }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid var(--line);
+        background: color-mix(in srgb, var(--paper) 88%, transparent);
+        backdrop-filter: blur(14px);
+      }
+      .topbar-inner {
+        max-width: 1100px;
+        margin: auto;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .brand {
+        font-family: var(--serif);
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+      }
+      .theme-button {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--paper-2);
+        color: var(--ink);
+        font: 700 12px var(--sans);
+        padding: 7px 12px;
+        cursor: pointer;
+      }
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 56px 20px 96px;
+      }
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: clamp(34px, 7vw, 72px);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        right: -90px;
+        bottom: -180px;
+        background: linear-gradient(
+          145deg,
+          transparent 49.5%,
+          color-mix(in srgb, var(--gold) 42%, transparent) 50%
+        );
+        transform: rotate(45deg);
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      .eyebrow {
+        color: var(--gold);
+        font: 500 12px var(--mono);
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--serif);
+        line-height: 1.35;
+        text-wrap: balance;
+      }
+      h1 {
+        margin: 14px 0 18px;
+        font-size: clamp(34px, 7vw, 64px);
+        letter-spacing: -0.025em;
+      }
+      h2 {
+        margin: 0 0 22px;
+        font-size: clamp(26px, 4vw, 38px);
+      }
+      h3 {
+        margin: 30px 0 10px;
+        font-size: 21px;
+      }
+      .lead {
+        max-width: 720px;
+        color: var(--muted);
+        font-size: clamp(16px, 2vw, 19px);
+        margin: 0;
+      }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 24px;
+      }
+      .chip {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 10px;
+        background: var(--paper-2);
+        font-size: 12px;
+      }
+      .toc {
+        margin: 30px 0 56px;
+        padding: 18px 22px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--paper);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 8px 18px;
+      }
+      .toc a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .section {
+        margin-top: 64px;
+      }
+      .section-head {
+        max-width: 760px;
+        margin-bottom: 22px;
+      }
+      .section-kicker {
+        color: var(--gold);
+        font: 500 12px var(--mono);
+        letter-spacing: 0.14em;
+      }
+      .section-intro {
+        color: var(--muted);
+        margin: -10px 0 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+      }
+      .card {
+        grid-column: span 6;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--paper);
+        box-shadow: 0 7px 24px rgba(60, 45, 20, 0.05);
+      }
+      .card.wide {
+        grid-column: 1 / -1;
+      }
+      .card.third {
+        grid-column: span 4;
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      .card p:last-child,
+      .card ul:last-child {
+        margin-bottom: 0;
+      }
+      .fact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+        gap: 10px;
+      }
+      .fact {
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--paper-2);
+      }
+      .fact strong {
+        display: block;
+        font-family: var(--serif);
+        font-size: 22px;
+        color: var(--lapis);
+        line-height: 1.25;
+      }
+      .fact span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .status {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border-radius: 999px;
+        padding: 4px 9px;
+        font: 700 11px var(--sans);
+      }
+      .status::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: currentColor;
+      }
+      .confirmed {
+        color: var(--green);
+        background: var(--green-soft);
+      }
+      .likely {
+        color: var(--lapis);
+        background: var(--lapis-soft);
+      }
+      .hypothesis {
+        color: var(--amber);
+        background: var(--amber-soft);
+      }
+      .myth {
+        color: var(--red);
+        background: var(--red-soft);
+      }
+      .note {
+        border-left: 4px solid var(--gold);
+        padding: 14px 18px;
+        background: var(--gold-soft);
+        border-radius: 0 12px 12px 0;
+      }
+      .note strong {
+        font-family: var(--serif);
+      }
+      .timeline {
+        border-left: 2px solid var(--line);
+        margin-left: 9px;
+        padding-left: 26px;
+      }
+      .event {
+        position: relative;
+        margin: 0 0 26px;
+      }
+      .event::before {
+        content: "";
+        position: absolute;
+        left: -33px;
+        top: 0.7em;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        border: 3px solid var(--paper);
+      }
+      .event time {
+        color: var(--gold);
+        font: 500 12px var(--mono);
+      }
+      .event h3 {
+        margin: 3px 0 5px;
+      }
+      .event p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--paper);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 760px;
+      }
+      th,
+      td {
+        padding: 13px 15px;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid var(--line);
+      }
+      th {
+        background: var(--paper-2);
+        font-size: 13px;
+        color: var(--muted);
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      td:first-child {
+        font-weight: 700;
+      }
+      .route {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        align-items: stretch;
+      }
+      .route-item {
+        position: relative;
+        padding: 18px 14px;
+        border-radius: 14px;
+        background: var(--lapis-soft);
+        color: var(--ink);
+        text-align: center;
+        font-weight: 700;
+      }
+      .route-item:not(:last-child)::after {
+        content: "→";
+        position: absolute;
+        right: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--gold);
+        z-index: 2;
+      }
+      .checklist {
+        padding: 0;
+        list-style: none;
+      }
+      .checklist li {
+        position: relative;
+        padding-left: 30px;
+        margin: 9px 0;
+      }
+      .checklist li::before {
+        content: "□";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--gold);
+        font: 700 18px var(--mono);
+      }
+      .sources {
+        display: grid;
+        gap: 8px;
+      }
+      .sources a {
+        display: block;
+        padding: 11px 14px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--paper);
+        text-decoration: none;
+        word-break: break-word;
+      }
+      details {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--paper);
+      }
+      summary {
+        cursor: pointer;
+        padding: 15px 18px;
+        font-weight: 700;
+      }
+      details > div {
+        padding: 0 18px 18px;
+      }
+      .added {
+        display: inline-block;
+        margin-left: 6px;
+        padding: 1px 7px;
+        border-radius: 5px;
+        background: var(--lapis-soft);
+        color: var(--lapis);
+        font: 500 11px var(--mono);
+        letter-spacing: 0.04em;
+        vertical-align: middle;
+      }
+      .footer {
+        margin-top: 72px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      ul {
+        padding-left: 1.35em;
+      }
+      li + li {
+        margin-top: 5px;
+      }
+      code {
+        font-family: var(--mono);
+        font-size: 0.9em;
+        background: var(--paper-2);
+        padding: 2px 5px;
+        border-radius: 5px;
+      }
+      @media (max-width: 760px) {
+        .page {
+          padding-top: 24px;
+        }
+        .hero {
+          border-radius: 20px;
+        }
+        .card,
+        .card.third {
+          grid-column: 1 / -1;
+        }
+        .route {
+          grid-template-columns: 1fr;
+        }
+        .route-item:not(:last-child)::after {
+          content: "↓";
+          right: 50%;
+          top: auto;
+          bottom: -17px;
+          transform: translateX(50%);
+        }
+      }
+      @media print {
+        :root {
+          --bg: #fff;
+          --paper: #fff;
+          --paper-2: #f4f1e8;
+          --ink: #111;
+          --muted: #555;
+        }
+        body {
+          background: #fff;
+          font-size: 11pt;
+        }
+        .topbar,
+        .toc {
+          display: none;
+        }
+        .page {
+          max-width: none;
+          padding: 0;
+        }
+        .hero,
+        .card {
+          box-shadow: none;
+          break-inside: avoid;
+        }
+        .section {
+          break-before: auto;
+        }
+        a {
+          color: #111;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">PYRAMID RESEARCH / NAGOYA VR PREP</div>
+        <button
+          class="theme-button"
+          id="themeButton"
+          type="button"
+          aria-label="表示テーマを切り替える"
+        >
+          明暗切替
+        </button>
+      </div>
+    </div>
+
+    <main class="page">
+      <header class="hero">
+        <div class="eyebrow">Research dossier · updated 2026-09-25</div>
+        <h1>クフ王と<br />ピラミッド</h1>
+        <p class="lead">
+          名古屋の「Horizon of
+          Khufu」を、ただ眺めるのではなく、約4500年前の現場に立つ感覚で体験するための事前資料。時代背景、王家、各ピラミッドの違い、クフ固有の建築、建設者、最新調査を一つに統合した。
+        </p>
+        <div class="meta">
+          <span class="chip">古王国・第4王朝</span>
+          <span class="chip">紀元前26世紀ごろ</span>
+          <span class="chip">史実／有力説／仮説を分離</span>
+          <span class="chip">VR演出も検証</span>
+        </div>
+      </header>
+
+      <nav class="toc" aria-label="目次">
+        <a href="#summary">01　最重要ポイント</a>
+        <a href="#event">02　名古屋VRの中身</a>
+        <a href="#background">03　当時の時代背景</a>
+        <a href="#kings">04　王とピラミッド比較</a>
+        <a href="#khufu">05　とりわけクフの特徴</a>
+        <a href="#builders">06　誰がどう造ったか</a>
+        <a href="#interior">07　内部と最新発見</a>
+        <a href="#after">08　死後世界とその後</a>
+        <a href="#check">09　VRチェックリスト</a>
+        <a href="#sources">10　主要出典</a>
+      </nav>
+
+      <section class="section" id="summary">
+        <div class="section-head">
+          <div class="section-kicker">01 / EXECUTIVE SUMMARY</div>
+          <h2>まず、この9点だけ覚える</h2>
+        </div>
+        <div class="grid">
+          <article class="card third">
+            <h3>白い人工の山</h3>
+            <p>
+              現在の茶色い段々は芯材。完成時は高さ約146.5mで、磨かれたトゥーラ石灰岩の白い外装に覆われていた。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>突然の超技術ではない</h3>
+            <p>
+              ジェセルの階段ピラミッドと、スネフェルの三大建設事業で蓄積した技術をクフが統合した。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>砂漠の孤島ではない</h3>
+            <p>
+              ギザはナイル支流、港、町、採石場、神殿、墓地が結び付く巨大な国家事業の景観だった。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>作ったのは組織された人々</h3>
+            <p>
+              常勤専門家、職人、船員、書記、食料生産者と交代労働班。映画的な異民族奴隷像では説明できない。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>建設法は半分分かる</h3>
+            <p>
+              採石、水運、そり、梃子、傾斜路は確認できる。全高までのランプ経路と巨大花崗岩材の上げ方は未解決。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>内部名は要注意</h3>
+            <p>
+              「王妃の間」に王妃が葬られた証拠はない。王の間にもクフのミイラは残っていない。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>空洞は実在、用途は不明</h3>
+            <p>
+              2017年のBig
+              Voidと2023年の北面回廊は高い信頼度で確認。ただし宝物庫とする証拠はない。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>クフだけの内部構成</h3>
+            <p>
+              石積み内部の二室、大回廊、四本の細いシャフト、王の間上の五層空間は、他のピラミッドにない組み合わせ。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>VRは史実＋再構成</h3>
+            <p>
+              建築と地形は研究資料を基にする一方、バステト、時間旅行、クフ葬儀の細部は物語演出である。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="event">
+        <div class="section-head">
+          <div class="section-kicker">02 / HORIZON OF KHUFU</div>
+          <h2>名古屋で何を体験するのか</h2>
+          <p class="section-intro">
+            名古屋・栄、スカイル10階のフリーローム型VR。制作元Excurioはハーバード大学Giza
+            Projectのピーター・デア・マニュエリアンと18か月協働したとしている。
+          </p>
+          <p class="section-intro" style="margin-top: 8px">
+            <span class="added">補足</span>
+            作品名の「Horizon of Khufu」は、大ピラミッドの古代名「アケト・クフ（クフの地平線）」から来ている。日本語版ではファイルーズあいがガイド役、沢城みゆきが猫の女神バステト役を担当する。体験は約45分（準備を含め約60分）、8歳以上。
+          </p>
+        </div>
+        <div class="card wide">
+          <div class="route" aria-label="VRの主な流れ">
+            <div class="route-item">現代のギザ台地</div>
+            <div class="route-item">大ピラミッド内部</div>
+            <div class="route-item">約4500年前へ</div>
+            <div class="route-item">ナイルとクフ葬儀</div>
+          </div>
+          <h3>史実と演出の境界</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>VRで見るもの</th>
+                  <th>判定</th>
+                  <th>理解の仕方</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>通路・王妃の間・大回廊・王の間</td>
+                  <td><span class="status confirmed">確認済み</span></td>
+                  <td>
+                    現存構造と測量を基にした再現。照明と移動方法は体験向け。
+                  </td>
+                </tr>
+                <tr>
+                  <td>完成当時のギザとナイル水運</td>
+                  <td><span class="status likely">有力</span></td>
+                  <td>古水路・港・神殿・町の証拠を組み合わせた復元。</td>
+                </tr>
+                <tr>
+                  <td>クフ王の防腐処置と葬儀</td>
+                  <td><span class="status hypothesis">再構成</span></td>
+                  <td>
+                    一般的な王の葬送知識から復元。クフ本人の葬儀記録はない。
+                  </td>
+                </tr>
+                <tr>
+                  <td>バステトと時間旅行</td>
+                  <td><span class="status myth">物語演出</span></td>
+                  <td>
+                    古代宗教へ感情的に導く装置で、歴史上の出来事ではない。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="background">
+        <div class="section-head">
+          <div class="section-kicker">03 / OLD KINGDOM</div>
+          <h2>当時の時代背景</h2>
+          <p class="section-intro">
+            大ピラミッドは古代エジプト史の後半ではなく、約3000年に及ぶ王朝史のかなり早い時期に現れた。
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>いつの時代か</h3>
+            <p>
+              古王国第4王朝、紀元前26世紀ごろ。クフの治世はエジプト政府編年で前2589～2566年、メトロポリタン美術館編年で前2551～2528年。数十年の差は王名表、天文資料、放射性炭素年代の組み方による。
+            </p>
+            <div class="note">
+              <strong>動画向け表現：</strong
+              >「紀元前26世紀ごろ」「約4500年前」が安全。
+            </div>
+          </article>
+          <article class="card">
+            <h3>ナイルが作った国家</h3>
+            <p>
+              生活圏はナイルの黒い沖積土に集中し、西岸の乾燥地は墓域となった。季節は氾濫期アケト、生育期ペレト、収穫期シェムウ。穀物を徴収・備蓄し、パン、ビール、布などを再分配する行政が巨大事業を支えた。
+            </p>
+            <p>
+              2022年の堆積物・花粉研究は、当時ギザ付近に航行可能な「クフ支流」があったことを示す。
+            </p>
+          </article>
+          <article class="card">
+            <h3>王とマアト</h3>
+            <p>
+              王は政治家だけでなく、神々と人間をつなぎ、宇宙秩序マアトを維持する存在。高官には王族が多く、王の墓は再生の装置であると同時に、全国の資源と人を統合する国家事業だった。
+            </p>
+            <p>
+              「ファラオ」は通じやすいが、王の称号として一般化するのは新王国以降。クフ時代には厳密には「王」と呼ぶ。
+            </p>
+          </article>
+          <article class="card">
+            <h3>現場の日常</h3>
+            <ul>
+              <li>主食はパンとビール。豆、玉ねぎ、魚、肉も食べた。</li>
+              <li>家・工房の多くは日干しレンガで、石造墓ほど残らない。</li>
+              <li>
+                労働者都市には厨房、パン工房、倉庫、行政区、職人区があった。
+              </li>
+              <li>貨幣ではなく食料・衣料などの配給で労働組織を維持した。</li>
+            </ul>
+          </article>
+          <article class="card wide">
+            <h3>時間の距離</h3>
+            <div class="fact-grid">
+              <div class="fact">
+                <strong>縄文時代</strong
+                ><span>大ピラミッド建設時の日本列島</span>
+              </div>
+              <div class="fact">
+                <strong>約1200年後</strong><span>ツタンカーメンの時代</span>
+              </div>
+              <div class="fact">
+                <strong>約2500年後</strong><span>クレオパトラ7世の時代</span>
+              </div>
+              <div class="fact">
+                <strong>約4500年前</strong><span>現代から見た建設時期</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="kings">
+        <div class="section-head">
+          <div class="section-kicker">04 / KINGS & PYRAMIDS</div>
+          <h2>クフ以外の王と、それぞれの特徴</h2>
+          <p class="section-intro">
+            <span class="added">補足</span>
+            エジプトには王・王妃のものを合わせて100基以上のピラミッドが知られる。有名なのはその一部で、形も材料も時代ごとに変わる。
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="event">
+            <time>第3王朝・前27世紀</time>
+            <h3>ジェセル王 — 階段ピラミッド</h3>
+            <p>
+              サッカラ。六段のマスタバを積み上げた最初のピラミッドで、大規模切石建築の画期。設計者としてイムホテプが知られる。
+            </p>
+          </article>
+          <article class="event">
+            <time>第4王朝初代</time>
+            <h3>スネフェル王 — 試行錯誤を一代で進めた王</h3>
+            <p>
+              メイドゥム、屈折、赤の三大ピラミッド事業。屈折ピラミッドでは途中で角度を緩め、赤いピラミッドで真正ピラミッドを安定して完成させた。クフの父。
+            </p>
+          </article>
+          <article class="event">
+            <time>第4王朝</time>
+            <h3>クフ王 — 規模と内部構成の頂点</h3>
+            <p>
+              ギザ第1ピラミッド。高さ約146.5m。石積み内部の高所に部屋を置き、大回廊と花崗岩の王の間を実現した。
+            </p>
+          </article>
+          <article class="event">
+            <time>クフの後継</time>
+            <h3>ジェドエフラー王 — ギザを離れた後継者</h3>
+            <p>
+              アブ・ロアシュにピラミッドを建設。かつての「簒奪者」像を裏付ける証拠は乏しく、クフの船坑封鎖にも関与した可能性がある。
+            </p>
+          </article>
+          <article class="event">
+            <time>第4王朝</time>
+            <h3>カフラー王 — スフィンクスと神殿景観</h3>
+            <p>
+              ギザ第2ピラミッド。クフより低いが高い地盤に立つため大きく見え、頂上付近に白い外装が残る。大スフィンクスは一般にこの複合体と結び付けられる。
+            </p>
+            <p>
+              <span class="added">補足</span>
+              大スフィンクスは岩盤を彫り残した像で、全長約73m、高さ約20m。顔をカフラー王とみる説が有力だが、名を刻んだ同時代の碑文はない。
+            </p>
+          </article>
+          <article class="event">
+            <time>第4王朝</time>
+            <h3>メンカウラー王 — 小型化と花崗岩外装</h3>
+            <p>
+              ギザ第3ピラミッド。約65m。下部に遠方アスワン産花崗岩を使用。死去時に未完成で、研磨前の外装や日干しレンガで急いだ神殿仕上げが残る。
+            </p>
+          </article>
+          <article class="event">
+            <time>第5王朝末</time>
+            <h3>ウナス王 — 石の量から「言葉」へ</h3>
+            <p>
+              約43mと小型だが、埋葬室に現存最古のピラミッド・テキストを刻む。王を復活させ天空へ導く呪文が、後代の王墓へ継承された。
+            </p>
+          </article>
+          <article class="event">
+            <time>中王国・第12王朝</time>
+            <h3>センウセレト3世ら — ピラミッドの復活</h3>
+            <p>
+              日干しレンガ芯と石灰岩外装を用いる例が多い。外装剥奪後に芯が侵食し、現在は丘に見えるものもある。
+            </p>
+          </article>
+          <article class="event">
+            <time>新王国・前16～11世紀</time>
+            <h3>ツタンカーメンら — 王家の谷へ</h3>
+            <p>
+              クフより約1200年後。墓を岩山内に隠し、葬祭殿を分離した。ツタンカーメンの黄金品や『死者の書』の後世像をクフ時代へ混ぜない。
+            </p>
+          </article>
+          <article class="event">
+            <time>前1千年紀以降</time>
+            <h3>クシュ王国 — ヌビア独自のピラミッド</h3>
+            <p>
+              現在のスーダン北部で、小型・急傾斜の王族墓が多数築かれた。エジプトとの交流を受けつつ、独自の礼拝堂と埋葬文化を発達させた。
+            </p>
+          </article>
+        </div>
+
+        <h3>数字で並べる <span class="added">補足</span></h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>王</th>
+                <th>時代</th>
+                <th>場所</th>
+                <th>当初の高さ</th>
+                <th>底辺</th>
+                <th>ひとことで</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ジェセル</td><td>第3王朝</td><td>サッカラ</td><td>約62m</td><td>約121×109m</td><td>最初のピラミッド。6段</td></tr>
+              <tr><td>スネフェル（屈折）</td><td>第4王朝</td><td>ダハシュール</td><td>約105m</td><td>約189m</td><td>途中で角度を約54度から約43度へ緩める</td></tr>
+              <tr><td>スネフェル（赤）</td><td>第4王朝</td><td>ダハシュール</td><td>約104m</td><td>約220m</td><td>最初の本格的な真正ピラミッド</td></tr>
+              <tr><td>クフ</td><td>第4王朝</td><td>ギザ</td><td>約146.5m</td><td>約230.3m</td><td>最大。部屋を石積みの中へ持ち上げた</td></tr>
+              <tr><td>カフラー</td><td>第4王朝</td><td>ギザ</td><td>約143.5m</td><td>約215m</td><td>高い地盤で一番大きく見える。頂上に外装が残る</td></tr>
+              <tr><td>メンカウラー</td><td>第4王朝</td><td>ギザ</td><td>約65m</td><td>約103m</td><td>下部に花崗岩の外装</td></tr>
+              <tr><td>ウナス</td><td>第5王朝</td><td>サッカラ</td><td>約43m</td><td>約58m</td><td>ピラミッド・テキストの始まり</td></tr>
+              <tr><td>ツタンカーメン</td><td>新王国</td><td>王家の谷</td><td>—</td><td>—</td><td>ピラミッドなし。岩をくり抜いた墓KV62</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="section-intro" style="margin-top: 10px">
+          数字は概数。測量や資料によって数mの差がある。動画では「約」を付ける。
+        </p>
+
+        <div class="grid" style="margin-top: 16px">
+          <article class="card wide">
+            <h3>名前が2通りある <span class="added">補足</span></h3>
+            <p>
+              本や海外資料では、ギリシア語由来の名前で書かれることがある。クフ＝ケオプス、カフラー＝ケフレン、メンカウラー＝ミケリノス。英語ではKhufu、Khafre（Khafra）、Menkaure。調べ物で別名が出てきても同じ王。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="khufu">
+        <div class="section-head">
+          <div class="section-kicker">05 / WHAT MAKES KHUFU UNIQUE</div>
+          <h2>とりわけクフの何が特別か</h2>
+        </div>
+        <div class="card wide">
+          <div class="fact-grid">
+            <div class="fact">
+              <strong>146.5m</strong><span>当初の高さ</span>
+            </div>
+            <div class="fact"><strong>230.3m</strong><span>底辺一辺</span></div>
+            <div class="fact">
+              <strong>約260万m³</strong><span>推定体積</span>
+            </div>
+            <div class="fact">
+              <strong>約138.5m</strong><span>現在の高さ（頂部と外装を失った）</span>
+            </div>
+            <div class="fact">
+              <strong>約230万個</strong><span>石材の推定数（平均約2.5t）</span>
+            </div>
+            <div class="fact">
+              <strong>約4分角</strong><span>東西南北からのずれ（0.07度ほど）</span>
+            </div>
+            <div class="fact">
+              <strong>約3800年間</strong><span>世界で最も高い人工建造物だったとされる（通説）</span>
+            </div>
+            <div class="fact">
+              <strong>最後の1基</strong><span>現存する古代七不思議</span>
+            </div>
+          </div>
+          <p class="section-intro" style="margin-top: 12px">
+            <span class="added">補足</span>
+            石材の数と重さは体積からの推定値。方位のずれはAERAの基壇測量による。「約3800年間最も高い」は14世紀にリンカーン大聖堂の尖塔に抜かれたとする通説で、比べ方によって変わる。
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>1　部屋を石の山の中へ持ち上げた</h3>
+            <p>
+              地下室に加え、石積み内部の高い位置に王妃の間と王の間を持つ。これが上昇通路、大回廊、巨大花崗岩梁、五層の荷重処理を必要にした。他のピラミッドにはない構成。
+            </p>
+          </article>
+          <article class="card">
+            <h3>2　大回廊</h3>
+            <p>
+              長さ約46～47m、高さ約8.5m。七段の持送りで壁が内側へせり出す。同規模の上昇空間は他王のピラミッドにない。儀礼動線と施工設備を兼ねた可能性もある。
+            </p>
+          </article>
+          <article class="card">
+            <h3>3　四本の細いシャフト</h3>
+            <p>
+              王の間の二本は外面へ、王妃の間の二本は途中まで。単なる換気孔では説明しきれず、施工、通気、星・王の魂の象徴経路などが議論される。
+            </p>
+          </article>
+          <article class="card">
+            <h3>4　王の間上部の五空間</h3>
+            <p>
+              平らな花崗岩梁を五層重ね、最上部の切妻石で荷重を左右へ逃がす。内部の赤い工事標識には作業班名とクフ王名がある。
+            </p>
+          </article>
+          <article class="card">
+            <h3>5　精度と巨大さが同居</h3>
+            <p>
+              ほぼ正方形で四辺は方位に精密に対応。ただし全ての芯材が精密接合なのではなく、外装・基準面・重要室に高精度を集中した合理的な工学。
+            </p>
+          </article>
+          <article class="card">
+            <h3>6　王本人の像がほとんどない</h3>
+            <p>
+              巨大な墓と対照的に、有名な確実な全身像は約7.5cmの象牙小像。像を作らなかった証拠ではなく、谷の神殿や装飾の残存率が低いことに注意。
+            </p>
+          </article>
+          <article class="card wide">
+            <h3>クフの王家</h3>
+            <p>
+              <strong>父：</strong
+              >スネフェル。<strong>母：</strong>ヘテプヘレス1世。金貼り家具を含む副葬品がギザG7000Xから出土した。<strong>後継：</strong>ジェドエフラー、のちにカフラー。王子カワブ、王女ヘテプヘレス2世など多数の王族が東墓地・西墓地と関係する。
+            </p>
+            <p>
+              系譜は墓の位置、称号、碑文から復元され、婚姻・母子関係が未確定な人物も多い。一本の確定家系図として断言しない。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="builders">
+        <div class="section-head">
+          <div class="section-kicker">06 / BUILDERS & CONSTRUCTION</div>
+          <h2>誰が、どう造ったのか</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>奴隷説を修正する</h3>
+            <p>
+              ギザで確認されるのは、王権が組織したエジプト人の専門家、職人、監督、船員、支援スタッフ、交代制労働班。ヘイト・エル＝グラブには7ha超の計画都市、厨房、パン工房、倉庫、行政建物がある。
+            </p>
+            <p>
+              ただし全員が現代的な自由雇用だったとも断定せず、徴発・義務労働を含む国家動員として捉える。
+            </p>
+          </article>
+          <article class="card">
+            <h3>メレルの日誌</h3>
+            <p>
+              ワディ・エル＝ジャルフで発見された現存最古級の文字入りパピルス。監督官メレルの班が、トゥーラの白色石灰岩を船で「アケト・クフ」へ運んだ日程を記す。
+            </p>
+            <p>
+              積み方の設計図ではないが、クフ治世の建設地、班組織、外装材、水運を同時代に結び付ける直接記録。
+            </p>
+          </article>
+          <article class="card wide">
+            <h3>工程別に見る証拠</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>工程</th>
+                    <th>分かっていること</th>
+                    <th>残る問題</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>測量</td>
+                    <td>基壇、方位、傾斜を高精度で維持</td>
+                    <td>太陽・星・水準をどう組み合わせたか</td>
+                  </tr>
+                  <tr>
+                    <td>採石</td>
+                    <td>芯材は現地、外装はトゥーラ、花崗岩はアスワン</td>
+                    <td>工程ごとの生産量と品質管理</td>
+                  </tr>
+                  <tr>
+                    <td>水運</td>
+                    <td>メレルの日誌、クフ支流、港湾景観</td>
+                    <td>季節ごとの航路・荷揚げ細部</td>
+                  </tr>
+                  <tr>
+                    <td>陸運</td>
+                    <td>木製そり、縄、湿らせた砂の物理的有効性</td>
+                    <td>全ての石で同じ方法を使ったか</td>
+                  </tr>
+                  <tr>
+                    <td>上昇</td>
+                    <td>傾斜路技術と梃子穴の存在</td>
+                    <td>全高までのランプ形状、巨大梁の上げ方</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article class="card wide">
+            <h3>確度を混ぜない</h3>
+            <p>
+              <span class="status confirmed">確認済み</span>
+              近隣採石、トゥーラ石の水運、そり、梃子、班組織。
+            </p>
+            <p>
+              <span class="status likely">有力</span>
+              工程別に複数型のランプと梃子を組み合わせた。
+            </p>
+            <p>
+              <span class="status hypothesis">仮説</span>
+              内部螺旋ランプ、大回廊カウンターウェイト、2025年提案の多段滑走路・重りシステム。
+            </p>
+            <p>
+              <span class="status myth">根拠なし</span>
+              宇宙人、反重力、失われた超文明だけで説明する説。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="interior">
+        <div class="section-head">
+          <div class="section-kicker">07 / INTERIOR & NEW DISCOVERIES</div>
+          <h2>内部を歩き、最新発見を正しく見る</h2>
+        </div>
+        <div class="card wide">
+          <div class="route">
+            <div class="route-item">下降・上昇通路</div>
+            <div class="route-item">王妃の間</div>
+            <div class="route-item">大回廊</div>
+            <div class="route-item">王の間</div>
+          </div>
+          <div class="grid" style="margin-top: 24px">
+            <div class="card">
+              <h3>王妃の間</h3>
+              <p>
+                名称は近代の通称。王妃埋葬の証拠はなく用途不明。東壁の高い壁龕と、外まで貫通しない二本の細いシャフトが特徴。
+              </p>
+            </div>
+            <div class="card">
+              <h3>王の間</h3>
+              <p>
+                赤いアスワン花崗岩、約10.5×5.2m、高さ約5.8m。蓋のない石棺が残るが、クフの遺体・副葬品は未発見。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid" style="margin-top: 16px">
+          <article class="card third">
+            <h3>2017<br />Big Void</h3>
+            <p>
+              大回廊上方。最小長30m。三方式のミューオン検出で確認。形、用途、中身は未確定。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>2023<br />北面回廊</h3>
+            <p>
+              本来の入口上方。約9×2×2m。ミューオン、超音波、レーダー、内視鏡で確認。Big
+              Voidとは別。
+            </p>
+          </article>
+          <article class="card third">
+            <h3>2025<br />メンカウラー</h3>
+            <p>
+              東面に二つの浅い空気領域。第二入口の可能性はあるが、通路・入口そのものは未確認。
+            </p>
+          </article>
+          <article class="card wide">
+            <div class="note">
+              <strong>2026年9月時点：</strong>クフのBig
+              Voidの用途には査読研究上の決着がない。「地下巨大都市」「地下2kmの柱群」「第二のスフィンクス」などのSNS画像は、確認された考古学的発見として扱わない。
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="after">
+        <div class="section-head">
+          <div class="section-kicker">08 / AFTERLIFE & LEGACY</div>
+          <h2>墓であり、それ以上のもの</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>複合体全体が装置</h3>
+            <p>
+              谷の神殿、参道、葬祭殿、王のピラミッド、王妃ピラミッド、船坑、王族・高官墓地が東西軸で結び付く。埋葬後も神官が供物と儀礼を続ける。
+            </p>
+          </article>
+          <article class="card">
+            <h3>カー、バー、アク</h3>
+            <p>
+              人は身体、名前、心、影、生命力カー、個性と移動性を示すバーなどから成り、死後に再統合して有効な霊アクとなることが理想。保存された身体、像、名前、供物が存在継続を助ける。
+            </p>
+          </article>
+          <article class="card">
+            <h3>太陽の船</h3>
+            <p>
+              大ピラミッド南側船坑から全長約43mの解体船が出土。実用葬送船、生前の儀礼船、太陽神と航行する象徴船などの説があり、用途は一つに確定しない。
+            </p>
+            <p>
+              <span class="added">補足</span>
+              1954年に発見され、組み立て直して長くピラミッド脇の博物館で展示された。2021年に大エジプト博物館（GEM）へ移送。隣の船坑にあった2隻目は保存状態が悪く、日本の調査隊と国際協力機構（JICA）の協力で取り出しと修復が進み、GEMで公開しながら組み立てている。
+            </p>
+          </article>
+          <article class="card">
+            <h3>なぜ四角錐なのか <span class="added">補足</span></h3>
+            <p>
+              太陽信仰と結び付ける説明が有力。世界の始まりに現れた原初の丘を表す「ベンベン石」、雲間から地上へ差す太陽光線、王が天へ昇る坂などの象徴が重ねられた。ただし古王国の人が「だから四角錐にした」と書いた文書はなく、解釈の段階にとどまる。
+            </p>
+            <p><span class="status likely">有力な解釈</span></p>
+          </article>
+          <article class="card">
+            <h3>なぜ墓と言えるのか</h3>
+            <p>
+              クフの遺体がない一事ではなく、王名、石棺、同時代日誌、王家墓地、葬祭殿、谷の神殿、船坑、前後の王墓伝統が一体でつながるため。単なる遺体容器ではなく、王の再生と国家統合の装置でもある。
+            </p>
+          </article>
+          <article class="card wide">
+            <h3>ピラミッドはなぜ終わったのか</h3>
+            <p>
+              小型化は即座の技術喪失ではない。後代は神殿装飾、祭祀、碑文へ重点を移し、中王国では材料構成を変えて復活した。新王国では盗掘経験、テーベの地形、新しい葬祭思想から王家の谷の地下墓へ移行した。谷を囲む自然のピラミッド形の峰は、なお再生の象徴だった。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="check">
+        <div class="section-head">
+          <div class="section-kicker">09 / VR CHECKLIST</div>
+          <h2>体験中に見るもの</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <ul class="checklist">
+              <li>現在の茶色い段に、白い完成外装を重ねる。</li>
+              <li>入口が北面、通路が約26度で上下する感覚を覚える。</li>
+              <li>王妃の間の東壁の高い壁龕を見る。</li>
+              <li>大回廊の持送り、中央溝、両側ベンチを見る。</li>
+              <li>狭い通路から巨大空間へ開く身体感覚を味わう。</li>
+              <li>王の間の赤い花崗岩と蓋のない石棺を見る。</li>
+            </ul>
+          </article>
+          <article class="card">
+            <ul class="checklist">
+              <li>王の間のシャフトを単なる換気孔と思い込まない。</li>
+              <li>重力軽減空間とBig Voidを混同しない。</li>
+              <li>頂上から三大ピラミッド、地盤差、マスタバ群を見る。</li>
+              <li>ナイル場面で港と全国物流を想像する。</li>
+              <li>葬儀場面を研究に基づく再構成として見る。</li>
+              <li>労働者を班名・配給・町を持つ人々として想像する。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="sources">
+        <div class="section-head">
+          <div class="section-kicker">10 / SOURCES</div>
+          <h2>主要出典</h2>
+          <p class="section-intro">
+            公的機関、大学・発掘機関、査読論文を優先。一般記事やSNSは新発見の入口にのみ使用した。
+          </p>
+        </div>
+        <details open>
+          <summary>VR公式・会場</summary>
+          <div class="sources">
+            <a href="https://immersivejourney.jp/khufu.html"
+              >IMMERSIVE JOURNEY — Horizon of Khufu</a
+            >
+            <a href="https://www.excurio.com/en/horizon-of-khufu/"
+              >Excurio — Horizon of Khufu</a
+            >
+            <a href="https://skyle.jp/informations/4085.html"
+              >SKYLE — 名古屋会場案内</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary>エジプト政府・博物館</summary>
+          <div class="sources">
+            <a
+              href="https://egymonuments.gov.eg/historical-periods/old-kingdom/"
+              >Egyptian Ministry — Old Kingdom</a
+            >
+            <a
+              href="https://egymonuments.gov.eg/monuments/the-step-pyramid-complex-of-djoser/"
+              >Djoser Step Pyramid</a
+            >
+            <a href="https://egymonuments.gov.eg/en/monuments/the-bent-pyramid/"
+              >Bent Pyramid</a
+            >
+            <a href="https://egymonuments.gov.eg/monuments/the-great-pyramid/"
+              >The Great Pyramid</a
+            >
+            <a
+              href="https://egymonuments.gov.eg/archaeological-sites/giza-plateau/"
+              >Giza Plateau</a
+            >
+            <a
+              href="https://egymonuments.gov.eg/monuments/pyramid-complex-of-menkaure/"
+              >Menkaure Pyramid Complex</a
+            >
+            <a
+              href="https://egymonuments.gov.eg/archaeological-sites/valley-of-the-kings"
+              >Valley of the Kings</a
+            >
+            <a href="https://egymonuments.gov.eg/monuments/tomb-of-tutankhamun/"
+              >Tomb of Tutankhamun</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary>大学・発掘機関</summary>
+          <div class="sources">
+            <a href="https://giza.fas.harvard.edu/">Harvard Digital Giza</a>
+            <a href="https://giza.fas.harvard.edu/faq/">Digital Giza FAQ</a>
+            <a href="https://aeraweb.org/projects/lost-city/"
+              >AERA — Lost City of the Pyramid Builders</a
+            >
+            <a href="https://aeraweb.org/feeding-pyramid-workers/"
+              >AERA — Feeding Pyramid Workers</a
+            >
+            <a
+              href="https://aeraweb.org/wp-content/uploads/2022/08/aeragram16_2.pdf"
+              >AERA — Great Pyramid Footprint Survey</a
+            >
+            <a
+              href="https://www.ifao.egnet.net/recherche/archeologie/ouadi-el-jarf/"
+              >IFAO — Wadi el-Jarf / Diary of Merer</a
+            >
+            <a
+              href="https://www.metmuseum.org/essays/egypt-in-the-old-kingdom-ca-2649-2150-b-c"
+              >Metropolitan Museum — Egypt in the Old Kingdom</a
+            >
+            <a
+              href="https://www.metmuseum.org/essays/egypt-in-the-middle-kingdom-2030-1640-b-c"
+              >Metropolitan Museum — Egypt in the Middle Kingdom</a
+            >
+          </div>
+        </details>
+        <details>
+          <summary>査読論文・最新調査</summary>
+          <div class="sources">
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9477388/"
+              >PNAS 2022 — Nile waterscapes and the Khufu branch</a
+            >
+            <a href="https://www.nature.com/articles/nature24647"
+              >Nature 2017 — ScanPyramids Big Void</a
+            >
+            <a href="https://www.nature.com/articles/s41467-023-36351-0"
+              >Nature Communications 2023 — North Face Corridor</a
+            >
+            <a href="https://doi.org/10.1016/j.ndteint.2025.103331"
+              >NDT &amp; E International 2025 — Menkaure anomalies</a
+            >
+            <a href="https://www.smithsonianmag.com/smart-news/egypts-ancient-king-khufus-boat-moved-pyramids-giza-new-grand-egyptian-museum-180978413/"
+              >Smithsonian 2021 — Khufu boat moved to the GEM</a
+            >
+            <a href="https://www.thenationalnews.com/news/mena/2025/12/23/restoration-of-second-king-khufu-boat-under-way-at-grand-egyptian-museum/"
+              >The National 2025 — Second Khufu boat restoration at the GEM</a
+            >
+            <a href="https://www.nature.com/articles/s40494-025-02018-w"
+              >npj Heritage Science 2025 — Counterweight construction
+              hypothesis</a
+            >
+          </div>
+        </details>
+      </section>
+
+      <footer class="footer">
+        <p>
+          調査基準日：2026年9月25日。歴史年代には編年差がある。空間の「検出」と用途の「解釈」を分け、最新発見は査読論文または研究機関発表まで遡った。
+        </p>
+        <p>
+          <strong>2026-09-25 補足：</strong>
+          「9点」の見出し修正、VRの出演者と作品名の由来、王ごとの数値比較表、別名、スフィンクスの寸法、クフの現在の高さ・石材数・方位の精度、太陽の船の現在（GEMと2隻目）、四角錐の意味、OSのダークモード対応を追加した。<span class="added">補足</span> の印が付いた箇所が追記部分。
+        </p>
+        <p>
+          元の章別調査メモ：<code>src/Pyramid/research/00_vr-event.md</code> ～
+          <code>11_khufu-unique.md</code>
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const button = document.getElementById("themeButton");
+        let saved = null;
+        try {
+          saved = localStorage.getItem("pyramid-research-theme");
+        } catch (e) {}
+        if (saved === "dark" || saved === "light") root.dataset.theme = saved;
+        button.addEventListener("click", () => {
+          const current =
+            root.dataset.theme ||
+            (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          const dark = current !== "dark";
+          root.dataset.theme = dark ? "dark" : "light";
+          try {
+            localStorage.setItem("pyramid-research-theme", dark ? "dark" : "light");
+          } catch (e) {}
+        });
+      })();
+    </script>
+  </body>
+</html>

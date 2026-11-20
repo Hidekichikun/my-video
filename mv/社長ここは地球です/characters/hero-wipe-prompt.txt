@@ -1,0 +1,6 @@
+【フキフキ用スプライト（4コマ横並び）】参考画像に characters/hero.png を一緒に渡す
+pixel art sprite sheet, 4 animation frames in a single horizontal row, the exact same character in every frame, a young Japanese woman factory worker, messy short black hair with an orange streak, yellow safety helmet with band stickers, navy work coveralls with rolled sleeves, studded wristband, side view facing right, standing and wiping a surface in front of her with a light blue cleaning rag held in her right hand, frame 1 arm stretched up-right, frame 2 arm moved to the right, frame 3 arm moved down-right, frame 4 arm pulled back, other hand on her hip, tired deadpan face, full body, evenly spaced, same size and same feet position in every frame, solid flat green background, 16-bit pixel art, SNES-era 1990s arcade fighting game sprite style, strictly 2D, flat shading with only 2-3 tones per color, limited color palette, crisp hard pixel edges, no anti-aliasing, no gradients, no 3D rendering, no realistic lighting, dark outlines, no text
+
+【4コマでうまくいかないとき：2コマ版】
+（上の文の「4 animation frames」を「2 animation frames」にして、frame 1〜4 の部分を次に差し替え）
+frame 1 rag held high, frame 2 rag pushed forward and low

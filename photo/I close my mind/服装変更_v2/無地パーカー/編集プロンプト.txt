@@ -1,0 +1,3 @@
+Tool: built-in image_gen
+Use case: precise-object-edit. Make ONE tiny localized edit to the supplied image: erase the small solid pink circular dot on the hoodie chest and fill ONLY that tiny circle with matching plain cream fabric, continuing surrounding cloth shading and stage light naturally. The hoodie must be completely plain with no emblem, dot, text, or logo. Keep ALL other areas exactly unchanged: girl's face, expression, hair, headphones, microphone, fingers, body pose, hoodie folds/strings, gray/navy checked knee-length skirt with thin pink lines, tights, boots, stage, lights, background, linework, colors, texture and framing. Do not redraw or reinterpret. Output exactly 1675x939 pixels.
+Portrait: same prompt with output dimensions 941x1672.

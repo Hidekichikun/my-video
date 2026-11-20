@@ -1,0 +1,83 @@
+{
+ "title": "Forward Glow",
+ "audio": "music/mastered/Forward Glow (master).wav",
+ "jacket": "music/jacket/ForwardGlow_jacket_illust.png",
+ "start": 33.3,
+ "lyrics_end": 22.1,
+ "lyrics": [
+  [
+   33.7,
+   "前に 攻め 跳ねて 進め 上げて 出でて"
+  ],
+  [
+   37.6,
+   "繰り返すのみ"
+  ],
+  [
+   39.6,
+   "越えて 詰めて 乗って 攻めて 晴れた 空を"
+  ],
+  [
+   43.1,
+   "迷いなんて"
+  ],
+  [
+   44.8,
+   "跳ねて 越えて キモチ たかめ 攻め つづけ"
+  ],
+  [
+   48.2,
+   "小さな一歩で"
+  ],
+  [
+   50.0,
+   "詰めて ぎゅっと 攻めて 前へ"
+  ],
+  [
+   52.5,
+   "かぜに 乗るよ"
+  ],
+  [
+   53.6,
+   "グッと押し出していけ"
+  ]
+ ],
+ "shots": [
+  [
+   0,
+   "build/public/forward-glow-chara-1.png",
+   0.5,
+   0.45,
+   1,
+   0.88
+  ],
+  [
+   6.3,
+   "build/public/forward-glow-chara-2.png",
+   0.5,
+   0.5,
+   1,
+   0.9
+  ],
+  [
+   11.5,
+   "build/public/forward-glow-chara-3.png",
+   0.5,
+   0.5,
+   1,
+   0.9
+  ],
+  [
+   16.7,
+   "build/public/forward-glow-chara-4.png",
+   0.5,
+   0.45,
+   1,
+   0.86
+  ]
+ ],
+ "end1": "2026.10.30",
+ "end2": "配信スタート",
+ "out": "forward-glow/ForwardGlow_short01_sabi_chara.mp4",
+ "top_shade": 0.8
+}

@@ -1,0 +1,37 @@
+{
+ "title": "So stupid, but so good.",
+ "audio": "music/So stupid, but so good..mp3",
+ "image": "photo/So stupid, but so good/オラオラ娘.png",
+ "bpm": 112.347,
+ "start": 35.5885,
+ "beats": 80.75,
+ "fadein": 3.6,
+ "hit": 8,
+ "shots": [
+  [
+   0,
+   0.4,
+   0.33,
+   0.62,
+   0.42,
+   "photo/So stupid, but so good/グーパン.png"
+  ],
+  [
+   24,
+   0.45,
+   0.3,
+   0.66,
+   0.5,
+   "photo/So stupid, but so good/上目遣い.png"
+  ],
+  [
+   56,
+   0.5,
+   0.5,
+   1.0,
+   0.88,
+   "photo/So stupid, but so good/オラオラ娘.png"
+  ]
+ ],
+ "out": "so-stupid-but-so-good/SoStupidButSoGood_chorus.mp4"
+}

@@ -1,0 +1,524 @@
+{
+  "date": "2026-10-26",
+  "generator": "built-in image_gen",
+  "status": "generated source images; sprite extraction and MV assembly pending",
+  "updated": "2026-10-27",
+  "character_revision": {
+    "character": "ojisan",
+    "design": "細身・短髪・サル顔（丸い寄り目・張り出した耳・長い上くちびる）、白ヘルメット前面の丸いライト",
+    "updated_assets": 25,
+    "backup": "backup/before-slim-monkey-revision/"
+  },
+  "characters": [
+    {
+      "file": "characters/keitora.png",
+      "prompt": "characters/keitora-prompt.txt",
+      "label": "軽トラ・横と後ろの設定画",
+      "width": 2172,
+      "height": 724,
+      "sha256": "3e7bd54480d17ab4ffa8107091fb9e62a173d40bda451afa6df5f3be594987f5"
+    },
+    {
+      "file": "characters/ojisan.png",
+      "prompt": "characters/ojisan-prompt.txt",
+      "label": "おじさん・全身設定画",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3ddc26a1b66e371e784380f5e608c7b69919e1e5f808e42cc3265a334652662f",
+      "updated": "2026-10-27",
+      "reference": "../社長ここは地球です/characters/hero.png",
+      "reference_role": "pixel size and detail level only"
+    },
+    {
+      "file": "characters/race_icons.png",
+      "prompt": "characters/race_icons-prompt.txt",
+      "label": "レース用アイコン8個",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "aa1055324f1effb303e05c62e717b864bfb6a6c31a22d8b7f990c1930e0128cc"
+    }
+  ],
+  "sprites": [
+    {
+      "file": "sprites/H08_umpire_call.png",
+      "prompt": "sprites/H08_umpire_call-prompt.txt",
+      "label": "Strike one / two / three のコール",
+      "width": 1774,
+      "height": 887,
+      "sha256": "6b4c39e06ff00d624708eab45fc69036ad020f84af590ad4748ddeb7ebf5c438",
+      "frames": 2,
+      "character": "hero",
+      "reference": "../社長ここは地球です/characters/hero.png"
+    },
+    {
+      "file": "sprites/H09_head_tilt.png",
+      "prompt": "sprites/H09_head_tilt-prompt.txt",
+      "label": "サビ「首を 45°」、寸劇",
+      "width": 1774,
+      "height": 887,
+      "sha256": "357bb71c3834dc2fec263f19d5f3453a1d223abe02e79c6765c010b56f57e836",
+      "frames": 2,
+      "character": "hero",
+      "reference": "../社長ここは地球です/characters/hero.png",
+      "correction_prompt": "sprites/H09_head_tilt-correction.txt"
+    },
+    {
+      "file": "sprites/K16_hospital_bed.png",
+      "prompt": "sprites/K16_hospital_bed-prompt.txt",
+      "label": "Rap Bridge「課長が入院だって」",
+      "width": 1983,
+      "height": 793,
+      "sha256": "c265f2aff74bd2d3ea9933cf30679d372260759236840898c2f4671b586237b0",
+      "frames": 2,
+      "character": "kacho",
+      "reference": "../課長ここは会社ですよ/characters/kacho.png"
+    },
+    {
+      "file": "sprites/M06_flatter_clap.png",
+      "prompt": "sprites/M06_flatter_clap-prompt.txt",
+      "label": "「全員から ご機嫌 取られて」「さすがっすね〜」",
+      "width": 2172,
+      "height": 724,
+      "sha256": "0cd177ac343210c7a5b2da419bf54087d131206529474a1c078375e169b7fc7c",
+      "frames": 2,
+      "character": "coworkers",
+      "reference": "../ウェルカムトゥザ社畜/characters/coworkers.png"
+    },
+    {
+      "file": "sprites/M07_ukki_cheer.png",
+      "prompt": "sprites/M07_ukki_cheer-prompt.txt",
+      "label": "ウッキー！の掛け声",
+      "width": 2172,
+      "height": 724,
+      "sha256": "eddf62ec3f1edc167ed1595e83e855b8b71fcffa2fe88f327760f88649ebc042",
+      "frames": 2,
+      "character": "coworkers",
+      "reference": "../ウェルカムトゥザ社畜/characters/coworkers.png"
+    },
+    {
+      "file": "sprites/O01_idle_armcross.png",
+      "prompt": "sprites/O01_idle_armcross-prompt.txt",
+      "label": "全体（腕組みで待機）",
+      "width": 1774,
+      "height": 887,
+      "sha256": "203d2d0de3012e20a11a4f4b349905a65dc0d0fc3af062dce6f14a6062997cc0",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O02_lecture_finger.png",
+      "prompt": "sprites/O02_lecture_finger-prompt.txt",
+      "label": "Verse1「御託 並べます」「お言葉 量産中」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "e7369d84074f16796a404d61d7ce8fc607cc3d5d7bbfc9da735d47586756df2d",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O03_palm_no.png",
+      "prompt": "sprites/O03_palm_no-prompt.txt",
+      "label": "「それは違うぞ」「俺は そうは 思わない」（毎回の Strike）",
+      "width": 1774,
+      "height": 887,
+      "sha256": "edae46a50f3dae6939fe9f46a8ba4889afdd25c6d79ddd8e70a32919c859b974",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O04_glare_lines.png",
+      "prompt": "sprites/O04_glare_lines-prompt.txt",
+      "label": "「眉間に 三本線」「ダメだと見捨てる」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "7e656a310a8f2ac37c91fe9c9b28d78194554c3425e70f91f76651dc4141a189",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O05_monkey_grin.png",
+      "prompt": "sprites/O05_monkey_grin-prompt.txt",
+      "label": "ウッキー！のたび、「お猿の笑顔」「ヘルメット ピカーッ」",
+      "width": 2172,
+      "height": 724,
+      "sha256": "79e8deb135ab8adaa6f80a7e9ac6b0ddb2df01994f49a02624153b131a4da3cc",
+      "updated": "2026-10-27",
+      "frames": 3,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O06_bow_yes.png",
+      "prompt": "sprites/O06_bow_yes-prompt.txt",
+      "label": "サビ「よそでは おっしゃる通りです」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "fd7dd4c09bfea8b2e947aa7482adc9a530c3a3fca1ccf7ed2f2e689b24d35990",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O07_angry_point.png",
+      "prompt": "sprites/O07_angry_point-prompt.txt",
+      "label": "サビ「なんだ その 態度は！」、「報連相が 足りないぞ！」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "5c15abd731c26f90f487987efc0ba2d01ad4b0421a023ae7fe4beced45cae28b",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O08_chair_check.png",
+      "prompt": "sprites/O08_chair_check-prompt.txt",
+      "label": "Rap Bridge「着席」「高さ調整」「肘掛け撫でて」、寸劇",
+      "width": 2172,
+      "height": 724,
+      "sha256": "d9ac144e2b587b4c9f1a057d8e840019e57e4ea8a870da2bd0599f19d4d9c728",
+      "updated": "2026-10-27",
+      "frames": 3,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O09_whiteboard.png",
+      "prompt": "sprites/O09_whiteboard-prompt.txt",
+      "label": "Verse2b「ホワイトボードで会話」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "d38126cdc4c81e9d169703cda4b13bbaa69de01b5638bb43fe12361dc461a099",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O10_doya.png",
+      "prompt": "sprites/O10_doya-prompt.txt",
+      "label": "「俺が改革した」、Outro「ドヤ顔キメて」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "891079e554c666a164e484525f40ed2d00c7b8d7504f2975d76b6cc0f5615ac6",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O11_scold_down.png",
+      "prompt": "sprites/O11_scold_down-prompt.txt",
+      "label": "サビ2「若手に ダメ出し 百連発」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "1a5dbaeca15931de10480b08cd1c55f32133459c8cd81e58924c07f7bdbc5769",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O12_spine_straight.png",
+      "prompt": "sprites/O12_spine_straight-prompt.txt",
+      "label": "Verse4「パワハラって聞いた瞬間 背筋ピン」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "70f0bd253b00e031fe83661b1a80ba07fc0d87b8ea0d0699fff1a0bd7c7d92d4",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O13_old_days.png",
+      "prompt": "sprites/O13_old_days-prompt.txt",
+      "label": "「昔は もっと 大変だった」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "76034c3e3a3ab04fdb3336b3141d82bb3e42e47fd8d33362489b6209d5e658db",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O14_swing_miss.png",
+      "prompt": "sprites/O14_swing_miss-prompt.txt",
+      "label": "Outro「三振です。」",
+      "width": 2172,
+      "height": 724,
+      "sha256": "f7aa0cb96195f5e1bd0bfdf8f2dd30487f84003375211865017b646e14aeda29",
+      "updated": "2026-10-27",
+      "frames": 3,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O15_toneup_greet.png",
+      "prompt": "sprites/O15_toneup_greet-prompt.txt",
+      "label": "Verse4「部長が来たら」「社長が来たら」、寸劇",
+      "width": 1774,
+      "height": 887,
+      "sha256": "af624b63689b606dca775e2d1b873f567b766c89addccdc5752ac03e99e07a1c",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/O16_gossip.png",
+      "prompt": "sprites/O16_gossip-prompt.txt",
+      "label": "Verse4「あいつは口が軽いからな」",
+      "width": 1774,
+      "height": 887,
+      "sha256": "2ff4f67e2ad0a67843f5b1d6bc8763c45f8da03117e6868a551264c08cf48eb5",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "ojisan",
+      "reference": "characters/ojisan.png"
+    },
+    {
+      "file": "sprites/V01_truck_rear_drive.png",
+      "prompt": "sprites/V01_truck_rear_drive-prompt.txt",
+      "label": "レース画面（後ろから）",
+      "width": 2172,
+      "height": 724,
+      "sha256": "e6e9d4e602102daab5793a2202eaa977abfa1b39aafbd381d679635365349062",
+      "updated": "2026-10-27",
+      "frames": 3,
+      "character": "keitora+ojisan",
+      "reference": [
+        "characters/keitora.png",
+        "characters/ojisan.png"
+      ]
+    },
+    {
+      "file": "sprites/V02_truck_side_drive.png",
+      "prompt": "sprites/V02_truck_side_drive-prompt.txt",
+      "label": "場面転換・横から爆走",
+      "width": 2172,
+      "height": 724,
+      "sha256": "0c0f852ff1eae93034590faa57d4cf8843d93401e7195c56abec9e888f8dabcd",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "keitora+ojisan",
+      "reference": [
+        "characters/keitora.png",
+        "characters/ojisan.png"
+      ]
+    },
+    {
+      "file": "sprites/V03_truck_arrive.png",
+      "prompt": "sprites/V03_truck_arrive-prompt.txt",
+      "label": "Verse1「軽トラから 現れた」、エンディング",
+      "width": 2172,
+      "height": 724,
+      "sha256": "79f92c36215117bb485d5ed63b986111334e589fb072e110d6b7dd53d7530a8a",
+      "updated": "2026-10-27",
+      "frames": 3,
+      "character": "keitora+ojisan",
+      "reference": [
+        "characters/keitora.png",
+        "characters/ojisan.png"
+      ]
+    },
+    {
+      "file": "sprites/V04_mirror_closeup.png",
+      "prompt": "sprites/V04_mirror_closeup-prompt.txt",
+      "label": "ラスサビ「軽トラのミラーに 今日もいい男」",
+      "width": 2172,
+      "height": 724,
+      "sha256": "deaef319ac05399198039339ed1e5460d8e4a4cb1d7a8c55daf0d2559a5da5e9",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "keitora+ojisan",
+      "reference": [
+        "characters/keitora.png",
+        "characters/ojisan.png"
+      ]
+    },
+    {
+      "file": "sprites/V05_truck_throne.png",
+      "prompt": "sprites/V05_truck_throne-prompt.txt",
+      "label": "サビ「今日も 玉座で 無敵です！」",
+      "width": 2172,
+      "height": 724,
+      "sha256": "20f5f4e9c90859a8dfe590baf64ebea60df37f94da4f1a0f140652e7a97bbb0a",
+      "updated": "2026-10-27",
+      "frames": 2,
+      "character": "keitora+ojisan",
+      "reference": [
+        "characters/keitora.png",
+        "characters/ojisan.png"
+      ]
+    }
+  ],
+  "backgrounds": [
+    {
+      "file": "backgrounds/B1_parking_morning.png",
+      "prompt": "backgrounds/B1_parking_morning-prompt.txt",
+      "label": "朝の工場の駐車場。軽トラが入ってくる",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b52179619793e034c793f04151a1c9a18828f763fddd23120f3feb7f7315c32c",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B2_race_road.png",
+      "prompt": "backgrounds/B2_race_road-prompt.txt",
+      "label": "工場の敷地を走る道（後ろから見た疑似3D）。紙のロール・配管",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ab05583616be26b5b83041cdd4057032add6229088587139f7df8f423f80e87a",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B3_genba_office.png",
+      "prompt": "backgrounds/B3_genba_office-prompt.txt",
+      "label": "現場の詰所。ホワイトボード（白紙）",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f7bd359cde609942df6f50222484e3a7aec361ff61b25db727be2d6951f88018",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B4_throne_room.png",
+      "prompt": "backgrounds/B4_throne_room-prompt.txt",
+      "label": "お城の玉座の間。でも壁に配管と消火器",
+      "width": 1672,
+      "height": 941,
+      "sha256": "00d29a12a9f111c2bf769446fddc9267d2dd753a916ff6fd4a711e954a2ba30c",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B5_other_company.png",
+      "prompt": "backgrounds/B5_other_company-prompt.txt",
+      "label": "よその会社のきれいな応接室",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f4e4fff6bf46d7f5dff65bede5a9d5f005d4c3b8d40f9b2c3ad5623d48dd5c43",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B6_warehouse_back.png",
+      "prompt": "backgrounds/B6_warehouse_back-prompt.txt",
+      "label": "ほこりっぽい倉庫の奥。シートをかぶった謎の機械",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a76de4489347b7ab117d1bdf4d684b25dfaa32698aca016c3c95ddcdd62a95c6",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B7_pit_lane.png",
+      "prompt": "backgrounds/B7_pit_lane-prompt.txt",
+      "label": "ピット風の工場の庭。給油機・タイヤ",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8bed85d12b44b7e26848165f6f7419142a9e993a005bc0b0a2248354233df2ae",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B8_old_factory.png",
+      "prompt": "backgrounds/B8_old_factory-prompt.txt",
+      "label": "昭和の工場（編集でセピア＋「4K REMASTER」）",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2f9e0543ff2135eaba9c643ecdc01dd7a5910bbec2ec899667995e6705656cb0",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B9_hospital_room.png",
+      "prompt": "backgrounds/B9_hospital_room-prompt.txt",
+      "label": "病室（ベッドはスプライト K16）",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6211fefe8db5ecbcc430050ed4e17e1c1b0c5f9965a3229bfda6ee9f16a56b1a",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    },
+    {
+      "file": "backgrounds/B10_sunset_road.png",
+      "prompt": "backgrounds/B10_sunset_road-prompt.txt",
+      "label": "夕方の、誰もいない道（疑似3D）",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c2ac2b834c535b88518411c7a15189bb0c06cdc1843ce815c4ab46b6b12fd00a",
+      "reference": "../部長ここは地上です/backgrounds/B2_factory_floor.png",
+      "reference_role": "coarse pixel size and detail level only"
+    }
+  ],
+  "thumbnail": [
+    {
+      "file": "thumbnail/J1_jacket_square.png",
+      "prompt": "thumbnail/J1_jacket_square-prompt.txt",
+      "label": "正方形ジャケット・ミラーのいい男",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a14db1cb627ba2803ea201e4abe50bbdc9cf91c7303560c9ecd1ea96fbbd61cf",
+      "updated": "2026-10-27",
+      "reference": [
+        "../課長ここは会社ですよ/サムネ_課長ここは会社です_イラスト版.png",
+        "../社長ここは地球です/サムネ案_イラスト×ゲームUI.png",
+        "characters/ojisan.png",
+        "characters/keitora.png"
+      ],
+      "target_size": "3000x3000 (upscale in finishing stage)"
+    },
+    {
+      "file": "thumbnail/T1_thumb_hero.png",
+      "prompt": "thumbnail/T1_thumb_hero-prompt.txt",
+      "label": "サムネ第1候補・主人公の審判コール",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c26b55c1ffbb1f6a654b3fbfa00981d33f6230fde77381d34d78a4c03c34ff70",
+      "updated": "2026-10-27",
+      "reference": [
+        "../課長ここは会社ですよ/サムネ_課長ここは会社です_イラスト版.png",
+        "../社長ここは地球です/サムネ案_イラスト×ゲームUI.png",
+        "characters/ojisan.png",
+        "characters/keitora.png"
+      ],
+      "correction_prompt": "thumbnail/T1_thumb_hero-correction.txt"
+    },
+    {
+      "file": "thumbnail/T2_thumb_ojisan.png",
+      "prompt": "thumbnail/T2_thumb_ojisan-prompt.txt",
+      "label": "サムネ第2候補・軽トラの玉座",
+      "width": 1672,
+      "height": 941,
+      "sha256": "32cf0b4787305782ff3d08be3912939806ba975bc3b618ce49f5dfac2476254d",
+      "updated": "2026-10-27",
+      "reference": [
+        "../課長ここは会社ですよ/サムネ_課長ここは会社です_イラスト版.png",
+        "../社長ここは地球です/サムネ案_イラスト×ゲームUI.png",
+        "characters/ojisan.png",
+        "characters/keitora.png"
+      ]
+    }
+  ],
+  "notes": [
+    "各-prompt.txtをそのまま内蔵image_genに渡して1枚ずつ生成。H09とT1は追加プロンプトで修正。",
+    "2026-10-27: おじさんの設定画・O01〜O16・V01〜V05・サムネ/ジャケット3枚の計25枚を細身・短髪・サル顔の新設定に更新。旧版はbackup/before-slim-monkey-revision/に保存。",
+    "キャラクター・スプライトは緑背景の原画像。緑抜き・コマ切り・粒度統一は後工程。",
+    "O05は3コマ目、O10・V04・V05は2コマ目でヘルメット前面の丸いライトが発光。",
+    "背景とサムネの生成サイズは厳密な16:9からわずかに異なるため、組み立て時に調整。ジャケットは1254pxの原画で、3000px化と文字・UIの重ね合わせは制作メモどおり仕上げ工程。"
+  ]
+}

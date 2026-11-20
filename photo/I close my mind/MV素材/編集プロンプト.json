@@ -1,0 +1,90 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": {
+    "L1": "Use case: identity-preserve. Edit target: supplied anime live image. MV present-day adult young woman. Replace hoodie and skirt/tights with plain white T-shirt, open LIGHT BLUE DENIM JACKET, BLACK STRAIGHT-LEG PANTS with no rips, no chains, no prints. Remove headphones completely including headband, naturally reconstruct only hidden gray/pink hair and ears, preserve bob silhouette. Remove fang/jagged teeth: keep happy wink and smile but natural ordinary teeth. Eyes remain pink-violet, not red. Preserve exact pose, hand positions, microphone and cable, boots, camera angle, full composition, stage, instruments, pink/cyan light, linework and texture. Denim/pants folds follow crouching legs exactly. No necklace chains, no cigarette, text, logo, watermark. Same face identity, proportions, gray hair with pink inner color, adult-looking. One landscape full frame 1456x816.",
+    "L2": "Use case: identity-preserve. Edit target: supplied anime live image. MV present-day adult young woman. Replace hoodie and skirt/tights with plain white T-shirt, open LIGHT BLUE DENIM JACKET, BLACK STRAIGHT-LEG PANTS with no rips, no chains, no prints. Remove headphones completely including headband, naturally reconstruct only hidden gray/pink hair and ears, preserve bob silhouette. Remove fang/jagged teeth: keep happy wink and smile but natural ordinary teeth. Eyes remain pink-violet, not red. Preserve exact pose, hand positions, microphone and cable, boots, camera angle, full composition, stage, instruments, pink/cyan light, linework and texture. Denim/pants folds follow crouching legs exactly. No necklace chains, no cigarette, text, logo, watermark. Same face identity, proportions, gray hair with pink inner color, adult-looking. One landscape full frame 1456x816.",
+    "L3": "Use case: identity-preserve. Edit target: supplied anime live image. MV present-day adult young woman. Replace hoodie and skirt/tights with plain white T-shirt, open LIGHT BLUE DENIM JACKET, BLACK STRAIGHT-LEG PANTS with no rips, no chains, no prints. Remove headphones completely including headband, naturally reconstruct only hidden gray/pink hair and ears, preserve bob silhouette. Remove fang/jagged teeth: keep happy wink and smile but natural ordinary teeth. Eyes remain pink-violet, not red. Preserve exact pose, hand positions, microphone and cable, boots, camera angle, full composition, stage, instruments, pink/cyan light, linework and texture. Denim/pants folds follow standing legs exactly. No necklace chains, no cigarette, text, logo, watermark. Same face identity, proportions, gray hair with pink inner color, adult-looking. One landscape full frame 941x1672. Preserve original standing gesture and open-mouth singing expression, with ordinary human teeth, no fangs. Remove choker and neck chain.",
+    "N1": "Use case: identity-preserve. Image 1 is EDIT TARGET beach BBQ illustration, image 2 is character/outfit reference ONLY. Edit target clothing to plain CREAM PULLOVER HOODIE, gray/navy check KNEE-LENGTH pleated skirt with THIN pink pinstripes, keep headphones. Remove neck pendant/lanyard/chain; no symbols or dots on hoodie. Keep exact beach, ocean, sunset, BBQ grill, comically burnt meat in her hands and smoke rising from grill unchanged. Same face identity and gray/pink bob, wink, joyful laugh, pose, hands, framing, anime painted texture, linework. Make teeth ordinary natural teeth, no fangs or jagged teeth; pink-violet eye not red. Scene is a fond snapshot taken by unseen close friend, only this woman in frame, no photographer. No cigarette, text, logos or watermark. Adult-looking young woman. Landscape 1456x816.",
+    "N2": "Use case: illustration-story. Reference image is CHARACTER/ART STYLE ONLY, do not copy night scene or man. Create a new MV memory still: warm DAYTIME quiet Japanese street, drink vending machine. Same adult-looking young woman with exact gray bob and pink inner color, pink-violet eyes, headphones, same facial identity and fine anime linework/painterly color texture. Plain CREAM pullover hoodie no dot/print, gray/navy KNEE-LENGTH pleated check skirt with thin pink pinstripes, no necklace/chain. She looks down at a few coins in her open palm with an amused sheepish grin, glancing warmly toward camera as if laughing with the unseen friend taking the photo; no friend visible. Waist-to-knees medium-wide candid disposable film camera snapshot with subtly imperfect casual framing, gentle grain, warm sunlight, playful broke-but-happy atmosphere. Several clearly drawn coins in ONE open hand, natural fingers. No cigarette, fangs, red eyes, text, logos, watermark, police officer. Vending machine has generic colored drinks with no readable labels. 1456x816 landscape.",
+    "N3": "Use case: illustration-story. Reference is vertical festival scene to RECOMPOSE as WIDE landscape 1456x816. MV opening establishing background. Keep same intricate anime painted linework, huge outdoor stage scaffold/trusses, hanging speaker towers, pink/magenta LED abstract lights, warm amber spotlights and haze, violet dusk sky with pink clouds, starry upper sky. Rebuild panoramic full stage balanced across horizontal frame, frontal symmetrical composition, central microphone stand. NO PEOPLE AT ALL: empty stage and empty foreground viewing area; no crowd, no faces or silhouettes. No text, logos, watermark or lettering. Preserve reference palette and dramatic scale, fine sharp illustration texture. Leave clean dark sky space near top center for title to be added later, do not draw title.",
+    "N4": "Use case: identity-preserve. New MV scene, reference image 1 for SAME ADULT WOMAN identity and present-day outfit, reference image 2 for night city palette/art only. Quiet nighttime walk home on Japanese city street, side profile medium-wide three-quarter body framing. Same gray bob with pink inner color, pink-violet eyes, calm slightly grown-up thoughtful expression, gently looking down at smartphone held naturally in one hand, screen glow softly lights cheek. Plain white T-shirt, open light blue denim jacket, black straight-leg pants, no rips/chains, NO HEADPHONES. Cool blue/teal night with distant warm orange streetlight bokeh, restrained mood and plenty of dark negative space to side for later lyrics. Same intricate anime line art and painterly texture. No other people, no microphone, no stage, no cigarette, fangs, red eyes, jewelry chains, text, readable phone screen, logos, watermark. 1456x816 horizontal.",
+    "N5": "Use case: illustration-story. Reference is for art style and cool night palette ONLY; no girl in output. Background-only MV still: exterior entrance of a modest old Japanese public bathhouse, wooden facade, ceramic tiled lower wall, navy noren curtain parted slightly with warm orange indoor light spilling onto pavement, faint drifting steam in cold blue nighttime air, quiet residential lane. No people, no human silhouettes, no reflections of people. Intricate anime linework and painterly textures, muted blue/teal night with warm amber accents matching reference, nostalgic restrained emotional mood, medium-wide eye-level shot. Noren has NO text or symbols, signage blank or absent; no logos, letters, watermark, cigarettes. Landscape 1456x816.",
+    "N6": "Use case: illustration-story. Reference for art style and night palette ONLY, no girl. Background-only MV bridge still: quiet empty Japanese sidewalk gently curving to the RIGHT around a low concrete garden wall toward a small softly glowing convenience store at mid-distance right. Eye-level pedestrian viewpoint, foreground paving and curve clearly readable, left residential wall with foliage, utility poles and modest street lamps. Cool blue/teal night with warm amber streetlight pools and soft white/cyan convenience store glow. Same intricate anime painted lines and textured color as reference. Upper quarter has quiet dark open blue sky/low-detail negative space for later lyrics. No people, silhouettes, cars in foreground, text, logos, labels, brand stripes or watermark. Store blank fascia, simple windows with indistinct products. Emotion: familiar place empty now, gentle nostalgic loneliness. Compose so a person could later be added in middle-ground slightly left of center without hiding store. Wide 1456x816.",
+    "N6b": "Use case: compositing / identity-preserve. Image 1 is EDIT TARGET empty night sidewalk. Image 2 is reference for woman identity, outfit and art style ONLY. Keep image1 EXACT camera, perspective, curve of sidewalk, all walls, railings, utility poles/wires, store position, distant hills and every building. NO shifting, zoom or rebuilding layout: intended for perfectly registered crossfade with image1. Change lighting only from blue night to WARM GOLDEN SUNSET with peach sky and warm reflections. Add the same adult-looking young woman from image2 on the sidewalk, middle foreground slightly left of center, full body, walking toward store but looking back over shoulder warmly smiling toward camera/friend. Same gray bob/pink inner hair, pink-violet eyes, headphones; PLAIN cream hoodie, gray/navy KNEE-LENGTH check pleated skirt with thin pink pinstripes, simple dark tights and lace boots. No neck chain, no dots/prints/logo. Soft natural happy smile ordinary teeth, no fangs, no red eyes. Keep upper sky uncluttered for later lyrics. Nobody else, unseen photographer remains offscreen. Same fine anime linework and painterly color. No text/logos/watermark. Landscape 1456x816.",
+    "N6b_correction": "One localized clothing correction to this completed illustration ONLY: extend woman's gray/navy plaid pleated skirt with thin pink lines so hem reaches her KNEES, a modest true knee-length skirt. Current hem is mid-thigh, must extend down substantially to knees. Preserve exact leg pose and walking motion; naturally drape longer pleats. Keep every other detail unchanged: woman's identity, face, hair, headphones, hoodie, arms, boots, sunset sky, buildings, poles, walls, convenience store, paving, railings, composition and linework. No other edits. No text, logo, watermark. 1456x816 landscape.",
+    "N2_correction": "Localized corrections ONLY to this completed MV daytime vending-machine image. Remove ALL necklace chain/jewelry visible at woman's neckline, replacing tiny chain areas with matching natural skin or plain cream hoodie fabric. Extend gray/navy checked skirt with thin pink pinstripes to TRUE KNEE LENGTH; if hem reaches below frame, it should continue past frame. Preserve pose, proportions, hands with three coins, face/smile, hair/headphones, hoodie, vending machine, all sunlight/trees/background, camera tilt, framing and painterly anime art exactly unchanged. Do not zoom out or move subject to show hem. Plain hoodie no marks or logos. No text or watermark. 1456x816.",
+    "L3_correction": "Tiny localized mouth correction ONLY: remove the pointed fang teeth in this adult woman's smile and render ordinary smooth natural human upper teeth, preserving her playful open-mouth singing expression and tongue. No sharp or jagged teeth. Keep every other detail EXACTLY as reference: face shape, eyes, gray hair/pink inner color, no headphones, light blue denim jacket, white T-shirt, black pants, hands/microphone, stage/background, colors, framing. Do not redraw any other region. 941x1672 portrait."
+  },
+  "files": [
+    {
+      "id": "L1",
+      "file": "L1_ライブ1.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-5ec1d782-2bb0-4988-92f8-4a59a6e79a59.png"
+    },
+    {
+      "id": "L2",
+      "file": "L2_ライブ2.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-61bad96d-847a-43de-8098-46406c280094.png"
+    },
+    {
+      "id": "L3",
+      "file": "L3_ライブ縦.png",
+      "width": 941,
+      "height": 1672,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-e4cc4772-9e73-47f4-8682-cf798e507d44.png"
+    },
+    {
+      "id": "N1",
+      "file": "N1_BBQ.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-030e5abe-fae3-4821-bce1-926b42867fdc.png"
+    },
+    {
+      "id": "N2",
+      "file": "N2_自販機.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-7e309fdd-d643-438c-a096-655716b234e0.png"
+    },
+    {
+      "id": "N3",
+      "file": "N3_フェス横.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-07ba7bed-85c6-4bef-a0b6-0e75b74a5e4e.png"
+    },
+    {
+      "id": "N4",
+      "file": "N4_今の彼女.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-b8259741-e88f-4cdd-83c0-742445cde1d6.png"
+    },
+    {
+      "id": "N5",
+      "file": "N5_銭湯.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-ad1aaa0a-b4d8-45a8-88da-2588695e52a7.png"
+    },
+    {
+      "id": "N6",
+      "file": "N6_曲がり角.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-a4d6a110-f61d-4dc7-be43-a1e03581a80e.png"
+    },
+    {
+      "id": "N6b",
+      "file": "N6b_曲がり角_過去.png",
+      "width": 1456,
+      "height": 816,
+      "source": "C:\\Users\\hiden\\.codex\\generated_images\\01a14282-142d-7663-8de6-ae8a0cb6b9f9\\exec-02dd914e-9502-430a-9c49-5c0daadc2619.png"
+    }
+  ]
+}

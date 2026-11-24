@@ -9,9 +9,9 @@
 
     // Paths (adjust if needed)
     var base = "C:/Users/hiden/my-video";
-    var musicPath = base + "/music/ふりーだむ.mp3";
-    var imgSoft = base + "/photo/ふりーだむ/u2944115231_a_cute_pastel_goth_anime_girl_with_pigtails_smili_9a8df4f9-b617-46eb-88c1-14c400972e91_3.png";
-    var imgNeon = base + "/photo/ふりーだむ/u2944115231_a_cute_pastel_goth_anime_girl_with_pigtails_smili_a7635260-938a-4846-8add-8cf5e9b42b35_0.png";
+    var musicPath = base + "/public/songs/freedom/ふりーだむ.mp3";
+    var imgSoft = base + "/public/songs/freedom/photo/u2944115231_a_cute_pastel_goth_anime_girl_with_pigtails_smili_9a8df4f9-b617-46eb-88c1-14c400972e91_3.png";
+    var imgNeon = base + "/public/songs/freedom/photo/u2944115231_a_cute_pastel_goth_anime_girl_with_pigtails_smili_a7635260-938a-4846-8add-8cf5e9b42b35_0.png";
 
     function importIfExists(path) {
         var f = new File(path);

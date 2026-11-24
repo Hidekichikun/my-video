@@ -2,20 +2,20 @@
 
 @font-face {
   font-family: "klsmaru";
-  src: url("../public/fonts/klsmaru.otf") format("opentype");
+  src: url("../public/fonts/klsmaru/klsmaru.otf") format("opentype");
 }
 
 @font-face {
   font-family: "ZenInShugo";
-  src: url("../public/fonts/ZenInShugo.ttf") format("truetype");
+  src: url("../public/fonts/全員集合_ポップ体ver3/全員集合！ポップ体ver3.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "ZenInShugoPop";
-  src: url("../public/fonts/ZenInShugoPop.ttf") format("truetype");
+  src: url("../public/fonts/全員集合_ポップ体ver3/全員集合！ポップ体ver3.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "ToroNoGlitchMincho";
-  src: url("../public/fonts/ToroNoGlitchMinchoH3.otf") format("opentype");
+  src: url("../public/fonts/瀞ノグリッチ明朝/瀞ノグリッチ明朝H3.otf") format("opentype");
 }

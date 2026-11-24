@@ -2,23 +2,23 @@
 import { Composition } from "remotion";
 import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
-import { LyricVideo } from "./LyricVideo";
-import { GlitchCandy } from "./GlitchCandy";
+import { LyricVideo } from "./songs/LyricVideo";
+import { GlitchCandy } from "./songs/GlitchCandy";
 
 
-import { WorldHateProtocol } from "./WorldHateProtocol";
-import { ForwardGlow } from "./ForwardGlow";
-import { Chikichihi } from "./Chikichihi";
-import { Freedom } from "./Freedom";
-import { OhanaBatake } from "./OhanaBatake";
-import { Dokkoisho } from "./Dokkoisho";
-import { Poppo } from "./Poppo";
-import { Seasons } from "./Seasons";
-import { Setsubunn } from "./Setsubunn";
-import { MahouShojoTanabe } from "./MahouShojoTanabe";
-import { NichijoTakagi } from "./NichijoTakagi";
-import { HarakataNabe } from "./HarakataNabe";
-import { JiGaMe } from "./JiGaMe";
+import { WorldHateProtocol } from "./songs/WorldHateProtocol";
+import { ForwardGlow } from "./songs/ForwardGlow";
+import { Chikichihi } from "./songs/Chikichihi";
+import { Freedom } from "./songs/Freedom";
+import { OhanaBatake } from "./songs/OhanaBatake";
+import { Dokkoisho } from "./songs/Dokkoisho";
+import { Poppo } from "./songs/Poppo";
+import { Seasons } from "./songs/Seasons";
+import { Setsubunn } from "./songs/Setsubunn";
+import { MahouShojoTanabe } from "./songs/MahouShojoTanabe";
+import { NichijoTakagi } from "./songs/NichijoTakagi";
+import { HarakataNabe } from "./songs/HarakataNabe";
+import { JiGaMe } from "./songs/JiGaMe";
 
 // Each <Composition> is an entry in the sidebar!
 

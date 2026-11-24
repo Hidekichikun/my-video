@@ -1,4 +1,4 @@
-export const FIRE_IN_MY_SENSES_LRC_FILE = 'fire-in-my-senses.lrc';
+export const FIRE_IN_MY_SENSES_LRC_FILE = 'songs/fire-in-my-senses/fire-in-my-senses.lrc';
 
 /**
  * Normalize LRC text before parsing.

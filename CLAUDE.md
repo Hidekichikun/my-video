@@ -10,6 +10,10 @@
 - 型チェック: `npx tsc --noEmit`（既存エラーが十数件ある。作業前後で件数が増えていないかを見る）
 - ffmpeg はシステムに無い。Remotion 同梱のものを使う
 
+## スキル
+
+- `.claude/skills/remotion-lecture-video`：講義・解説動画（MathGacha 型）の組み立て。骨組み作成（`scaffold.py`）、音声の尺計測、確認用の静止画・動画の書き出し、BGMの測り方、つまずき集。新作はここから始める。
+
 ## フォルダの役割
 
 | フォルダ | 中身 | git |
@@ -76,6 +80,7 @@
 | ピラミッド（第1弾） | `Pyramid`（台本・データ）, `PyramidFull`, `PyramidPrevis` | `audio/pyramid/`, `photo/pyramid*/` | `ピラミッド` | `pyramid` |
 | ピラミッド2 | `Pyramid2`（台本・データ）, `Pyramid2Full` | `audio/pyramid2/`, `photo/pyramid2-anime/` | `ピラミッド2` | `pyramid2` |
 | 鎌倉（プリビズ） | `KamakuraPrevis` | `audio/`（`scripts/generate_kamakura_audio.cjs`） | `鎌倉` | − |
+| 数学講義 確率と統計 #1「1%のガチャ、100回引けば当たる？」 | `MathGacha`（台本・データ）, `MathGachaFull`（3D＋2D） | `audio/mathgacha/`, `music/mathgacha/`, `photo/math-guide/`, `photo/math-gacha/` | `MathGacha` | `MathGacha`（元は `voice/MathGacha`） |
 
 ### アーカイブ（2025年〜2026年初めのリリックMV）
 

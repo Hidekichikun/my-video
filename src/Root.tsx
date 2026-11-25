@@ -34,6 +34,7 @@ import { KamakuraFull } from "./KamakuraPrevis/Full";
 import { PyramidPrevis, PYRAMID_PREVIS_DURATION } from "./PyramidPrevis";
 import { PyramidChapter, PyramidFull, PYRAMID_CHAPTERS, PYRAMID_FULL_DURATION } from "./PyramidFull";
 import { Pyramid2Chapter, Pyramid2Full, PYRAMID2_CHAPTERS, PYRAMID2_FULL_DURATION } from "./Pyramid2Full";
+import { MathGachaChapter, MathGachaFull, MATHGACHA_CHAPTERS, MATHGACHA_FULL_DURATION } from "./MathGachaFull";
 
 // ---- アーカイブ（2025年〜2026年初めのリリックMV） ----
 import { LyricVideo } from "./LyricVideo";
@@ -125,6 +126,13 @@ export const RemotionRoot: React.FC = () => {
         <Folder name="Pyramid2-chapters">
           {PYRAMID2_CHAPTERS.map((c) => (
             <Composition key={c.id} id={`Pyramid2Ch${c.id}`} component={Pyramid2Chapter} defaultProps={{ chapterId: c.id }} durationInFrames={c.durationInFrames} {...HD} />
+          ))}
+        </Folder>
+        {/* 数学講義 シーズン1 #1「1%のガチャ、100回引けば当たる？」。いまは00章と02章だけ組み済み */}
+        <Composition id="MathGachaFull" component={MathGachaFull} durationInFrames={MATHGACHA_FULL_DURATION} {...HD} />
+        <Folder name="MathGacha-chapters">
+          {MATHGACHA_CHAPTERS.map((c) => (
+            <Composition key={c.id} id={`MathGachaCh${c.id}`} component={MathGachaChapter} defaultProps={{ chapterId: c.id }} durationInFrames={c.durationInFrames} {...HD} />
           ))}
         </Folder>
       </Folder>

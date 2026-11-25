@@ -6,19 +6,23 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@react-three/fiber": "^9.8.2",
     "@remotion/cli": "4.0.379",
     "@remotion/google-fonts": "4.0.379",
     "@remotion/tailwind-v4": "4.0.379",
+    "@remotion/three": "^4.0.379",
     "@remotion/zod-types": "4.0.379",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "remotion": "4.0.379",
     "tailwindcss": "4.0.0",
+    "three": "^0.187.0",
     "zod": "3.22.3"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.379",
     "@types/react": "19.0.0",
+    "@types/three": "^0.187.0",
     "@types/web": "0.0.166",
     "eslint": "9.19.0",
     "prettier": "3.6.0",
